@@ -108,3 +108,34 @@ body {
         display: flex;
     }
 }
+
+main {
+    max-width: 900px;
+    margin: 3rem auto;
+    padding: 0 2rem;
+}
+
+section {
+    margin-bottom: 3rem;
+    border-left: 2px solid var(--bordure-structurelle);
+    padding-left: 1.5rem;
+}
+
+section h2 {
+    color: var(--texte-principal);
+    font-size: 1.5rem;
+    margin-top: 0;
+    font-weight: 500;
+}
+
+section ul {
+    color: var(--texte-secondaire);
+    line-height: 1.8;
+}
+
+#role-loop {
+    color: var(--texte-principal);
+    border-bottom: 1px dashed var(--texte-secondaire);
+    display: inline-block;
+    min-width: 130px;
+}
