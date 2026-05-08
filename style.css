@@ -1,0 +1,110 @@
+:root {
+    --fond-apaisant: #121212;
+    --texte-principal: #e0e0e0;
+    --texte-secondaire: #a0a0a0;
+    --bordure-structurelle: #2a2a2a;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--fond-apaisant);
+    color: var(--texte-principal);
+    font-family: system-ui, sans-serif;
+    line-height: 1.6;
+}
+
+.en-tete-site {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+/* Structuration de la bannière */
+.banniere {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--bordure-structurelle);
+    padding-bottom: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.banniere-texte h1 {
+    margin: 0 0 0.5rem 0;
+    font-size: 2.5rem;
+    letter-spacing: -0.05em;
+}
+
+.banniere-texte p {
+    margin: 0;
+    color: var(--texte-secondaire);
+    font-style: italic;
+}
+
+.banniere-photo {
+    width: 120px;
+    height: 120px;
+    background-color: var(--bordure-structurelle);
+    border-radius: 50%;
+}
+
+/* Navigation par défaut (Ordinateur) */
+#declencheur-menu {
+    display: none;
+}
+
+#menu-principal {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 2rem;
+}
+
+#menu-principal a {
+    color: var(--texte-principal);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+#menu-principal a:hover {
+    text-decoration: underline;
+}
+
+/* Adaptation pour terminaux mobiles et tablettes */
+@media (max-width: 768px) {
+    .en-tete-site {
+        padding: 1rem;
+    }
+
+    .banniere {
+        flex-direction: column-reverse;
+        text-align: center;
+        gap: 1.5rem;
+    }
+
+    #declencheur-menu {
+        display: block;
+        width: 100%;
+        background-color: transparent;
+        color: var(--texte-principal);
+        border: 1px solid var(--bordure-structurelle);
+        padding: 0.75rem;
+        cursor: pointer;
+        font-family: inherit;
+    }
+
+    #menu-principal {
+        display: none;
+        flex-direction: column;
+        gap: 1rem;
+        padding-top: 1rem;
+        text-align: center;
+    }
+
+    /* Classe activée par JavaScript */
+    #menu-principal.déployé {
+        display: flex;
+    }
+}
