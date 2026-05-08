@@ -10,13 +10,30 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 });
 
-const roles = ["researcher", "data scientist"];
-let roleIndex = 0;
-const roleElement = document.getElementById("role-loop");
+document.addEventListener("DOMContentLoaded", () => {
+    // ... [conservez ici le code du menu de la bannière] ...
 
-if (roleElement) {
-    setInterval(() => {
-        roleIndex = (roleIndex + 1) % roles.length;
-        roleElement.textContent = roles[roleIndex];
-    }, 2500);
-}
+    const conteneurRoles = document.getElementById("conteneur-roles");
+    if (conteneurRoles) {
+        // Extraction et nettoyage des options depuis l'attribut HTML
+        const roles = conteneurRoles.getAttribute("data-roles").split(",").map(role => role.trim());
+        const affichageRole = document.getElementById("role-actuel");
+        const btnPrec = document.getElementById("role-prec");
+        const btnSuiv = document.getElementById("role-suiv");
+        let indexRole = 0;
+
+        const mettreAJourAffichage = () => {
+            affichageRole.textContent = roles[indexRole];
+        };
+
+        btnPrec.addEventListener("click", () => {
+            indexRole = (indexRole - 1 + roles.length) % roles.length;
+            mettreAJourAffichage();
+        });
+
+        btnSuiv.addEventListener("click", () => {
+            indexRole = (indexRole + 1) % roles.length;
+            mettreAJourAffichage();
+        });
+    }
+});
