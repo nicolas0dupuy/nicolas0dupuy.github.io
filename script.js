@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
+    /* Logique du menu de navigation mobile */
     const boutonDeclencheur = document.getElementById("declencheur-menu");
     const menuPrincipal = document.getElementById("menu-principal");
 
@@ -8,32 +9,24 @@ document.addEventListener("DOMContentLoaded", () => {
             boutonDeclencheur.setAttribute("aria-expanded", estDeploye);
         });
     }
-});
 
-document.addEventListener("DOMContentLoaded", () => {
-    // ... [conservez ici le code du menu de la bannière] ...
-
+    /* Logique du sélecteur de rôles */
     const conteneurRoles = document.getElementById("conteneur-roles");
     if (conteneurRoles) {
-        // Extraction et nettoyage des options depuis l'attribut HTML
         const roles = conteneurRoles.getAttribute("data-roles").split(",").map(role => role.trim());
         const affichageRole = document.getElementById("role-actuel");
         const btnPrec = document.getElementById("role-prec");
         const btnSuiv = document.getElementById("role-suiv");
         let indexRole = 0;
 
-        const mettreAJourAffichage = () => {
-            affichageRole.textContent = roles[indexRole];
-        };
-
         btnPrec.addEventListener("click", () => {
             indexRole = (indexRole - 1 + roles.length) % roles.length;
-            mettreAJourAffichage();
+            affichageRole.textContent = roles[indexRole];
         });
 
         btnSuiv.addEventListener("click", () => {
             indexRole = (indexRole + 1) % roles.length;
-            mettreAJourAffichage();
+            affichageRole.textContent = roles[indexRole];
         });
     }
 });
