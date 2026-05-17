@@ -163,6 +163,22 @@ section {
     color: #e0e0e0;
 }
 
+.service-desc {
+    color: #e0e0e0;
+    margin-bottom: 0.75rem;
+}
+
+.proficiency-level {
+    font-size: 0.9rem;
+    color: #b0bec5; 
+    background-color: #1a1a1a; 
+    padding: 0.75rem 1rem;
+    border-left: 3px solid #82b1ff; 
+    border-radius: 0 4px 4px 0;
+    margin-top: 0;
+    margin-bottom: 2rem;
+}
+
 @keyframes fadeIn {
     from { opacity: 0; }
     to { opacity: 1; }
