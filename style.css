@@ -72,6 +72,18 @@ body {
     text-decoration: underline;
 }
 
+/* Ajout dans style.css */
+.profile-pic {
+    width: 150px;           /* Largeur fixe pour la barre latérale */
+    height: 150px;          /* Hauteur identique pour un carré parfait */
+    border-radius: 50%;     /* Transforme le carré en cercle parfait */
+    object-fit: cover;      /* S'assure que l'image remplit l'espace sans distorsion */
+    display: block;         /* Centrage dans le conteneur parent */
+    margin: 0 auto 20px auto; 
+    border: 3px solid #fff; /* Cadre clean optionnel (ajuster la couleur selon le design) */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Légère ombre pour détacher l'image */
+}
+
 /* Adaptation pour terminaux mobiles et tablettes */
 @media (max-width: 768px) {
     .en-tete-site {
