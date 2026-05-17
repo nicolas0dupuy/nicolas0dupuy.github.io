@@ -182,4 +182,18 @@ section {
         margin-left: 0;
         padding: 1.5rem;
     }
+
+    .tab-buttons {
+        flex-direction: column;
+    }
+
+    .tab-btn {
+        border-bottom: 1px solid #333333;
+        text-align: left;
+    }
+
+    .tab-btn.active {
+        border-bottom: 1px solid #333333;
+        border-left: 4px solid #82b1ff;
+    }
 }
