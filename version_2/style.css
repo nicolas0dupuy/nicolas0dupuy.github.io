@@ -179,6 +179,32 @@ section {
     margin-bottom: 2rem;
 }
 
+.tab-buttons.grid-matrix {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: #1e1e1e;
+    border-bottom: 1px solid #333333;
+}
+
+/* Ajustement des bordures internes de la matrice pour éviter les doublons */
+.tab-buttons.grid-matrix .tab-btn:nth-child(1),
+.tab-buttons.grid-matrix .tab-btn:nth-child(2) {
+    border-bottom: 1px solid #333333;
+}
+
+.tab-buttons.grid-matrix .tab-btn:nth-child(1),
+.tab-buttons.grid-matrix .tab-btn:nth-child(3) {
+    border-right: 1px solid #333333;
+}
+
+/* Ajustement de l'indicateur actif pour la version bureau */
+.tab-buttons.grid-matrix .tab-btn.active {
+    background-color: #121212;
+    color: #82b1ff;
+    border-bottom: 1px solid #333333;
+    box-shadow: inset 0 -2px 0 0 #82b1ff; /* Utilisation d'une ombre interne pour ne pas décaler la grille */
+}
+
 @keyframes fadeIn {
     from { opacity: 0; }
     to { opacity: 1; }
@@ -199,16 +225,19 @@ section {
         padding: 1.5rem;
     }
 
-    .tab-buttons {
+.tab-buttons.grid-matrix {
+        display: flex;
         flex-direction: column;
     }
 
     .tab-btn {
         border-bottom: 1px solid #333333;
+        border-right: none !important; /* Annule la bordure droite de la matrice */
         text-align: left;
     }
 
-    .tab-btn.active {
+    .tab-buttons.grid-matrix .tab-btn.active {
+        box-shadow: none;
         border-bottom: 1px solid #333333;
         border-left: 4px solid #82b1ff;
     }
