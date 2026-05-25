@@ -230,28 +230,26 @@ section {
   color: #f1f1f1;
 }
 
-.bio-certificates {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1.5rem;
-  margin-top: 3rem;
-}
-
-.bio-certificates figure {
-  margin: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-  border-radius: 4px;
-  overflow: hidden;
-  background-color: #f9f9f9;
-}
-
-.bio-certificates img {
-  max-width: 100%;
+.inline-cert {
+  width: 150px;
   height: auto;
-  display: block;
+  border-radius: 4px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  background-color: #fff;
+}
+
+.inline-cert.right {
+  float: right;
+  margin: 0 0 10px 15px;
+}
+
+.inline-cert.left {
+  float: left;
+  margin: 0 15px 10px 0;
+}
+
+.clearfix {
+  display: flow-root;
 }
 
 @keyframes fadeIn {
