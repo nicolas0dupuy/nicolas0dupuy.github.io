@@ -205,6 +205,18 @@ section {
     box-shadow: inset 0 -2px 0 0 #82b1ff; /* Utilisation d'une ombre interne pour ne pas décaler la grille */
 }
 
+.email-link {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+  transition: opacity 0.2s ease;
+}
+
+.email-link:hover {
+  opacity: 0.7;
+}
+
 @keyframes fadeIn {
     from { opacity: 0; }
     to { opacity: 1; }
