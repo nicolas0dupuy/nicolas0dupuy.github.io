@@ -252,6 +252,59 @@ section {
   display: flow-root;
 }
 
+.cert-link {
+  display: inline-block;
+  position: relative;
+  transition: transform 0.2s ease;
+  text-decoration: none;
+}
+
+.cert-link.right {
+  float: right;
+  margin: 0 0 10px 15px;
+}
+
+.cert-link.left {
+  float: left;
+  margin: 0 15px 10px 0;
+}
+
+/* Effet de zoom au survol */
+.cert-link:hover {
+  transform: scale(1.05);
+}
+
+/* Indicateur de texte au survol */
+.cert-link::after {
+  content: "Click for real size";
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  font-size: 0.75rem;
+  padding: 4px 8px;
+  border-radius: 4px;
+  white-space: nowrap;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  pointer-events: none; /* Empêche le texte de bloquer le clic */
+}
+
+.cert-link:hover::after {
+  opacity: 1;
+}
+
+.inline-cert {
+  width: 150px;
+  height: auto;
+  border-radius: 4px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  background-color: #fff;
+  display: block;
+}
+
 @keyframes fadeIn {
     from { opacity: 0; }
     to { opacity: 1; }
