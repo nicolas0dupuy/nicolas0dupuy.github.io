@@ -1,32 +1,56 @@
 document.addEventListener("DOMContentLoaded", () => {
-    /* Logique du menu de navigation mobile */
-    const boutonDeclencheur = document.getElementById("declencheur-menu");
-    const menuPrincipal = document.getElementById("menu-principal");
+    const tabButtons = document.querySelectorAll(".tab-btn");
+    const tabPanels = document.querySelectorAll(".tab-panel");
 
-    if (boutonDeclencheur && menuPrincipal) {
-        boutonDeclencheur.addEventListener("click", () => {
-            const estDeploye = menuPrincipal.classList.toggle("déployé");
-            boutonDeclencheur.setAttribute("aria-expanded", estDeploye);
+    tabButtons.forEach(button => {
+        button.addEventListener("click", () => {
+            // Remove the active class from all buttons and panels
+            tabButtons.forEach(btn => btn.classList.remove("active"));
+            tabPanels.forEach(panel => panel.classList.remove("active"));
+
+            // Add the active class to the clicked button
+            button.classList.add("active");
+
+            // Identify and activate the corresponding panel
+            const targetId = button.getAttribute("data-target");
+            document.getElementById(targetId).classList.add("active");
         });
-    }
+    });
+});
 
-    /* Logique du sélecteur de rôles */
-    const conteneurRoles = document.getElementById("conteneur-roles");
-    if (conteneurRoles) {
-        const roles = conteneurRoles.getAttribute("data-roles").split(",").map(role => role.trim());
-        const affichageRole = document.getElementById("role-actuel");
-        const btnPrec = document.getElementById("role-prec");
-        const btnSuiv = document.getElementById("role-suiv");
-        let indexRole = 0;
+document.addEventListener('DOMContentLoaded', () => {
+  const navLinks = document.querySelectorAll('.nav-links a');
+  const sections = document.querySelectorAll('.content section');
 
-        btnPrec.addEventListener("click", () => {
-            indexRole = (indexRole - 1 + roles.length) % roles.length;
-            affichageRole.textContent = roles[indexRole];
-        });
+  // Fonction pour basculer l'affichage
+  function showSection(targetId) {
+    sections.forEach(section => {
+      if (section.id === targetId) {
+        section.classList.add('active-section');
+      } else {
+        section.classList.remove('active-section');
+      }
+    });
+  }
 
-        btnSuiv.addEventListener("click", () => {
-            indexRole = (indexRole + 1) % roles.length;
-            affichageRole.textContent = roles[indexRole];
-        });
-    }
+  // Initialisation : lire le hash de l'URL ou afficher section1 par défaut
+  const initialHash = window.location.hash.substring(1);
+  if (initialHash && document.getElementById(initialHash)) {
+    showSection(initialHash);
+  } else {
+    showSection('section1');
+  }
+
+  // Écoute des clics sur le menu
+  navLinks.forEach(link => {
+    link.addEventListener('click', (e) => {
+      e.preventDefault(); // Bloque le saut visuel instantané du navigateur
+      const targetId = link.getAttribute('href').substring(1);
+      
+      showSection(targetId);
+      
+      // Met à jour l'URL sans recharger la page
+      window.history.pushState(null, null, `#${targetId}`);
+    });
+  });
 });

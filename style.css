@@ -1,179 +1,367 @@
-:root {
-    --fond-apaisant: #121212;
-    --texte-principal: #e0e0e0;
-    --texte-secondaire: #a0a0a0;
-    --bordure-structurelle: #2a2a2a;
-}
-
-body {
+body, html {
     margin: 0;
     padding: 0;
-    background-color: var(--fond-apaisant);
-    color: var(--texte-principal);
-    font-family: system-ui, sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: #e0e0e0;
     line-height: 1.6;
+    background-color: #121212;
 }
 
-.en-tete-site {
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 2rem;
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 280px;
+    height: 100vh;
+    background-color: #1e1e1e;
+    border-right: 1px solid #333333;
+    padding: 2.5rem 1.5rem;
+    box-sizing: border-box;
+    text-align: center;
+    overflow-y: auto;
 }
 
-/* Structuration de la bannière */
-.banniere {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 1px solid var(--bordure-structurelle);
-    padding-bottom: 2rem;
-    margin-bottom: 1.5rem;
-}
-
-.banniere-texte h1 {
-    margin: 0 0 0.5rem 0;
-    font-size: 2.5rem;
-    letter-spacing: -0.05em;
-}
-
-.banniere-texte p {
-    margin: 0;
-    color: var(--texte-secondaire);
-    font-style: italic;
-}
-
-.banniere-photo {
-    width: 120px;
-    height: 120px;
-    background-color: var(--bordure-structurelle);
+.profile-pic {
+    width: 140px;
+    height: 140px;
+    background-color: #2c2c2c;
     border-radius: 50%;
+    margin: 0 auto 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #9e9e9e;
+    font-size: 0.9rem;
 }
 
-/* Navigation par défaut (Ordinateur) */
-#declencheur-menu {
-    display: none;
+.sidebar-name {
+    font-size: 1.5rem;
+    margin: 0 0 0.5rem 0;
+    color: #ffffff;
 }
 
-#menu-principal {
+.sidebar-title {
+    font-size: 0.9rem;
+    color: #9e9e9e;
+    margin-bottom: 2rem;
+}
+
+.nav-links {
     list-style: none;
     padding: 0;
     margin: 0;
-    display: flex;
-    gap: 2rem;
 }
 
-#menu-principal a {
-    color: var(--texte-principal);
+.nav-links li {
+    margin-bottom: 0.8rem;
+}
+
+.nav-links a {
     text-decoration: none;
-    font-weight: 500;
+    color: #82b1ff;
 }
 
-#menu-principal a:hover {
+.nav-links a:hover {
     text-decoration: underline;
 }
 
-/* Ajout dans style.css */
-.profile-pic {
-    width: 150px;           /* Largeur fixe pour la barre latérale */
-    height: 150px;          /* Hauteur identique pour un carré parfait */
-    border-radius: 50%;     /* Transforme le carré en cercle parfait */
-    object-fit: cover;      /* S'assure que l'image remplit l'espace sans distorsion */
-    display: block;         /* Centrage dans le conteneur parent */
-    margin: 0 auto 20px auto; 
-    border: 3px solid #fff; /* Cadre clean optionnel (ajuster la couleur selon le design) */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Légère ombre pour détacher l'image */
-}
-
-/* Adaptation pour terminaux mobiles et tablettes */
-@media (max-width: 768px) {
-    .en-tete-site {
-        padding: 1rem;
-    }
-
-    .banniere {
-        flex-direction: column-reverse;
-        text-align: center;
-        gap: 1.5rem;
-    }
-
-    #declencheur-menu {
-        display: block;
-        width: 100%;
-        background-color: transparent;
-        color: var(--texte-principal);
-        border: 1px solid var(--bordure-structurelle);
-        padding: 0.75rem;
-        cursor: pointer;
-        font-family: inherit;
-    }
-
-    #menu-principal {
-        display: none;
-        flex-direction: column;
-        gap: 1rem;
-        padding-top: 1rem;
-        text-align: center;
-    }
-
-    /* Classe activée par JavaScript */
-    #menu-principal.déployé {
-        display: flex;
-    }
-}
-
-main {
+.content {
+    margin-left: 280px;
+    padding: 3rem 4rem;
     max-width: 900px;
-    margin: 3rem auto;
-    padding: 0 2rem;
+}
+
+h2 {
+    font-weight: 400;
+    border-bottom: 1px solid #333333;
+    padding-bottom: 0.5rem;
+    margin-top: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: #ffffff;
 }
 
 section {
     margin-bottom: 3rem;
-    border-left: 2px solid var(--bordure-structurelle);
-    padding-left: 1.5rem;
 }
 
-section h2 {
-    color: var(--texte-principal);
-    font-size: 1.5rem;
-    margin-top: 0;
-    font-weight: 500;
+.publication-item {
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+    align-items: flex-start;
 }
 
-section ul {
-    color: var(--texte-secondaire);
-    line-height: 1.8;
-}
-
-.selecteur-role {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
-    border: 1px solid var(--bordure-structurelle);
-    border-radius: 4px;
-    padding: 0.1rem 0.4rem;
-    background-color: rgba(255, 255, 255, 0.05);
-    vertical-align: middle;
-}
-
-.selecteur-role button {
-    background: transparent;
-    border: none;
-    color: var(--texte-secondaire);
-    cursor: pointer;
-    padding: 0 0.2rem;
-    font-size: 0.8rem;
+.pub-cover {
+    width: 90px;
+    height: 130px;
+    background-color: #2c2c2c;
+    flex-shrink: 0;
     display: flex;
     align-items: center;
+    justify-content: center;
+    color: #9e9e9e;
+    font-size: 0.8rem;
 }
 
-.selecteur-role button:hover {
-    color: var(--texte-principal);
+.tabs-container {
+    margin-top: 2rem;
+    border: 1px solid #333333;
+    border-radius: 8px;
+    overflow: hidden;
 }
 
-#role-actuel {
-    color: var(--texte-principal);
-    font-weight: 500;
-    min-width: 140px;
-    text-align: center;
+.tab-buttons {
+    display: flex;
+    background-color: #1e1e1e;
+    border-bottom: 1px solid #333333;
+}
+
+.tab-btn {
+    flex: 1;
+    padding: 1rem;
+    border: none;
+    background: none;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    color: #e0e0e0;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.tab-btn:hover {
+    background-color: #2c2c2c;
+}
+
+.tab-btn.active {
+    background-color: #121212;
+    color: #82b1ff;
+    border-bottom: 2px solid #82b1ff;
+}
+
+.tab-content {
+    padding: 2rem;
+    background-color: #121212;
+}
+
+.tab-panel {
+    display: none;
+}
+
+.tab-panel.active {
+    display: block;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+.tab-panel h3 {
+    margin-top: 0;
+    color: #ffffff;
+}
+
+.tab-panel h4 {
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #e0e0e0;
+}
+
+.service-desc {
+    color: #e0e0e0;
+    margin-bottom: 0.75rem;
+}
+
+.proficiency-level {
+    font-size: 0.9rem;
+    color: #90a4ae; 
+    background-color: #2a2a2a; 
+    padding: 0.75rem 1rem;
+    border-left: 3px solid #82b1ff; 
+    border-radius: 0 4px 4px 0;
+    margin-top: 0;
+    margin-bottom: 2rem;
+}
+
+.tab-buttons.grid-matrix {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: #1e1e1e;
+    border-bottom: 1px solid #333333;
+}
+
+/* Ajustement des bordures internes de la matrice pour éviter les doublons */
+.tab-buttons.grid-matrix .tab-btn:nth-child(1),
+.tab-buttons.grid-matrix .tab-btn:nth-child(2) {
+    border-bottom: 1px solid #333333;
+}
+
+.tab-buttons.grid-matrix .tab-btn:nth-child(1),
+.tab-buttons.grid-matrix .tab-btn:nth-child(3) {
+    border-right: 1px solid #333333;
+}
+
+/* Ajustement de l'indicateur actif pour la version bureau */
+.tab-buttons.grid-matrix .tab-btn.active {
+    background-color: #121212;
+    color: #82b1ff;
+    border-bottom: 1px solid #333333;
+    box-shadow: inset 0 -2px 0 0 #82b1ff; /* Utilisation d'une ombre interne pour ne pas décaler la grille */
+}
+
+.email-link {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+  transition: opacity 0.2s ease;
+}
+
+.email-link:hover {
+  opacity: 0.7;
+}
+
+.section-3 {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  font-family: sans-serif;
+}
+
+.bio-text p {
+  line-height: 1.6;
+  margin-bottom: 1.2rem;
+  color: #f1f1f1;
+}
+
+.inline-cert {
+  width: 150px;
+  height: auto;
+  border-radius: 4px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  background-color: #fff;
+}
+
+.inline-cert.right {
+  float: right;
+  margin: 0 0 10px 15px;
+}
+
+.inline-cert.left {
+  float: left;
+  margin: 0 15px 10px 0;
+}
+
+.clearfix {
+  display: flow-root;
+}
+
+.cert-link {
+  display: inline-block;
+  position: relative;
+  transition: transform 0.2s ease;
+  text-decoration: none;
+}
+
+.cert-link.right {
+  float: right;
+  margin: 0 0 10px 15px;
+}
+
+.cert-link.left {
+  float: left;
+  margin: 0 15px 10px 0;
+}
+
+/* Effet de zoom au survol */
+.cert-link:hover {
+  transform: scale(1.05);
+}
+
+/* Indicateur de texte au survol */
+.cert-link::after {
+  content: "Click for real size";
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  font-size: 0.75rem;
+  padding: 4px 8px;
+  border-radius: 4px;
+  white-space: nowrap;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  pointer-events: none; /* Empêche le texte de bloquer le clic */
+}
+
+.cert-link:hover::after {
+  opacity: 1;
+}
+
+.inline-cert {
+  width: 150px;
+  height: auto;
+  border-radius: 4px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  background-color: #fff;
+  display: block;
+}
+
+/* Masquer toutes les sections par défaut */
+.content section {
+  display: none;
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+/* Afficher uniquement la section active */
+.content section.active-section {
+  display: block;
+}
+
+/* Animation de fondu et léger glissement */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        position: relative;
+        width: 100%;
+        height: auto;
+        border-right: none;
+        border-bottom: 1px solid #333333;
+        padding: 2rem 1rem;
+    }
+
+    .content {
+        margin-left: 0;
+        padding: 1.5rem;
+    }
+
+.tab-buttons.grid-matrix {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .tab-btn {
+        border-bottom: 1px solid #333333;
+        border-right: none !important; /* Annule la bordure droite de la matrice */
+        text-align: left;
+    }
+
+    .tab-buttons.grid-matrix .tab-btn.active {
+        box-shadow: none;
+        border-bottom: 1px solid #333333;
+        border-left: 4px solid #82b1ff;
+    }
 }
