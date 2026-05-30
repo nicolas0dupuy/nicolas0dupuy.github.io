@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
   if (initialHash && document.getElementById(initialHash)) {
     showSection(initialHash);
   } else {
-    showSection('section1');
+    showSection('home');
   }
 
   // Écoute des clics sur le menu
