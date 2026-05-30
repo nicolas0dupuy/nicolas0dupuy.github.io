@@ -316,6 +316,27 @@ section {
   display: block;
 }
 
+/* Presentation Cadre Styling */
+.intro-cadre {
+    background-color: #1e1e1e;
+    border: 1px solid #333333;
+    border-left: 4px solid #82b1ff;
+    border-radius: 4px;
+    padding: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.intro-cadre p {
+    margin-top: 0;
+    margin-bottom: 1.25rem;
+    color: #e0e0e0;
+}
+
+.intro-cadre p:last-child {
+    margin-bottom: 0;
+}
+
 /* Animation de fondu et léger glissement */
 @keyframes fadeIn {
   from {
