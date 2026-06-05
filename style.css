@@ -359,6 +359,26 @@ section {
     box-shadow: inset 0 -2px 0 0 #82b1ff;
 }
 
+/* Style spécifique pour le li de contact */
+.nav-links .nav-contact-item {
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid #333333;
+}
+
+/* Ajustement cosmétique du lien e-mail dans la barre latérale */
+.nav-links .nav-contact-item a {
+    font-size: 0.85rem;
+    font-style: italic;
+    color: #9e9e9e;
+}
+
+/* Changement d'état au survol pour conserver l'interactivité */
+.nav-links .nav-contact-item a:hover {
+    color: #82b1ff;
+    text-decoration: none;
+}
+
 /* Version responsive pour les écrans mobiles */
 @media (max-width: 768px) {
     .tab-buttons.grid-three {
