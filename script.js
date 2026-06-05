@@ -1,19 +1,27 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const tabButtons = document.querySelectorAll(".tab-btn");
-    const tabPanels = document.querySelectorAll(".tab-panel");
+    // Ciblage autonome de chaque conteneur d'onglets pour isoler la logique
+    const tabContainers = document.querySelectorAll(".tabs-container");
 
-    tabButtons.forEach(button => {
-        button.addEventListener("click", () => {
-            // Remove the active class from all buttons and panels
-            tabButtons.forEach(btn => btn.classList.remove("active"));
-            tabPanels.forEach(panel => panel.classList.remove("active"));
+    tabContainers.forEach(container => {
+        const tabButtons = container.querySelectorAll(".tab-btn");
+        const tabPanels = container.querySelectorAll(".tab-panel");
 
-            // Add the active class to the clicked button
-            button.classList.add("active");
+        tabButtons.forEach(button => {
+            button.addEventListener("click", () => {
+                // Nettoyage limité exclusivement au conteneur parent actif
+                tabButtons.forEach(btn => btn.classList.remove("active"));
+                tabPanels.forEach(panel => panel.classList.remove("active"));
 
-            // Identify and activate the corresponding panel
-            const targetId = button.getAttribute("data-target");
-            document.getElementById(targetId).classList.add("active");
+                // Activation locale du bouton sélectionné
+                button.classList.add("active");
+
+                // Activation locale du panneau cible correspondant
+                const targetId = button.getAttribute("data-target");
+                const targetPanel = container.querySelector(`#${targetId}`);
+                if (targetPanel) {
+                    targetPanel.classList.add("active");
+                }
+            });
         });
     });
 });
@@ -22,7 +30,6 @@ document.addEventListener('DOMContentLoaded', () => {
   const navLinks = document.querySelectorAll('.nav-links a');
   const sections = document.querySelectorAll('.content section');
 
-  // Fonction pour basculer l'affichage
   function showSection(targetId) {
     sections.forEach(section => {
       if (section.id === targetId) {
@@ -33,7 +40,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // Initialisation : lire le hash de l'URL ou afficher section1 par défaut
   const initialHash = window.location.hash.substring(1);
   if (initialHash && document.getElementById(initialHash)) {
     showSection(initialHash);
@@ -41,15 +47,11 @@ document.addEventListener('DOMContentLoaded', () => {
     showSection('home');
   }
 
-  // Écoute des clics sur le menu
   navLinks.forEach(link => {
     link.addEventListener('click', (e) => {
-      e.preventDefault(); // Bloque le saut visuel instantané du navigateur
+      e.preventDefault();
       const targetId = link.getAttribute('href').substring(1);
-      
       showSection(targetId);
-      
-      // Met à jour l'URL sans recharger la page
       window.history.pushState(null, null, `#${targetId}`);
     });
   });
