@@ -337,6 +337,48 @@ section {
     margin-bottom: 0;
 }
 
+/* Alignement sur une grille à 3 colonnes pour la section Philosophie */
+.tab-buttons.grid-three {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: #1e1e1e;
+    border-bottom: 1px solid #333333;
+}
+
+/* Gestion des bordures internes de l'interface à trois boutons */
+.tab-buttons.grid-three .tab-btn:nth-child(1),
+.tab-buttons.grid-three .tab-btn:nth-child(2) {
+    border-right: 1px solid #333333;
+}
+
+/* Style de l'état actif avec ombre interne */
+.tab-buttons.grid-three .tab-btn.active {
+    background-color: #121212;
+    color: #82b1ff;
+    border-bottom: 1px solid #333333;
+    box-shadow: inset 0 -2px 0 0 #82b1ff;
+}
+
+/* Version responsive pour les écrans mobiles */
+@media (max-width: 768px) {
+    .tab-buttons.grid-three {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .tab-buttons.grid-three .tab-btn {
+        border-bottom: 1px solid #333333;
+        border-right: none !important;
+        text-align: left;
+    }
+
+    .tab-buttons.grid-three .tab-btn.active {
+        box-shadow: none;
+        border-bottom: 1px solid #333333;
+        border-left: 4px solid #82b1ff;
+    }
+}
+
 /* Animation de fondu et léger glissement */
 @keyframes fadeIn {
   from {
