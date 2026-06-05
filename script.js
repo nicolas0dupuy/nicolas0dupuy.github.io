@@ -27,9 +27,11 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 document.addEventListener('DOMContentLoaded', () => {
-  const navLinks = document.querySelectorAll('.nav-links a');
+  // Sélectionne uniquement les liens dont l'attribut href commence par #
+  const navLinks = document.querySelectorAll('.nav-links a[href^="#"]');
   const sections = document.querySelectorAll('.content section');
 
+  // Fonction pour basculer l'affichage
   function showSection(targetId) {
     sections.forEach(section => {
       if (section.id === targetId) {
@@ -40,6 +42,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  // Initialisation : lire le hash de l'URL ou afficher la section par défaut
   const initialHash = window.location.hash.substring(1);
   if (initialHash && document.getElementById(initialHash)) {
     showSection(initialHash);
@@ -47,11 +50,14 @@ document.addEventListener('DOMContentLoaded', () => {
     showSection('home');
   }
 
+  // Écoute des clics uniquement sur les liens d'ancrage interne
   navLinks.forEach(link => {
     link.addEventListener('click', (e) => {
-      e.preventDefault();
+      e.preventDefault(); 
       const targetId = link.getAttribute('href').substring(1);
+      
       showSection(targetId);
+      
       window.history.pushState(null, null, `#${targetId}`);
     });
   });
