@@ -88,8 +88,8 @@ function runVerticalTileTransition(targetSectionId) {
 
   // Configuration parameters
   const tileSize = 40;          // 40px tiles
-  const speed = 450;            // 450ms fade duration
-  const tileColor = '#1e1b4b';   // Cosmic Indigo
+  const speed = 400;            // 450ms fade duration
+  const tileColor = '#0f172a';   // Cosmic Indigo
 
   // Calculate grid dimensions dynamically to guarantee total canvas coverage
   const cols = Math.ceil(containerWidth / tileSize);
