@@ -463,6 +463,7 @@ section {
 }
 
 @media (max-width: 768px) {
+    /*
     .sidebar {
         position: relative;
         width: 100%;
@@ -470,6 +471,36 @@ section {
         border-right: none;
         border-bottom: 1px solid #333333;
         padding: 2rem 1rem;
+    }*/
+    .sidebar {
+        display: flex; /* Active le flexbox */
+        flex-direction: row; /* Aligne les items horizontalement */
+        align-items: center; /* Centre verticalement */
+        flex-wrap: wrap; /* Permet aux éléments de passer à la ligne si besoin */
+        gap: 1rem;
+        text-align: left;
+    }
+
+    .profile-pic {
+        margin: 0; /* Supprime la marge automatique centrée */
+        width: 80px; /* Réduit un peu la taille pour l'espace mobile */
+        height: 80px;
+    }
+.sidebar-name, .sidebar-title {
+        margin: 0; /* Supprime les marges par défaut */
+    }
+
+    .nav-links {
+        width: 100%; /* Force le menu en dessous */
+        display: flex;
+        flex-direction: row; /* Aligne les boutons en ligne */
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        margin-top: 1rem;
+    }
+
+    .nav-links li {
+        margin: 0;
     }
 
     .content {
