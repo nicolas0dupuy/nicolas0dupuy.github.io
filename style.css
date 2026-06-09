@@ -463,7 +463,7 @@ section {
 }
 
 @media (max-width: 768px) {
-    /*
+    
     .sidebar {
         position: relative;
         width: 100%;
@@ -471,7 +471,7 @@ section {
         border-right: none;
         border-bottom: 1px solid #333333;
         padding: 2rem 1rem;
-    }*/
+    }
     .sidebar {
         display: flex; /* Active le flexbox */
         flex-direction: row; /* Aligne les items horizontalement */
