@@ -161,32 +161,134 @@
     </div> </section>
         
     <section id="section3" class="section-3">
-  <h2>Biography</h2>
-  <article class="bio-text">
-    <p>Hi, I'm Nicolas. Here is a short biographical overview. It is currently a work in progress to be expanded over time.</p>
+    <h2>Biography</h2>
     
-<p class="clearfix">
-      <a href="cert_doctorat.webp" target="_blank" class="cert-link right">
-        <img src="cert_doctorat.webp" alt="Diplôme de Docteur" class="inline-cert" loading="lazy">
-      </a>
-      <a href="cert_maitrise.webp" target="_blank" class="cert-link right">
-        <img src="cert_maitrise.webp" alt="Maîtrise de Mathématiques" class="inline-cert" loading="lazy">
-      </a>
-      I am proud to be a PhD. I got it in 2016 after defending a thesis about numerical computations of the electronic ground states of chemical compounds called acenes, under the supervision of Prof. Michele Casula at the IMPMC (Sorbonne Université). You can also see that I got a Maîtrise in Fundamental Mathematics in 2005.
-    </p>
-    
-    <p>I am passionate about research, but I paused my studies for some years, working full-time as a home teacher. I owe my return to science to the people who believed in me.</p>
-    
-    <p class="clearfix">
-      <a href="cert_datacamp.webp" target="_blank" class="cert-link left">
-        <img src="cert_datacamp.webp" alt="DataCamp Finance Fundamentals" class="inline-cert" loading="lazy">
-      </a>
-      <a href="cert_coursera.webp" target="_blank" class="cert-link left">
-        <img src="cert_coursera.webp" alt="Coursera Deep Learning Certificate" class="inline-cert" loading="lazy">
-      </a>
-      I am passionate about fundamental sciences, but in 2016, after my defense, I shifted toward practical applications and discovered Data Science and Machine Learning. I love to apply it to any domain. My latest focus is in Finance.
-    </p>  </article>
-</section>    
+    <!-- Local Index / Table of Contents -->
+    <nav class="bio-index" aria-label="Biography Subsections">
+        <h3>Contents</h3>
+        <ul>
+            <li>
+                <a href="#bio-academics">Academics</a>
+                <ul>
+                    <li><a href="#bio-physics">Physics</a></li>
+                    <li><a href="#bio-mathematics">Mathematics</a></li>
+                    <li><a href="#bio-languages-acad">Languages</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#bio-miscellaneous">Miscellaneous</a>
+                <ul>
+                    <li><a href="#bio-languages-misc">Languages</a></li>
+                    <li><a href="#bio-datascience">Data Science & Machine Learning</a></li>
+                    <li><a href="#bio-computervision">Computer Vision</a></li>
+                    <li><a href="#bio-generative">Generative Models</a></li>
+                    <li><a href="#bio-finance">Finance</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- General Introduction -->
+    <article class="bio-intro">
+        <p>Hi, I'm Nicolas, an independent researcher and a lecturer in data science. I split this page into subsections, Academic and Miscellaneous, the best I could considering my very non-linear path.</p>
+    </article>
+
+    <!-- Academics Subsection -->
+    <div id="bio-academics" class="bio-subsection">
+        <h3>Academics</h3>
+        <p>My studies started in 1998 with my high-school graduation to end in 2016 with my PhD defense. It included, but was not limited to, three main themes: Physics, Mathematics, and Languages. I’ll talk a bit about what I did, but exclude most of the chaotic years.</p>
+        
+        <!-- Physics Subtopic -->
+        <div id="bio-physics" class="bio-subtopic">
+            <h4>Physics</h4>
+            <p class="clearfix">
+                <a href="cert_doctorat.webp" target="_blank" class="cert-link right">
+                    <img src="cert_doctorat.webp" alt="Diplôme de Docteur" class="inline-cert" loading="lazy">
+                </a>
+                I started with a DEUG in Physics at Jussieu, the first two university years, before switching to Mathematics, then returning to Physics for the second Master's degree year in Material Science (the SMNO Master at Sorbonne), followed by my PhD, running from September 2012 to April 2016 at Sorbonne Université in the IMPMC laboratory, supervised by Prof. Michele Casula and Prof. Francesco Mauri.
+            </p>
+            <p>My PhD research involved numerical investigations of the electronic ground states (primarily) and excited states (secondarily) of a molecular family called acenes. Acenes are a family of linear molecules whose structure can be seen as a thin stripe of a graphene nanoribbon. We focused on electron and spin densities and correlations to better understand spin correlations in graphene-like materials, which can have applications to fields such as solar energy.</p>
+            <p>Prof. Casula is an expert in Quantum Monte Carlo methods and a researcher with an impressive capacity to focus on dozens of things at the same time. He was a challenging and uncompromising advisor who taught me to do science, while I was only in a solving-textbook-problems mindset before. I feel very lucky to have worked with him.</p>
+        </div>
+
+        <!-- Mathematics Subtopic -->
+        <div id="bio-mathematics" class="bio-subtopic">
+            <h4>Mathematics</h4>
+            <p class="clearfix">
+                <a href="cert_maitrise.webp" target="_blank" class="cert-link right">
+                    <img src="cert_maitrise.webp" alt="Maîtrise de Mathématiques" class="inline-cert" loading="lazy">
+                </a>
+                I switched to mathematics in my third year. I had already been studying both physics and mathematics through textbooks since 1999, but to achieve my personal ENS goal, it was strategically preferable to make this bifurcation.
+            </p>
+            <p>A brief context note about French schools. We have an elite alternative to the standard university track called Classes Préparatoires aux Grandes Écoles. To draw a parallel with the USA: these Grandes Écoles can be compared to the Ivy League universities. Students prepare challenging exams for two years in the Classes Préparatoires (and often take a third year for a better school), then engage in a marathon of competitive tests.</p>
+            <p>My dream institution was the École Normale Supérieure (ENS), likely the most selective among them, with Polytechnique. I discovered it too late to apply for a Classe Préparatoire, but decided to try it anyway as an independent applicant. So I was competing against future potential Nobel prize winners, relying on my textbook self-study (and it didn’t work, but I enjoyed trying!).</p>
+            <p>The Licence de Mathématiques offered the closest match to the Classes Préparatoires. During those years, my curriculum covered:</p>
+            <ul>
+                <li>Two Algebra courses: foundations, followed by ring structures and Galois theory (roughly corresponding to the first half of Part II in Serge Lang's Algebra)</li>
+                <li>Foundational Topology</li>
+                <li>Differential Calculus</li>
+                <li>Integration and Measure Theory</li>
+                <li>Differential Equations and Differential Geometry</li>
+                <li>Spectral and Fourier Analysis</li>
+                <li>Dynamical Systems and Lie Groups</li>
+            </ul>
+            <p>(This summary excludes the domains I studied later through independent research, such as probability theory and numerical methods.)</p>
+        </div>
+
+        <!-- Languages (Academic) Subtopic -->
+        <div id="bio-languages-acad" class="bio-subtopic">
+            <h4>Languages</h4>
+            <p>My setback at the ENS brought my morale down, so, alongside my maîtrise de mathématiques, I enrolled at INALCO to study Russian.</p>
+            <p>I became absorbed in studying the Russian language, so it began to take too much of a precedence over mathematics. And so it took me two years to complete my maîtrise because I had to retry a couple of exams (I don’t regret it either!).</p>
+            <p>My grammar lecturer awakened a passion for poetry in foreign languages. Poetry frequently motivates me to begin a new language. When I started Estonian, I discovered Jaan Kaplinski, who remains one of my favourite poets. It’s even an addiction: I read something interesting about a culture, want to know a bit about it, research just a bit, promise myself not to dig any deeper, do it anyway, then add a new pile of books to my nightstand.</p>
+        </div>
+    </div>
+
+    <!-- Miscellaneous Subsection -->
+    <div id="bio-miscellaneous" class="bio-subsection">
+        <h3>Miscellaneous</h3>
+        
+        <!-- Languages (Misc) Subtopic -->
+        <div id="bio-languages-misc" class="bio-subtopic">
+            <h4>Languages</h4>
+            <p>I begin by talking about my passion with a disclaimer: I know many languages very badly. It’s a passion, not a collection to brag about, but since I started it more than twenty years ago, I have accumulated a lot of experience that I sometimes think I can use.</p>
+            <p>So, briefly. It started with Russian, with two years at university, and continued on my own (it will always be the case, so I don’t need to specify anymore). Then, the first two languages I started completely on my own were Czech and Hungarian, planning a trip there. During the first one, it was a disaster when I tried to talk to people, but the next year was better. My High-School foreign languages were German and English, so I resumed them next, and added Italian on the way, because of a friend, and went to a summer school there. For seven years, I’ve been learning Estonian, starting at a school in Saaremaa, and a few years ago, I started learning Swedish and a bit of Chinese. That’s not it, but those are the ones I’m the most active in.</p>
+            <p>Yet, I benefit from the pros and cons of being on the spectrum. I can learn Estonian or Swedish poetry during my commute, using my phone as a dictionary, now using AI tools to explain symbolism or history, but meanwhile, it’s not always easy for me to communicate, and I’m often stuck when I get anxious.</p>
+        </div>
+
+        <!-- Data Science & Machine Learning Subtopic -->
+        <div id="bio-datascience" class="bio-subtopic">
+            <h4>Data Science & Machine Learning</h4>
+            <p class="clearfix">
+                <a href="cert_datacamp.webp" target="_blank" class="cert-link left">
+                    <img src="cert_datacamp.webp" alt="DataCamp Finance Fundamentals" class="inline-cert" loading="lazy">
+                </a>
+                <a href="cert_coursera.webp" target="_blank" class="cert-link left">
+                    <img src="cert_coursera.webp" alt="Coursera Deep Learning Certificate" class="inline-cert" loading="lazy">
+                </a>
+                I started to learn data science online on Coursera because it was emerging in France at the time I finished my PhD, and it was a fascinating new field, demonstrating how to use those methods on public data to discover things about any topic. Maths enthusiasts have easy access to plenty of new methods, interesting in themselves to study, but also to easily do numerical research even from home.
+            </p>
+        </div>
+
+        <!-- Computer Vision Subtopic -->
+        <div id="bio-computervision" class="bio-subtopic">
+            <h4>Computer Vision</h4>
+            <p>After a couple of deep learning tutorials on classic architectures, such as Andrew Ng’s deep learning course, I wanted to dig deeper into this field and not be limited to machine learning methods, because legacy algorithms have fascinating mathematical foundations, especially in geometry, using Fourier transformations, or differential calculus.</p>
+        </div>
+
+        <!-- Generative Models Subtopic -->
+        <div id="bio-generative" class="bio-subtopic">
+            <h4>Generative Models</h4>
+            <p>In 2021, I had saved enough money to take a course on Stanford Online, and I chose CS236. At the time, it was somewhat of a way of taking a late revenge on my ENS failure and feeling like a student of an Ivy League university. I didn’t have the right personality to bond with my classmate online, to voice out on the forum, ask questions, so I didn’t get more than if I read a book, but I had an early teaching from one of the leading experts in the field, and he was fascinating. Now I’m passionate about it.</p>
+        </div>
+
+        <!-- Finance Subtopic -->
+        <div id="bio-finance" class="bio-subtopic">
+            <h4>Finance</h4>
+            <p>I discovered a late interest in financial mathematics from lecturing in business schools. I’m interested in computing values at risk of portfolios using machine learning methods (PCA and normalizing flows). Meanwhile, I discovered that it was less complicated than I thought to invest according to my personal values, especially investing in northern Europe.</p>
+        </div>
+    </div>
+</section>
     
     
     </main>
