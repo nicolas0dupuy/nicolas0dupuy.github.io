@@ -220,15 +220,18 @@ function filterByTag(selectedTag, clickedButton) {
     allButtons.forEach(btn => btn.classList.remove("active"));
     clickedButton.classList.add("active");
 
+    // ERGONOMIE MOBILE : Centre doucement le hashtag cliqué dans la glissière
+    clickedButton.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+
     // Filtrer les cartes de service
     serviceCards.forEach(card => {
         const cardTagsString = card.getAttribute("data-tags");
         const cardTags = cardTagsString ? cardTagsString.split(",") : [];
 
         if (selectedTag === "all" || cardTags.includes(selectedTag)) {
-            card.style.display = "block"; // Affiche la carte
+            card.style.display = "block";
         } else {
-            card.style.display = "none";  // Cache la carte
+            card.style.display = "none";
         }
     });
 }
