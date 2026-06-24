@@ -487,32 +487,36 @@ section {
     color: #ffffff;
 }
 
-/* Conteneur du menu */
+/* Conteneur du menu - Format glissière par défaut (Mobile) */
 .hashtag-menu-container {
     display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    margin-bottom: 32px;
-    padding: 16px;
+    flex-wrap: nowrap; /* Empêche le retour à la ligne automatique */
+    overflow-x: auto;  /* Active le défilement horizontal si ça dépasse */
+    -webkit-overflow-scrolling: touch; /* Défilement fluide et naturel sur iOS */
+    gap: 8px;
+    padding: 12px 4px;
+    margin-bottom: 24px;
     border-bottom: 1px solid #262626;
+    
+    /* Masquer la barre de défilement pour un rendu plus propre */
+    scrollbar-width: none; /* Firefox */
 }
 
-/* Style de base des boutons du menu */
+.hashtag-menu-container::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera */
+}
+
+/* Style de base des boutons (légèrement plus compacts pour mobile) */
 .menu-tag-btn {
-    font-size: 0.9rem;
+    flex: 0 0 auto; /* Empêche les boutons de rétrécir ou de s'écraser */
+    font-size: 0.85rem;
     color: #a3a3a3;
     background-color: #121212;
     border: 1px solid #262626;
-    padding: 6px 14px;
-    border-radius: 20px; /* Format pilule moderne */
+    padding: 6px 12px;
+    border-radius: 20px;
     cursor: pointer;
     transition: all 0.2s ease;
-}
-
-/* Effet de survol */
-.menu-tag-btn:hover {
-    border-color: #3b6b4c;
-    color: #cbd5e1;
 }
 
 /* État "allumé" quand le bouton est sélectionné */
@@ -520,9 +524,17 @@ section {
     background-color: #1c2420;
     color: #62b078;
     border-color: #3b6b4c;
-    box-shadow: 0 0 8px rgba(98, 176, 120, 0.2); /* Léger halo lumineux éco */
+    box-shadow: 0 0 8px rgba(98, 176, 120, 0.2);
 }
 
+/* --- OPTIONNEL : Comportement sur Grand Écran (PC) --- */
+@media (min-width: 768px) {
+    .hashtag-menu-container {
+        flex-wrap: wrap;       /* Repasse en mode grille classique si tu as de la place */
+        overflow-x: visible;   /* Plus besoin de glisser sur PC */
+        padding: 16px 0;
+    }
+}
 @media (max-width: 768px) {
     .title-with-badge {
         flex-direction: column;
