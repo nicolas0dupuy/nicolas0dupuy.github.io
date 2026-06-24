@@ -173,3 +173,62 @@ function runVerticalTileTransition(targetSectionId) {
 
   }, phase1Duration);
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+    generateHashtagMenu();
+});
+
+function generateHashtagMenu() {
+    const menuContainer = document.getElementById("hashtag-menu");
+    const serviceCards = document.querySelectorAll(".service-card");
+    
+    if (!menuContainer) return;
+
+    // 1. Extraire tous les hashtags uniques des attributs data-tags
+    const allTags = new Set();
+    serviceCards.forEach(card => {
+        const tagsString = card.getAttribute("data-tags");
+        if (tagsString) {
+            tagsString.split(",").forEach(tag => {
+                if (tag.trim() !== "") allTags.add(tag.trim());
+            });
+        }
+    });
+
+    // 2. Créer le bouton "All Services"
+    const allButton = document.createElement("button");
+    allButton.textContent = "All Services";
+    allButton.className = "menu-tag-btn active"; // Activé par défaut
+    allButton.onclick = () => filterByTag("all", allButton);
+    menuContainer.appendChild(allButton);
+
+    // 3. Générer dynamiquement les boutons pour chaque hashtag trouvé
+    Array.from(allTags).sort().forEach(tag => {
+        const button = document.createElement("button");
+        button.textContent = `#${tag}`;
+        button.className = "menu-tag-btn";
+        button.onclick = () => filterByTag(tag, button);
+        menuContainer.appendChild(button);
+    });
+}
+
+function filterByTag(selectedTag, clickedButton) {
+    const serviceCards = document.querySelectorAll(".service-card");
+    const allButtons = document.querySelectorAll(".menu-tag-btn");
+
+    // Gérer l'état visuel "allumé" des boutons du menu
+    allButtons.forEach(btn => btn.classList.remove("active"));
+    clickedButton.classList.add("active");
+
+    // Filtrer les cartes de service
+    serviceCards.forEach(card => {
+        const cardTagsString = card.getAttribute("data-tags");
+        const cardTags = cardTagsString ? cardTagsString.split(",") : [];
+
+        if (selectedTag === "all" || cardTags.includes(selectedTag)) {
+            card.style.display = "block"; // Affiche la carte
+        } else {
+            card.style.display = "none";  // Cache la carte
+        }
+    });
+}
