@@ -412,6 +412,81 @@ section {
     transform: translateY(-2px);
 }
 
+/* Conteneur principal du service */
+.service-card {
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 24px;
+    margin-bottom: 24px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.service-card:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.service-title {
+    margin-top: 0;
+    margin-bottom: 16px;
+    color: #1a1a1a;
+    font-size: 1.4rem;
+}
+
+.service-description {
+    margin-bottom: 20px;
+    color: #4a4a4a;
+    line-height: 1.6;
+}
+
+/* Zone de commentaire personnel avec nuance légère */
+.service-commentary {
+    background-color: #f4f7f6; /* Nuance subtile (ici un gris-vert très doux, ajustable) */
+    border-left: 4px solid #4a7c59; /* Ligne d'accentuation pour ancrer le bloc */
+    border-radius: 0 6px 6px 0;
+    padding: 16px 20px;
+    margin-bottom: 20px;
+}
+
+.service-commentary h4 {
+    margin-top: 0;
+    margin-bottom: 8px;
+    font-size: 1rem;
+    color: #2c4a35;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.service-commentary p {
+    margin: 0;
+    color: #555555;
+    font-style: italic;
+    line-height: 1.5;
+}
+
+/* Style des tags */
+.service-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.tag {
+    font-size: 0.85rem;
+    color: #4a7c59;
+    background-color: #eef4f0;
+    padding: 4px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.tag:hover {
+    background-color: #4a7c59;
+    color: #ffffff;
+}
+
 @media (max-width: 768px) {
     .title-with-badge {
         flex-direction: column;
