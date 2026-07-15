@@ -527,6 +527,76 @@ section {
     box-shadow: 0 0 8px rgba(98, 176, 120, 0.2);
 }
 
+/* ==========================================================================
+   EFFET DE PLIEMENT DYNAMIQUE "READ MORE" EN CSS PUR
+   ========================================================================== */
+
+/* 1. Conteneur ajustable qui cache le texte dépassant 150px par défaut */
+.card-fold-content {
+    max-height: 150px; /* Hauteur de repliement de base */
+    overflow: hidden;  /* Masque le surplus */
+    transition: max-height 0.4s cubic-bezier(0.25, 0.8, 0.25, 1); /* Animation fluide */
+    position: relative;
+}
+
+/* 2. Effet d'ombrage fondu en bas de carte */
+.card-fold-fade {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 60px; /* Profondeur du fondu */
+    /* REMPLACEMENT CRITIQUE : Changez #1f2937 par la couleur de fond de vos cartes de service */
+    background: linear-gradient(to bottom, rgba(31, 41, 55, 0), #1f2937); 
+    pointer-events: none; /* Laisse passer le clic à travers le dégradé */
+    transition: opacity 0.3s ease;
+}
+
+/* 3. Masquage de la case à cocher technique */
+.card-toggle-input {
+    display: none !important;
+}
+
+/* 4. Bouton "(more)" stylisé */
+.card-toggle-label {
+    display: inline-block;
+    margin-top: 12px;
+    margin-bottom: 16px;
+    color: #60a5fa; /* Bleu clair d'accentuation pour votre thème sombre */
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 0.9rem;
+    user-select: none;
+}
+
+.card-toggle-label:hover {
+    text-decoration: underline;
+}
+
+/* ==========================================================================
+   CONTRÔLE DES ÉTATS (OUVERT / FERMÉ)
+   ========================================================================== */
+
+/* Dépliement de la carte lorsqu'on coche */
+.card-toggle-input:checked ~ .card-fold-content {
+    max-height: 2000px; /* Permet d'ouvrir n'importe quel long texte */
+}
+
+/* Disparition du dégradé blanc/gris lors du dépliement */
+.card-toggle-input:checked ~ .card-fold-content .card-fold-fade {
+    opacity: 0;
+    pointer-events: none;
+}
+
+/* Changement automatique du texte du bouton sans une seule ligne de JS */
+.card-toggle-label::after {
+    content: " (more) ▼";
+}
+
+.card-toggle-input:checked ~ .card-toggle-label::after {
+    content: " (less) ▲";
+}
+
 /* --- OPTIONNEL : Comportement sur Grand Écran (PC) --- */
 @media (min-width: 768px) {
     .hashtag-menu-container {
