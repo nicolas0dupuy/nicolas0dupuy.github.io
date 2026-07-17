@@ -1,21 +1,39 @@
-document.addEventListener("DOMContentLoaded", () => {
-    // Ciblage autonome de chaque conteneur d'onglets pour isoler la logique
-    const tabContainers = document.querySelectorAll(".tabs-container");
+// Dictionnaire de mots-clés de personnalisation (URL GET "?choices=...")
+const CHOICE_PRESETS = {
+    "cat": ["ComputerVision", "GenerativeAI"],
+    "math": ["AppliedMathematics", "ComputationalPhysics"],
+    "researcher": ["GenerativeAI", "MachineLearning", "ComputerVision"],
+    "quant": ["QuantitativeFinance", "AppliedMathematics", "SignalProcessing", "DataScience"],
+    "consulting": ["MachineLearning", "DataScience", "DataEngineering", "ComputerVision"],
+    "curator": ["ComputerVision", "ResearchCollaboration"]
+};
 
+// Helper permettant de changer le hash de l'URL de manière sécurisée en local (évite SecurityError avec file://)
+function safePushHash(hash) {
+    try {
+        window.history.pushState(null, null, hash);
+    } catch (e) {
+        window.location.hash = hash;
+    }
+}
+
+// System flag preventing overlapping transitions
+let isTransitioning = false;
+
+document.addEventListener("DOMContentLoaded", () => {
+    // 1. Initialiser la logique des onglets (Tabs)
+    const tabContainers = document.querySelectorAll(".tabs-container");
     tabContainers.forEach(container => {
         const tabButtons = container.querySelectorAll(".tab-btn");
         const tabPanels = container.querySelectorAll(".tab-panel");
 
         tabButtons.forEach(button => {
             button.addEventListener("click", () => {
-                // Nettoyage limité exclusivement au conteneur parent actif
                 tabButtons.forEach(btn => btn.classList.remove("active"));
                 tabPanels.forEach(panel => panel.classList.remove("active"));
 
-                // Activation locale du bouton sélectionné
                 button.classList.add("active");
 
-                // Activation locale du panneau cible correspondant
                 const targetId = button.getAttribute("data-target");
                 const targetPanel = container.querySelector(`#${targetId}`);
                 if (targetPanel) {
@@ -24,167 +42,179 @@ document.addEventListener("DOMContentLoaded", () => {
             });
         });
     });
-});
 
-document.addEventListener('DOMContentLoaded', () => {
-  const navLinks = document.querySelectorAll('.nav-links a[href^="#"]');
-  const container = document.querySelector('.content');
+    // 2. Initialiser le routage et les transitions de navigation
+    const navLinks = document.querySelectorAll('.nav-links a[href^="#"]');
+    const container = document.querySelector('.content');
 
-  // Routine to instantly display initial layout configuration without rendering delays
-  function showSectionInstant(targetId) {
-    if (!container) return;
-    const sections = container.querySelectorAll('section');
-    sections.forEach(section => {
-      if (section.id === targetId) {
-        section.classList.add('active-section');
-      } else {
-        section.classList.remove('active-section');
-      }
+    function showSectionInstant(targetId) {
+        if (!container) return;
+        const sections = container.querySelectorAll('section');
+        sections.forEach(section => {
+            if (section.id === targetId) {
+                section.classList.add('active-section');
+            } else {
+                section.classList.remove('active-section');
+            }
+        });
+    }
+
+    const initialHash = window.location.hash.substring(1);
+    if (initialHash && document.getElementById(initialHash)) {
+        showSectionInstant(initialHash);
+    } else {
+        showSectionInstant('home');
+    }
+
+    navLinks.forEach(link => {
+        link.addEventListener('click', (e) => {
+            const targetId = link.getAttribute('href').substring(1);
+            const targetElement = document.getElementById(targetId);
+
+            if (targetElement && !targetElement.classList.contains('active-section') && !isTransitioning) {
+                e.preventDefault();
+                runVerticalTileTransition(targetId);
+                safePushHash(`#${targetId}`);
+            } else if (isTransitioning || (targetElement && targetElement.classList.contains('active-section'))) {
+                e.preventDefault();
+            }
+        });
     });
-  }
 
-  // Initialisation : check address parameters or fallback automatically
-  const initialHash = window.location.hash.substring(1);
-  if (initialHash && document.getElementById(initialHash)) {
-    showSectionInstant(initialHash);
-  } else {
-    showSectionInstant('home');
-  }
+    // 3. Générer le menu des hashtags
+    generateHashtagMenu();
 
-  // Navigation click routing rules
-  navLinks.forEach(link => {
-    link.addEventListener('click', (e) => {
-      const targetId = link.getAttribute('href').substring(1);
-      const targetElement = document.getElementById(targetId);
-      
-      // Execute only if target is distinct from active screen and pipeline is clear
-      if (targetElement && !targetElement.classList.contains('active-section') && !isTransitioning) {
-        e.preventDefault(); 
-        runVerticalTileTransition(targetId);
-        window.history.pushState(null, null, `#${targetId}`);
-      } else if (isTransitioning || (targetElement && targetElement.classList.contains('active-section'))) {
-        e.preventDefault(); // Stop default movement during state adjustments
-      }
-    });
-  });
+    // 4. Appliquer les préconfigurations GET par URL (?choices=...)
+    function applyUrlPresets() {
+        const urlParams = new URLSearchParams(window.location.search);
+        const choicesParam = urlParams.get("choices");
+        if (!choicesParam) return;
+
+        const key = choicesParam.toLowerCase().trim();
+        if (CHOICE_PRESETS[key]) {
+            const targetTags = CHOICE_PRESETS[key];
+            const checkboxes = document.querySelectorAll(".filter-checkbox");
+            const allButton = document.getElementById("all-services-btn");
+            
+            let activatedAny = false;
+            checkboxes.forEach(cb => {
+                if (targetTags.includes(cb.value)) {
+                    cb.checked = true;
+                    cb.closest(".filter-checkbox-container").classList.add("active");
+                    activatedAny = true;
+                } else {
+                    cb.checked = false;
+                    cb.closest(".filter-checkbox-container").classList.remove("active");
+                }
+            });
+            
+            if (activatedAny && allButton) {
+                allButton.classList.remove("active");
+            }
+            
+            applyFilters();
+            
+            // Afficher automatiquement la section Services (id: section2)
+            showSectionInstant('section2');
+            safePushHash('#section2');
+        }
+    }
+    applyUrlPresets();
 });
-// System flag preventing overlapping transitions
-let isTransitioning = false;
 
 /**
  * Executes a top-to-bottom linear tile transition to swap content sections.
  * @param {string} targetSectionId - The HTML ID of the section to reveal.
  */
 function runVerticalTileTransition(targetSectionId) {
-  if (isTransitioning) return;
-  isTransitioning = true;
+    if (isTransitioning) return;
+    isTransitioning = true;
 
-  const container = document.querySelector('.content');
-  if (!container) return;
+    const container = document.querySelector('.content');
+    if (!container) return;
 
-  const rect = container.getBoundingClientRect();
-  const containerWidth = rect.width;
-  const containerHeight = rect.height;
+    const rect = container.getBoundingClientRect();
+    const containerWidth = rect.width;
+    const containerHeight = rect.height;
 
-  // Configuration parameters
-  const tileSize = 40;          // 40px tiles
-  const speed = 400;            // 450ms fade duration
-  const tileColor = '#0f172a';   // Cosmic Indigo
+    const tileSize = 40;
+    const speed = 400;
+    const tileColor = '#0f172a';
 
-  // Calculate grid dimensions dynamically to guarantee total canvas coverage
-  const cols = Math.ceil(containerWidth / tileSize);
-  const rows = Math.ceil(containerHeight / tileSize);
+    const cols = Math.ceil(containerWidth / tileSize);
+    const rows = Math.ceil(containerHeight / tileSize);
 
-  // Initialize and style the absolute transition grid overlay
-  const overlay = document.createElement('div');
-  overlay.style.position = 'absolute';
-  overlay.style.top = '0';
-  overlay.style.left = '0';
-  overlay.style.width = '100%';
-  overlay.style.height = '100%';
-  overlay.style.display = 'grid';
-  overlay.style.gridTemplateColumns = `repeat(${cols}, 1fr)`;
-  overlay.style.gridTemplateRows = `repeat(${rows}, 1fr)`;
-  overlay.style.pointerEvents = 'none';
-  overlay.style.zIndex = '40';
-  container.appendChild(overlay);
+    const overlay = document.createElement('div');
+    overlay.style.position = 'absolute';
+    overlay.style.top = '0';
+    overlay.style.left = '0';
+    overlay.style.width = '100%';
+    overlay.style.height = '100%';
+    overlay.style.display = 'grid';
+    overlay.style.gridTemplateColumns = `repeat(${cols}, 1fr)`;
+    overlay.style.gridTemplateRows = `repeat(${rows}, 1fr)`;
+    overlay.style.pointerEvents = 'none';
+    overlay.style.zIndex = '40';
+    container.appendChild(overlay);
 
-  const tileElements = [];
+    const tileElements = [];
 
-  // Populate the grid structural matrix
-  for (let r = 0; r < rows; r++) {
-    for (let c = 0; c < cols; c++) {
-      const tile = document.createElement('div');
-      
-      // Configure aesthetic baseline states
-      tile.style.backgroundColor = tileColor;
-      tile.style.opacity = '0';
-      tile.style.transform = 'scale(0)';
-      tile.style.borderRadius = '0px'; 
-      
-      // Apply specialized smooth timing curve
-      tile.style.transition = `transform ${speed}ms cubic-bezier(0.25, 1, 0.5, 1), opacity ${speed}ms ease`;
+    for (let r = 0; r < rows; r++) {
+        for (let c = 0; c < cols; c++) {
+            const tile = document.createElement('div');
+            tile.style.backgroundColor = tileColor;
+            tile.style.opacity = '0';
+            tile.style.transform = 'scale(0)';
+            tile.style.borderRadius = '0px';
+            tile.style.transition = `transform ${speed}ms cubic-bezier(0.25, 1, 0.5, 1), opacity ${speed}ms ease`;
+            overlay.appendChild(tile);
 
-      overlay.appendChild(tile);
-
-      // Map sequential animation delay based exclusively on row index (top-to-bottom sweep)
-      const delay = r * (speed / rows) * 1.5;
-      
-      tileElements.push({ element: tile, delay });
+            const delay = r * (speed / rows) * 1.5;
+            tileElements.push({ element: tile, delay });
+        }
     }
-  }
 
-  // PHASE 1: Cover the active view layer with the growing grid overlay
-  setTimeout(() => {
-    tileElements.forEach(item => {
-      item.element.style.transitionDelay = `${item.delay}ms`;
-      item.element.style.opacity = '1';
-      item.element.style.transform = 'scale(1.05)'; // Elimina hairline gaps
-    });
-  }, 20);
-
-  // Compute total duration required for the longest delayed element to finish animating
-  const maxDelay = Math.max(...tileElements.map(item => item.delay));
-  const phase1Duration = maxDelay + speed;
-
-  // MIDPOINT INTERMISSION: Invert content visibility properties under the solid curtain
-  setTimeout(() => {
-    const sections = container.querySelectorAll('section');
-    sections.forEach(section => {
-      if (section.id === targetSectionId) {
-        section.classList.add('active-section');
-      } else {
-        section.classList.remove('active-section');
-      }
-    });
-
-    // PHASE 2: Shrink and dissolve elements to elegantly unmask the loaded section
-    tileElements.forEach(item => {
-      item.element.style.transitionDelay = `${item.delay}ms`;
-      item.element.style.opacity = '0';
-      item.element.style.transform = 'scale(0)';
-    });
-
-    // Complete lifecycle garbage collection once animations conclude entirely
     setTimeout(() => {
-      overlay.remove();
-      isTransitioning = false;
+        tileElements.forEach(item => {
+            item.element.style.transitionDelay = `${item.delay}ms`;
+            item.element.style.opacity = '1';
+            item.element.style.transform = 'scale(1.05)';
+        });
+    }, 20);
+
+    const maxDelay = Math.max(...tileElements.map(item => item.delay));
+    const phase1Duration = maxDelay + speed;
+
+    setTimeout(() => {
+        const sections = container.querySelectorAll('section');
+        sections.forEach(section => {
+            if (section.id === targetSectionId) {
+                section.classList.add('active-section');
+            } else {
+                section.classList.remove('active-section');
+            }
+        });
+
+        tileElements.forEach(item => {
+            item.element.style.transitionDelay = `${item.delay}ms`;
+            item.element.style.opacity = '0';
+            item.element.style.transform = 'scale(0)';
+        });
+
+        setTimeout(() => {
+            overlay.remove();
+            isTransitioning = false;
+        }, phase1Duration);
+
     }, phase1Duration);
-
-  }, phase1Duration);
 }
-
-document.addEventListener("DOMContentLoaded", () => {
-    generateHashtagMenu();
-});
 
 function generateHashtagMenu() {
     const menuContainer = document.getElementById("hashtag-menu");
     const serviceCards = document.querySelectorAll(".service-card");
-    
+
     if (!menuContainer) return;
 
-    // 1. Extraire tous les hashtags uniques des attributs data-tags
     const allTags = new Set();
     serviceCards.forEach(card => {
         const tagsString = card.getAttribute("data-tags");
@@ -195,43 +225,96 @@ function generateHashtagMenu() {
         }
     });
 
-    // 2. Créer le bouton "All Services"
     const allButton = document.createElement("button");
     allButton.textContent = "All Services";
-    allButton.className = "menu-tag-btn active"; // Activé par défaut
-    allButton.onclick = () => filterByTag("all", allButton);
+    allButton.id = "all-services-btn";
+    allButton.className = "menu-tag-btn active";
+    allButton.onclick = () => filterByTag("all");
     menuContainer.appendChild(allButton);
 
-    // 3. Générer dynamiquement les boutons pour chaque hashtag trouvé
     Array.from(allTags).sort().forEach(tag => {
-        const button = document.createElement("button");
-        button.textContent = `#${tag}`;
-        button.className = "menu-tag-btn";
-        button.onclick = () => filterByTag(tag, button);
-        menuContainer.appendChild(button);
+        const label = document.createElement("label");
+        label.className = "filter-checkbox-container";
+
+        const checkbox = document.createElement("input");
+        checkbox.type = "checkbox";
+        checkbox.value = tag;
+        checkbox.className = "filter-checkbox";
+        
+        checkbox.addEventListener("change", () => {
+            if (checkbox.checked) {
+                label.classList.add("active");
+            } else {
+                label.classList.remove("active");
+            }
+            
+            const checkedBoxes = document.querySelectorAll(".filter-checkbox:checked");
+            const allBtn = document.getElementById("all-services-btn");
+            if (checkedBoxes.length > 0) {
+                if (allBtn) allBtn.classList.remove("active");
+            } else {
+                if (allBtn) allBtn.classList.add("active");
+            }
+            
+            applyFilters();
+        });
+
+        label.appendChild(checkbox);
+        label.appendChild(document.createTextNode(`#${tag}`));
+        menuContainer.appendChild(label);
     });
 }
 
-function filterByTag(selectedTag, clickedButton) {
+function applyFilters() {
     const serviceCards = document.querySelectorAll(".service-card");
-    const allButtons = document.querySelectorAll(".menu-tag-btn");
+    const checkedBoxes = document.querySelectorAll(".filter-checkbox:checked");
+    
+    const activeTags = Array.from(checkedBoxes).map(cb => cb.value);
 
-    // Gérer l'état visuel "allumé" des boutons du menu
-    allButtons.forEach(btn => btn.classList.remove("active"));
-    clickedButton.classList.add("active");
-
-    // ERGONOMIE MOBILE : Centre doucement le hashtag cliqué dans la glissière
-    clickedButton.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
-
-    // Filtrer les cartes de service
     serviceCards.forEach(card => {
         const cardTagsString = card.getAttribute("data-tags");
         const cardTags = cardTagsString ? cardTagsString.split(",") : [];
 
-        if (selectedTag === "all" || cardTags.includes(selectedTag)) {
+        if (activeTags.length === 0) {
             card.style.display = "block";
         } else {
-            card.style.display = "none";
+            const hasMatch = cardTags.some(tag => activeTags.includes(tag));
+            if (hasMatch) {
+                card.style.display = "block";
+            } else {
+                card.style.display = "none";
+            }
         }
     });
+}
+
+function filterByTag(selectedTag) {
+    const checkboxes = document.querySelectorAll(".filter-checkbox");
+    const allButton = document.getElementById("all-services-btn");
+    
+    if (selectedTag === "all") {
+        checkboxes.forEach(cb => {
+            cb.checked = false;
+            cb.closest(".filter-checkbox-container").classList.remove("active");
+        });
+        if (allButton) {
+            allButton.classList.add("active");
+        }
+        applyFilters();
+    } else {
+        checkboxes.forEach(cb => {
+            if (cb.value === selectedTag) {
+                cb.checked = true;
+                cb.closest(".filter-checkbox-container").classList.add("active");
+                cb.closest(".filter-checkbox-container").scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+            } else {
+                cb.checked = false;
+                cb.closest(".filter-checkbox-container").classList.remove("active");
+            }
+        });
+        if (allButton) {
+            allButton.classList.remove("active");
+        }
+        applyFilters();
+    }
 }
