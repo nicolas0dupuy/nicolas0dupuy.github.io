@@ -1,6 +1,6 @@
 // Dictionnaire de mots-clés de personnalisation (URL GET "?choices=...")
 const CHOICE_PRESETS = {
-    "cat": ["ComputerVision", "GenerativeAI"],
+    "seagull": ["ResearchSupport", "ScientificComputing", "MathematicalModeling", "ComputerVision"],
     "math": ["AppliedMathematics", "ComputationalPhysics"],
     "researcher": ["GenerativeAI", "MachineLearning", "ComputerVision"],
     "quant": ["QuantitativeFinance", "AppliedMathematics", "SignalProcessing", "DataScience"],
