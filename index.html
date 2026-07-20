@@ -23,6 +23,18 @@
         </nav>
 
         <main class="content">
+            <div class="lang-selector-container">
+                <select class="lang-select" onchange="if(this.value) window.location.href=this.value;">
+                    <option value="" selected>English</option>
+                    <option value="fr/index.html">Français</option>
+                    <option value="de/index.html">Deutsch</option>
+                    <option value="sv/index.html">Svenska</option>
+                    <option value="et/index.html">Eesti</option>
+                    <option value="fi/index.html">Suomi</option>
+                    <option value="ru/index.html">Русский</option>
+                    <option value="uk/index.html">Українська</option>
+                </select>
+            </div>
             <section id="home">
                 <div class="intro-cadre">
                     <p><strong>Welcome! A first note about this Beta preview.</strong></p>

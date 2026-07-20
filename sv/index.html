@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="sv">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Nicolas Dupuy</title>
+        <link rel="stylesheet" href="../style.css">
+    </head>
+    <body>
+
+        <nav class="sidebar">
+            <img src="../profile.webp" alt="Nicolas Dupuy" class="profile-pic">
+            <h1 class="sidebar-name">Nicolas Dupuy</h1>
+            <p class="sidebar-title">Oberoende forskare | PhD i beräkningsfysik</p>
+            <ul class="nav-links">
+                <li><a href="#home">Hem</a></li>
+                <li><a href="#section1">Filosofi bakom mitt initiativ</a></li>
+                <li><a href="#section2">Tjänster</a></li>
+                <li><a href="#section3">Kort biografi</a></li>
+                <li class="nav-contact-item"><a href="mailto:nicolas0dupuy@gmail.com" class="email-link">nicolas0dupuy@gmail.com</a></li>
+            </ul>
+        </nav>
+
+        <main class="content">
+            <div class="lang-selector-container">
+                <select class="lang-select" onchange="if(this.value) window.location.href=this.value;">
+                    <option value="../index.html">English</option>
+                    <option value="../fr/index.html">Français</option>
+                    <option value="../de/index.html">Deutsch</option>
+                    <option value="" selected>Svenska</option>
+                    <option value="../et/index.html">Eesti</option>
+                    <option value="../fi/index.html">Suomi</option>
+                    <option value="../ru/index.html">Русский</option>
+                    <option value="../uk/index.html">Українська</option>
+                </select>
+            </div>
+            <section id="home">
+                <div class="translation-notice">
+                    Dessa sidor på svenska är en automatisk översättning från engelska. Jag har ett stort intresse för språk och studerar för närvarande svenska. Jag tycker mycket om språket och hoppas nå en nivå där jag kan arbeta tillsammans med er på svenska i framtiden, men just nu måste jag förlita mig på maskinöversättning. Planen är att låta korrekturläsa texten framöver, men er feedback är mycket värdefull för mig – både när det gäller mina tjänster och språket.
+                </div>
+                <div class="intro-cadre">
+                    <p><strong>Välkommen! En första anteckning om denna Beta-version.</strong></p>
+                    <p>Denna webbplats ger en översikt över mina digitala FoU-tjänster. Eftersom min omedelbara prioritet är återspegla min tillgänglighet, har jag utformat en minimal version som kommer att förbättras med tiden.</p>
+                    <p>Vi läser mycket om AI-systems förmåga på PhD-nivå, och jag har själv underutnyttjad PhD-kapacitet som jag vill erbjuda. Neuroatypism har varit mitt främsta hinder i traditionella arbetsflöden, så jag har strukturerat ett arbetssätt anpassat efter min profil inom autismspektrumet, vilket eliminerar traditionell friktion genom främst asynkront arbete, administrativa uppgifter delegerade till ett egenanställningsföretag (Employer of Record), och leverans villkorad av milstolpar.</p>
+                    <p>Eftersom jag arbetar med två energinivåer (låg och hög) täcker mina tjänster ett spektrum av olika komplexitet. När jag har för låg energi för krävande forskning kan jag alltid ta itu med er eftersläpning av databehandling; det finns alltid något jag kan bearbeta för att påskynda ert arbete.</p>
+                    <p>Jag kommer att förfina denna webbplats över tid för att göra den mer mänsklig, bättre förklarad och inkludera en mer personlig sektion. Då jag ständigt arbetar inom två energiregimer, utvecklar jag också denna plattform med två motsvarande nivåer av förfining; att långsamt humanisera den genom att dela mina passioner är för mig ett sätt att ladda mina batterier samtidigt som jag engagerar mig med intellektuellt nyfikna personer.</p>
+                </div>
+            </section>
+            <section id="section1">
+                <div class="translation-notice">
+                    Dessa sidor på svenska är en automatisk översättning från engelska. Jag har ett stort intresse för språk och studerar för närvarande svenska. Jag tycker mycket om språket och hoppas nå en nivå där jag kan arbeta tillsammans med er på svenska i framtiden, men just nu måste jag förlita mig på maskinöversättning. Planen är att låta korrekturläsa texten framöver, men er feedback är mycket värdefull för mig – både när det gäller mina tjänster och språket.
+                </div>
+                <h2>Filosofin bakom mitt initiativ</h2>
+
+                <!-- Unified Introduction Context Block -->
+                <div class="philosophy-intro-text">
+                    <p><strong>Jag är Nicolas, den oberoende forskaren som driver denna stödtjänst inom forskning och datavetenskap.</strong></p>
+                    <p>Jag erbjuder en modulär meny av tjänster, från vetenskaplig forskning till datavetenskap, som ger externt stöd för uppgifter som ert team behöver avlastas från.</p>
+                    <p>Jag byggde detta ramverk kring ett biljettbaserat system (tickets) inspirerat av programvaruteknik, utformat för att anpassa sig efter mina fluktuerande arbetsbelastningsgränser som forskare på autismspektrumet. Betalning sker efter leverans av milstolpar via ett egenanställningsföretag, vilket gör hela samarbetet klart att använda (plug-and-play).</p>
+                    <p><strong>Mer i detalj:</strong></p>
+                </div>
+                <div class="tabs-container">
+                    <!-- Barre de navigation à 3 onglets -->
+                    <div class="tab-buttons grid-three">
+                        <button class="tab-btn active" data-target="phil-what">Vad jag gör...</button>
+                        <button class="tab-btn" data-target="phil-why">Varför</button>
+                        <button class="tab-btn" data-target="phil-autism">Profil inom autismspektrumet</button>
+                    </div>
+
+                    <!-- Contenu des onglets -->
+                    <div class="tab-content">
+
+                        <!-- Onglet 1 : What I do -->
+                        <div id="phil-what" class="tab-panel active">
+
+                            <h4 style="margin-top: 1.5rem; color: #ffffff;">Vad jag gör i korta drag:</h4>
+                            <ul style="padding-left: 1.2rem; color: #e0e0e0;">
+                                <li style="margin-bottom: 0.8rem;"><strong>Avlastning av vilande projekt och eftersläpande ingenjörsarbete:</strong> Jag tar ansvar för era ackumulerade forsknings- och datavetenskapliga arbetsbelastningar. Detta inkluderar att utforska sekundära hypoteser som lämnats åt sidan eller att utöka ert teams kapacitet för brådskande beräkningsarbete. Jag verkar som en domänagnostisk forskare.</li>
+                                <li style="margin-bottom: 0.8rem;"><strong>Milstorpar baserade på värde:</strong> Vi bryter ner den tekniska färdplanen i projektbiljetter tillsammans, där varje milstolpe tilldelas ett fast värde och en uppskattad tidslinje. Därefter hanterar jag mitt schema med full autonomi. Vi håller varandra informerade genom asynkrona uppdateringar, vilket eliminerar formella mötesrutiner.</li>
+                                <li style="margin-bottom: 0rem;"><strong>Adaptivt utförande:</strong> Jag hanterar arbetsflöden som sträcker sig från grundläggande dataanalys till specialiserade numeriska simuleringar eller teoretisk utforskning. Mitt arbetsflöde anpassar sig efter min kognitiva tillgänglighet; jag kanaliserar maximalt fokus till komplex matematikforskning medan jag utför linjär databehandling för att bibehålla ett jämnt operativt tempo.</li>
+                            </ul>
+                        </div>
+
+                        <!-- Onglet 2 : Why -->
+                        <div id="phil-why" class="tab-panel">
+                            <ul style="padding-left: 1.2rem; color: #e0e0e0;">
+                                <li style="margin-bottom: 0.8rem;"><p><strong>Forskning som passion:</strong> För många år sedan trodde jag inte att jag kunde bli forskare, trots goda akademiska resultat. Jag stannade kvar på universitetet för att jag älskade att lära mig, och fick slutligen en doktorandmöjlighet. Att stödja tekniska team är mitt sätt att samarbeta med framstående forskare i spännande projekt, vilket gör att jag kan fortsätta lära mig samtidigt som jag bidrar till deras framsteg, och nå bortom mina doktorandstudier.</p></li>
+                                <li style="margin-bottom: 0.8rem;"><p><strong>Nyttja min inlärningsdynamik:</strong> Jag är en akademisk bokmal. Det var främst så jag studerade: jag arbetade som privatlärare, köpte sedan travar av läroböcker och forskningsböcker. Jag har aldrig slutat. Idag, med digitala medier från historiska institutioner som Collège de France eller Stanford, är min studielista längre än ett barns önskelista till tomten (vilket är vad jag kallar den). Det intensiva fokus som förknippas med autism är ingen myt. När jag utvecklar en besatthet gör jag inte saker halvhjärtat. Detta ger mig drivkraften att utföra fokuserat arbete av hög kvalitet under långa perioder.</p></li>
+                                <li style="margin-bottom: 0.8rem;"><p><strong>Tvärvetenskaplig dynamik:</strong> Till skillnad från konventionella forskningsvägar som kräver extrem specialisering inom ett enda område, trivs jag med att utforska flera fält. Medan detta skulle vara en begränsning i en fast akademisk tjänst, gör mitt oberoende ramverk detta behov av variation till en tillgång. Det gör att jag kan tillämpa mina matematiska färdigheter agnostiskt över olika sektorer och flytta analytiska verktyg mellan finans, medicin, teoretisk fysik och tillämpade datapipelines.</p></li>
+                            </ul>
+                        </div>
+
+                        <!-- Onglet 3 : Autism Notes -->
+                        <div id="phil-autism" class="tab-panel">
+                            <p><em>”Autismspektrumtillstånd (AST) är en heterogen grupp av tillstånd. De kännetecknas av viss svårighet med social interaktion och kommunikation. Andra särdrag är atypiska aktivitets- och beteendemönster, såsom svårigheter att gå från en aktivitet till en annan, fokus på detaljer och ovanliga reaktioner på sinnesintryck”,</em> enligt WHO, som uppskattar förekomsten till cirka 1 på 127 i den globala befolkningen.</p>
+                            <p>Hur ser det ut inom akademin? Även om det saknas direkta globala folkräkningsdata om förekomsten inom akademin, Simon Baron-Cohen publicerade en artikel 2001 som mätte den genomsnittliga autismspektrumkvoten (AQ) i olika grupper. På en skala från 0 till 50, där den allmänna befolkningen i genomsnitt har 16,4 (± 6,4) och den kliniskt diagnostiserade autistiska befolkningen i genomsnitt har 35,8 (± 6,5), fick studenter i matematik 21,5 (± 6,5), vilket var något lägre än 16 brittiska olympiadvinnare (24,5 ± 5,7).</p>
+                            <p>När man tittar på autism i arbetslivet visar data från specialiserade organisationer som National Autistic Society och det brittiska statistikorganet ONS att autism uppvisar den lägsta sysselsättningsgraden bland alla funktionsnedsättningskategorier, med endast cirka <strong>21,7 % av autistiska vuxna i meningsfull sysselsättning</strong> (data från 2020), strax under vuxna med svåra inlärningssvårigheter.</p>
+                            <p>Autismspektrumet täcker dock ett brett spektrum av situationer och intellektuella nivåer. Dr. Neil Kenny samlade in värdefulla vittnesmål från akademiker inom irländsk högre utbildning (<em>”Tell me what my job is”: A Qualitative Exploration of the Experiences of Autistic Academic Staff working in Higher Education in Ireland</em>), och jag kan lägga till mitt eget. Om ni läser den, här är några av de teman som tas upp:</p>
+
+                            <ol style="padding-left: 1.2rem; color: #e0e0e0; margin-top: 1rem;">
+                                <li style="margin-bottom: 0.8rem;"><strong>Att få en diagnos lyfter en stor sten från ens axlar:</strong> För mig kändes det som att vara en kanin som av en slump hamnat i en kattfamilj, och att slutligen få veta att även om jag älskar dem, skulle mindre anpassningar som att avstå från att jaga fåglar eller vandra på natten göra mitt liv mycket bättre.</li>
+                                <li style="margin-bottom: 0.8rem;"><strong>Tidsuppfattningen är drastiskt annorlunda</strong> mellan neurodivergenta och neurotypiska personer, och även mellan två autistiska individer. I studien beskriver en deltagare att han kan fokusera på en enda uppgift i timmar utan att inse att tiden går, medan en annan behöver pauser oftare än sina kollegor. Jag är mitt i detta: jag älskade schackturneringar när jag var 17 år, med heldagspartier som började kl. 9 och kunde pågå i upp till 8 timmar. Jag försökte mig på ett av de svåraste antagningsproven till École Normale Supérieure (ENS); eftersom jag inte följde den traditionella vägen fick jag förfärliga resultat, men jag njöt verkligen av utmaningen. Men även för en uppgift jag är utmärkt på, om mitt sinne är grumlat av giftiga tankar, blir min tidsuppfattning helt omvänd.</li>
+                                <li style="margin-bottom: 0.8rem;"><strong>Rutiner och organisation:</strong> Vi har alla våra egna rutiner, och organisationen kan vara rörig. För mig är multitasking som att försöka jonglera med flera käglor samtidigt, och att ha ens två tidsgränser, även mycket avlägsna sådana, kan göra att jag fryser helt.</li>
+                                <li style="margin-bottom: 0.8rem;"><strong>Maskering (masking):</strong> Tillbaka till att vara en kanin mitt i den kattfamilj som adopterade dig. Du älskar dem, du vill spendera tid och göra saker med dem, men de har instinkter som du inte har. Så du försöker göra detsamma genom en omedveten kopieringsmekanism, men ditt sinne skriker av smärta. Det är ofta den främsta orsaken till utmattning, vilket leder till utbrändhet.</li>
+                                <li style="margin-bottom: 0.8rem;"><strong>Sensorisk överbelastning:</strong> Jag lägger till detta som en kritisk orsak till utmattning och utbrändhet. Vid trötthet i trånga offentliga miljöer tvingar upprepade utrot medan man väntar på tåget, avgasslällar eller skannerns pip i snabbköpskassan vår hjärna att arbeta ständigt, som om vi aktivt behandlade data.</li>
+                                <li style="margin-bottom: 0rem;"><strong>Mer tillbaka för våra besvär:</strong> Visst, att vara autistisk gör livet komplicerat, men jag skulle inte vilja vara på något annat sätt. Deltagarna i studien hyllar sin hyperfokus och sin drivkraft att gå djupare in i sina passioner. Inte heller jag skulle någonsin vilja förlora glädjen i att lära mig logiska saker med en sådan intensitet.</li>
+                            </ol>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+            <section id="section2">
+                <div class="translation-notice">
+                    Dessa sidor på svenska är en automatisk översättning från engelska. Jag har ett stort intresse för språk och studerar för närvarande svenska. Jag tycker mycket om språket och hoppas nå en nivå där jag kan arbeta tillsammans med er på svenska i framtiden, men just nu måste jag förlita mig på maskinöversättning. Planen är att låta korrekturläsa texten framöver, men er feedback är mycket värdefull för mig – både när det gäller mina tjänster och språket.
+                </div>
+                <!-- Services Section Header & Introduction (Ultra-Clean & Pure HTML) -->
+                <div class="services-container">
+                    <div class="services-header">
+                        <h2>Tjänster</h2>
+                        <span class="status-badge">
+                            🌱 <strong>Uppstartsfas:</strong> er feedback är viktig för att bättre matcha era behov
+                        </span>
+                    </div>
+
+                    <div class="services-intro-text">
+                        <p>
+                            Här hittar ni min lista över tjänster, som jag kan komma att utöka över tid när jag börjar studera något nytt. Dessa är i första hand utformade för att ge er färdigheter som jag har utvecklat genom kontinuerligt lärande under årens lopp, genom flera akademiska vägar.
+                        </p>
+                        <p class="framework-note">
+                            För att säkerställa ett förutsägbart, mycket professionellt och stressfritt samarbete för oss båda, tillämpar jag ett konsekvent ramverk för de flesta av dessa moduler:
+                        </p>
+                    </div>
+
+                    <div class="services-grid">
+                        <div class="feature-card">
+                            <h3>💼 Administrativ enkelhet</h3>
+                            <p>Naturlig användning av ett egenanställningsföretag (EOR) eller fransk portage salarial för att hantera alla kontrakt, fakturor och efterlevnad.</p>
+                        </div>
+                        <div class="feature-card">
+                            <h3>✅ Riskfria milstolpar</h3>
+                            <p>Betalning sker strikt <strong>efter validering av milstolpar</strong>, med inspiration från biljett- och backlog-hantering i moderna IT-företag.</p>
+                        </div>
+                        <div class="feature-card">
+                            <h3>📥 Avlastning av eftersläpningar</h3>
+                            <p>Utformat för att absorbera era eftersläpningar av databehandling och sekundära hypoteser, vilket avlastar uppgifter som ert kärnteam saknar tid att utföra.</p>
+                        </div>
+                        <div class="feature-card">
+                            <h3>🧩 Anpassad kognitiv takt</h3>
+                            <p>Brett spektrum av komplexitet, från juniora uppgifter till djup forskning. Detta gör att jag, som forskare på autismspektrumet, kan hantera min tid och kognitiva belastning beroende på min aktuella koncentrationsförmåga.</p>
+                        </div>
+                    </div>
+
+                    <div class="services-footer">
+                        <p>Har ni ett anpassat krav utanför denna standardkatalog?</p>
+                        <a href="mailto:nicolas0dupuy@gmail.com" class="contact-button">✉️ Kontakt: nicolas0dupuy@gmail.com</a>
+                    </div>
+                </div>
+
+                <div id="hashtag-menu" class="hashtag-menu-container"></div>
+
+                <!-- ==================== SERVICE 1 ==================== -->
+                <div class="service-card" data-tags="ComputationalPhysics,AppliedMathematics">
+                    <h3 class="service-title">Numeriska beräkningar & Simulering</h3>
+
+                    <input type="checkbox" id="toggle-service-1" class="card-toggle-input">
+                    <div class="card-fold-content">
+                        <div class="service-description">
+                            <p>Tekniskt och teoretiskt stöd för utforskning, kodimplementering, simuleringar av fysiska system och matematisk modellering. Levereras främst på distans, med möjlighet till insatser på plats.</p>
+                            <p>Projekten är strukturerade i oberoende milstolpar med tydliga definitioner och mål, vilket säkerställer att varje leverans enkelt kan följas och integreras av valfri teammedlem.</p>
+                            <p>Milstolpar kan vara en teoretisk utforskning eller en algoritmiimplementering, och utgör grunden för de delar som faktureras vid slutförande, vilket skyddar er budget. Priset avtalas för varje milstolpe och ändras inte om jag behöver extra tid, vilket ger er stabilitet och förutsägbarhet, samtidigt som det ger mig minskad press och möjlighet till kvalitativ studietid.</p>
+                            <p>Denna struktur är utformad för att hjälpa team eller forskare att beta av vilande sidoprojekt och utvärdera alternativa hypoteser medan era huvudsakliga team fokuserar på sina primära projekt.</p>
+                            <p>Långvariga samarbeten kan förutses för att säkra fördelarna med min inlärningskurva, då jag aktivt studerar numeriska metoder på ingångsnivå för forskning.</p>
+                        </div>
+                        <div class="service-commentary">
+                            <h4>Personal Note</h4>
+                            <p>Jag upptäckte numeriska beräkningar under min masterpraktik före mina doktorandstudier. Under dessa perioder tillämpade jag flera kvantkemiska metoder (som jag erbjuder i tjänsten Kvantkemi & Materialmodellering), och matematikern i mig ville redan då förstå deras grunder. Jag erbjuder denna tjänst eftersom mitt kontinuerliga lärande inom detta område, i kombination med min erfarenhet, kan finna många användningsområden i både näringsliv och akademi, där praktiskt stöd ofta saknas. Som referens kan nämnas några verk jag använder i min verksamhet: Quarteroni et al.s *Numerical Mathematics*, Grégoire Allaires *Analyse numérique et optimisation* (Éditions de l'École Polytechnique), Mallats böcker och föreläsningar om ondeletter (wavelets) samt Pohjolainens *Mathematical Modeling*.</p>
+                        </div>
+                        <div class="card-fold-fade"></div>
+                    </div>
+                    <label for="toggle-service-1" class="card-toggle-label"></label>
+
+                    <div class="service-tags">
+                    <span class="tag" onclick="filterByTag('ComputationalPhysics')">#ComputationalPhysics</span>
+                    <span class="tag" onclick="filterByTag('AppliedMathematics')">#AppliedMathematics</span>
+                
+                    </div>
+                </div>
+
+                <!-- ==================== SERVICE 2 ==================== -->
+                <div class="service-card" data-tags="ComputationalPhysics">
+                    <h3 class="service-title">Kvantkemi & Materialmodellering</h3>
+
+                    <input type="checkbox" id="toggle-service-2" class="card-toggle-input">
+                    <div class="card-fold-content">
+                        <div class="service-description">
+                            <p>Molekylmodellering, beräkningar av elektronisk eller geometrisk struktur och kvantsimuleringar för grund- och exciterade tillstånd, inklusive DFT- och Quantum Monte Carlo-arbetsflöden. Levereras främst på distans, med möjlighet till insatser på plats.</p>
+                            <p>Projekten är strukturerade i oberoende milstolpar med tydliga definitioner och mål, vilket säkerställer att varje leverans enkelt kan följas och integreras av valfri teammedlem.</p>
+                            <p>Milstolpar kan helt enkelt vara en DFT-optimering av en elektronisk struktur (i en grupp av molekyler som ska undersökas) eller teoretisk utforskning av alternativa metoder, och utgör grunden för de delar som faktureras vid slutförande, vilket skyddar er budget. Priset avtalas för varje milstolpe och ändras inte om jag behöver extra tid, vilket ger er stabilitet och förutsägbarhet, samtidigt som det ger mig minskad press och möjlighet till kvalitativ studietid.</p>
+                            <p>Denna struktur är utformad för att hjälpa team eller forskare att beta av vilande sidoprojekt och utvärdera alternativa hypoteser medan era huvudsakliga team fokuserar på sina primära projekt.</p>
+                            <p>Långvariga samarbeten kan förutses för att säkra fördelarna med min inlärningskurva, då jag aktivt anpassar mina befintliga beräkningsflöden till era specifika forskningsproblem.</p>
+                        </div>
+                        <div class="service-commentary">
+                            <h4>Personal Note</h4>
+                            <p>Jag slutförde min doktorsexamen (2012–2016) i beräkningsfysik med fokus på Quantum Monte Carlo-optimering av grafenliknande molekyler, elektroniska strukturer i grundtillståndet, exciterade singlett-/triplettillstånd och geometrin hos starkt korrelerade system. Även om jag ännu inte har driftsatt pipelines för molekyldynamik eller integrerat maskininlärning i traditionella fysikarbetsflöden, är jag ivrig to lära mig, implementera och anpassa dessa metoder för era projekt. Utöver min passion för fysik utvecklade jag tidigt ett intresse för kvantdatorer. Jag har slutfört certifikatprogrammen 'Quantum Computing Fundamentals' och 'Quantum Computing Realities' från MITxPRO och bidrar gärna till utvecklingen inom detta fält.</p>
+                        </div>
+                        <div class="card-fold-fade"></div>
+                    </div>
+                    <label for="toggle-service-2" class="card-toggle-label"></label>
+
+                    <div class="service-tags">
+                    <span class="tag" onclick="filterByTag('ComputationalPhysics')">#ComputationalPhysics</span>
+                
+                    </div>
+                </div>
+
+                <!-- ==================== SERVICE 3 ==================== -->
+                <div class="service-card" data-tags="QuantitativeFinance,AppliedMathematics">
+                    <h3 class="service-title">Numeriska metoder i kvantitativ finans</h3>
+
+                    <input type="checkbox" id="toggle-service-3" class="card-toggle-input">
+                    <div class="card-fold-content">
+                        <div class="service-description">
+                            <p>Implementering och validering av numeriska modeller, stokastiska simuleringar och matematiska ramverk för kvantitativ finans. Levereras främst på distans, med möjlighet till insatser på plats.</p>
+                            <p>Projekten är strukturerade i oberoende milstolpar med tydliga definitioner och mål, vilket säkerställer att varje leverans enkelt kan följas och integreras av valfri teammedlem.</p>
+                            <p>Milstolpar kan vara en Value-at-Risk (VaR)-uppskattning, en mängd data som ska förberedas, struktureras eller analyseras, eller en teoretisk modell som ska utforskas, och utgör grunden för de delar som faktureras vid slutförande, vilket skyddar er budget. Priset avtalas för varje milstolpe och ändras inte om jag behöver extra tid, vilket ger er stabilitet och förutsägbarhet, samtidigt som det ger mig minskad press och möjlighet till kvalitativ studietid.</p>
+                            <p>Denna struktur är utformad för att hjälpa team eller forskare att beta av vilande sidoprojekt och utvärdera alternativa hypoteser medan era huvudsakliga team fokuserar på sina primära projekt.</p>
+                            <p>Långvariga samarbeten kan förutses för att säkra fördelarna med min inlärningskurva, då jag aktivt specialiserar mig på kvantitativa finansmetoder och bygger vidare på min bakgrund inom kvantitativ forskning.</p>
+                        </div>
+                        <div class="service-commentary">
+                            <h4>Personal Note</h4>
+                            <p>Jag började aktivt specialisera mig på kvantitativa finansmetoder förra året, och bygger vidare på sju års undervisning i Data Science vid Paris School of Business i nära kontakt med finansbranschen. Min nästa personliga milstolpe är att samarbeta med aktiva forskare och praktiker för att lära genom att göra. Genom samarbete kan ni bygga upp en långsiktig partner som kommer att förstå er miljö på djupet. Givet bristen på solid kvantitativ talang på dagens marknad gör detta samarbete att ni kan undvika den svåra sökandet efter sällsynta profiler och säkra en forskare på PhD-nivå med bevisad analytisk mognad. Jag tar gärna emot enklare uppgifter medan jag lär mig grunderna, och som erfaren föreläsare kan jag också bidra till att utbilda era praktikanter med min nyförvärvade kunskap. Jag positionerar mig i gränssnittet mellan forskare och praktiker, så tveka inte att höra av er om ni behöver en länk. Jag fokuserar mina europeiska bidrag till Frankrike, mitt hemland, samt Norden och Baltikum, som är mina favoritregioner.</p>
+                        </div>
+                        <div class="card-fold-fade"></div>
+                    </div>
+                    <label for="toggle-service-3" class="card-toggle-label"></label>
+
+                    <div class="service-tags">
+                    <span class="tag" onclick="filterByTag('QuantitativeFinance')">#QuantitativeFinance</span>
+                    <span class="tag" onclick="filterByTag('AppliedMathematics')">#AppliedMathematics</span>
+                
+                    </div>
+                </div>
+
+                <!-- ==================== SERVICE 4 ==================== -->
+                <div class="service-card" data-tags="AppliedMathematics">
+                    <h3 class="service-title">Convex Optimization & Mathematical Programming</h3>
+
+                    <input type="checkbox" id="toggle-service-4" class="card-toggle-input">
+                    <div class="card-fold-content">
+                        <div class="service-description">
+                            <p>Formulering och lösning av optimeringsproblem (såsom LP, QP, SOCP, SDP) under fysikaliska eller operativa bivillkor. Levereras främst på distans, med möjlighet till insatser på plats.</p>
+                            <p>Projekten är strukturerade i oberoende milstolpar med tydliga definitioner och mål, vilket säkerställer att varje leverans enkelt kan följas och integreras av valfri teammedlem.</p>
+                            <p>Milstolpar kan vara översättningen av fysikaliska eller operativa bivillkor till en konvex programmeringsmodell, eller en benchmark-svit som jämför olika lösare på ett dataset, och utgör grunden för de delar som faktureras vid slutförande, vilket skyddar er budget. Priset avtalas för varje milstolpe och ändras inte om jag behöver extra tid, vilket ger er stabilitet och förutsägbarhet, samtidigt som det ger mig minskad press och möjlighet till kvalitativ studietid.</p>
+                            <p>Denna struktur är utformad för att hjälpa team eller forskare att beta av vilande sidoprojekt och utvärdera alternativa hypoteser medan era huvudsakliga team fokuserar på sina primära projekt.</p>
+                            <p>Långvariga samarbeten kan förutses för att säkra fördelarna med min inlärningskurva, då jag kontinuerligt förfinar min praktiska behärskning genom Stephen Boyds ramverk.</p>
+                        </div>
+                        <div class="service-commentary">
+                            <h4>Personal Note</h4>
+                            <p>Jag började studera konvex optimering först nyligen som en förlängning av mitt intresse för numeriska metoder. Jag utgår från Stephen Boyds offentligt tillgängliga föreläsningar och lärobok, tillsammans med Yang Zhengs algoritmiska föreläsningsanteckningar och det klassiska verket av Ben-Tal och Nemirovski, *Lectures on Modern Convex Optimization*. Ett tidigt samarbete säkrar en alltmer specialiserad optimeringsresurs för att modellera era operativa och fysikaliska flaskhalsar. Om ni behöver expertis jag ännu inte besitter, tveka inte att informera mig så dat vi kan sätta upp mål för kompetensförvärv, så att jag kan hjälpa er att slutföra uppgifter där ni saknar kvalificerad arbetskraft.</p>
+                        </div>
+                        <div class="card-fold-fade"></div>
+                    </div>
+                    <label for="toggle-service-4" class="card-toggle-label"></label>
+
+                    <div class="service-tags">
+                    <span class="tag" onclick="filterByTag('AppliedMathematics')">#AppliedMathematics</span>
+                
+                    </div>
+                </div>
+
+                <!-- ==================== SERVICE 5 ==================== -->
+                <div class="service-card" data-tags="ComputerVision,MachineLearning">
+                    <h3 class="service-title">Forskning inom datorseende</h3>
+
+                    <input type="checkbox" id="toggle-service-5" class="card-toggle-input">
+                    <div class="card-fold-content">
+                        <div class="service-description">
+                            <p>Tekniskt och teoretiskt stöd för utveckling av datorseendealgoritmer, matematiska grunder och numeriska implementeringar, som spänner över klassiska geometriska metoder, maskininlärningsarkitekturer och generativa modeller. Levereras främst på distans, med möjlighet till insatser på plats.</p>
+                            <p>Projekten är strukturerade i oberoende milstolpar med tydliga definitioner och mål, vilket säkerställer att varje leverans enkelt kan följas och integreras av valfri teammedlem.</p>
+                            <p>Milstolpar kan sträcka sig från en grundläggande bildbehandlingsuppgift eller en algoritmiimplementering av en forskningsartikel, till en matematisk granskning av ett teoretiskt ramverk, och utgör grunden för de delar som faktureras vid slutförande, vilket skyddar er budget. Priset avtalas för varje milstolpe och ändras inte om jag behöver extra tid, vilket ger er stabilitet och förutsägbarhet, samtidigt som det ger mig minskad press och möjlighet till kvalitativ studietid.</p>
+                            <p>Denna struktur är utformad för att hjälpa team eller forskare avhjälpa vilande sidoprojekt och utvärdera alternativa hypoteser medan era huvudsakliga team fokuserar på sina primära projekt.</p>
+                            <p>Långvariga samarbeten kan förutses för att säkra fördelarna med min inlärningskurva, då jag snabbt anpassar mina matematiska färdigheter till era specifika problem inom datorseende.</p>
+                        </div>
+                        <div class="service-commentary">
+                            <h4>Personal Note</h4>
+                            <p>Jag upptäckte datorseende efter deep learning-boomen, och dess underliggande matematik fascinerade mig snabbt. Jag följde det första året av masterprogrammet i datorseende vid HSE University online (vilket avbröts av krigsutbrottet i Ukraina) och slutförde Stanfords CS236-kurs om generativa modeller 2021. Jag är lika passionerad av klassiska metoder som drar nytta av grundläggande matematik som av metoder härledda från maskininlärning. Som referens använder jag läroböcker som Szeliskis *Computer Vision: Algorithms and Applications* och Gonzalez & Woods *Digital Image Processing*. Dessutom innehåller min akademiska bakgrund olika niveau av differentialgeometri – inklusive riemannsk geometri, symplektisk geometri och Lie-grupper – vilket ger ett gediget geometriskt perspektiv vid arbete med högdimensionella visuella data eller invarianta arkitekturer.</p>
+                        </div>
+                        <div class="card-fold-fade"></div>
+                    </div>
+                    <label for="toggle-service-5" class="card-toggle-label"></label>
+
+                    <div class="service-tags">
+                    <span class="tag" onclick="filterByTag('ComputerVision')">#ComputerVision</span>
+                    <span class="tag" onclick="filterByTag('MachineLearning')">#MachineLearning</span>
+                
+                    </div>
+                </div>
+
+                <!-- ==================== SERVICE 6 ==================== -->
+                <div class="service-card" data-tags="ComputerVision,DataEngineering">
+                    <h3 class="service-title">Tillämpningar av datorseende</h3>
+
+                    <input type="checkbox" id="toggle-service-6" class="card-toggle-input">
+                    <div class="card-fold-content">
+                        <div class="service-description">
+                            <p>Praktisk implementering av datorseendeflöden för industriell automation, kvalitetskontroll och dataförbehandling, med hjälp av klassisk bildbehandling och maskininlärningsmodeller. Levereras främst på distans, med möjlighet till insatser på plats.</p>
+                            <p>Projekten är strukturerade i oberoende milstolpar med tydliga definitioner och mål, vilket säkerställer att varje leverans enkelt kan följas och integreras av valfri teammedlem.</p>
+                            <p>Milstolpar kan sträcka sig från att bygga en OpenCV-förbehandlingspipeline for bildfiltrering och justering till att skriva ett anpassat script för matchning av särdrag eller driftsätta en lätt förtränad modell, och utgör grunden för de delar som faktureras vid slutförande, vilket skyddar er budget. Priset avtalas för varje milstolpe och ändras inte om jag behöver extra tid, vilket ger er stabilitet och förutsägbarhet, samtidigt som det ger mig minskad press och möjlighet till kvalitativ studietid.</p>
+                            <p>Denna struktur är utformad för att hjälpa team eller forskare att beta av eftersläpande sidoprojekt och utvärdera alternativa hypoteser medan era huvudsakliga team fokuserar på sina primära projekt.</p>
+                            <p>Långvariga samarbeten kan förutses för att säkra fördelarna med min inlärningskurva, då jag aktivt utökar min praktiska verktygslåda med programvarubibliotek av industristandard.</p>
+                        </div>
+                        <div class="service-commentary">
+                            <h4>Personal Note</h4>
+                            <p>Även om jag i grunden är teoretiker har jag under de senaste fem åren aktivt arbetat för att bli praktiker inom datorseende. Jag började med att slutföra grundläggande kurser på plattformar som Coursera, Udacity och LearnOpenCV, innan jag accelererade min utbildning genom att skriva in mig på masterprogrammet online vid HSE University – ett arbete som tyvärr avbröts av invasionen av Ukraina. Jag erbjuder dessa tjänster för att komplettera min teoretiska bakgrund med praktisk erfarenhet, och ramar in mitt bidrag som en stödtjänst för att avhjälpa eftersläpningar där er ekonomiska risk helt elimineras av milstolpebaserad betalning.</p>
+                        </div>
+                        <div class="card-fold-fade"></div>
+                    </div>
+                    <label for="toggle-service-6" class="card-toggle-label"></label>
+
+                    <div class="service-tags">
+                    <span class="tag" onclick="filterByTag('ComputerVision')">#ComputerVision</span>
+                    <span class="tag" onclick="filterByTag('DataEngineering')">#DataEngineering</span>
+                
+                    </div>
+                </div>
+
+                <!-- ==================== SERVICE 7 ==================== -->
+                <div class="service-card" data-tags="DataEngineering,DataScience">
+                    <h3 class="service-title">Datateknik & Rapportering</h3>
+
+                    <input type="checkbox" id="toggle-service-7" class="card-toggle-input">
+                    <div class="card-fold-content">
+                        <div class="service-description">
+                            <p>Utveckling av datapipelines, dashboards för beslutsstöd och datakvalitetsrevisioner. Levereras främst på distans, med möjlighet till insatser på plats.</p>
+                            <p>Projekten är strukturerade i oberoende milstolpar med tydliga definitioner och mål, vilket säkerställer att varje leverans enkelt kan följas och integreras av valfri teammedlem.</p>
+                            <p>Milstolpar kan sträcka sig från att skriva ett anpassat Python-script för att rensa och förena olika dataset till att skriva SQL-frågor i Google BigQuery eller bygga en automatiserad dashboard, och utgör grunden för de delar som faktureras vid slutförande, vilket skyddar er budget. Priset avtalas för varje milstolpe och ändras inte om jag behöver extra tid, vilket ger er stabilitet och förutsägbarhet, samtidigt som det ger mig minskad press och möjlighet till kvalitativ studietid.</p>
+                            <p>Denna struktur är utformad för att hjälpa data- eller IT-team att beta av eftersläpningar och bygga operativa dashboards medan era kärnteam fokuserar på sina dagliga flöden, men också för att hjälpa icke-specialiserade team att utveckla sin första infrastruktur.</p>
+                            <p>Långvariga samarbeten kan förutses för att säkra fördelarna med min inlärningskurva, då jag gärna bidrar till era projekt tills vi uppnår märkbara och kvantifierbara resultat.</p>
+                        </div>
+                        <div class="service-commentary">
+                            <h4>Personal Note</h4>
+                            <p>Jag har undervisat i Data Science och grundläggande databasteknik vid Paris School of Business sedan 2019, samtidigt som jag kontinuerligt har vässat mina färdigheter på plattformar som DataCamp och Coursera since deras tidiga dagar. Jag började så småningom föreläsa vid andra välrenommerade institutioner för att undervisa om data i högst specialiserade sammanhang, såsom cybersäkerhet och finans. Jag erbjuder denna tjänst för to avlasta ert team från liggande eftersläpningar – som dataförberedelse eller grundläggande pipelines – eftersom det ger mig värdelös praktisk erfarenhet som direkt göder min personliga FoU.</p>
+                        </div>
+                        <div class="card-fold-fade"></div>
+                    </div>
+                    <label for="toggle-service-7" class="card-toggle-label"></label>
+
+                    <div class="service-tags">
+                    <span class="tag" onclick="filterByTag('DataEngineering')">#DataEngineering</span>
+                    <span class="tag" onclick="filterByTag('DataScience')">#DataScience</span>
+                
+                    </div>
+                </div>
+
+                <!-- ==================== SERVICE 8 ==================== -->
+                <div class="service-card" data-tags="DataScience,AppliedMathematics">
+                    <h3 class="service-title">Tillämpad statistik & Hypotesprövning</h3>
+
+                    <input type="checkbox" id="toggle-service-8" class="card-toggle-input">
+                    <div class="card-fold-content">
+                        <div class="service-description">
+                            <p>Formulering av experimentell design, hypotesprövning, statistisk validering och utvinning av underliggande mönster från multivariata eller högdimensionella dataset. Levereras främst på distans, med möjlighet till insatser på plats.</p>
+                            <p>Projekten är strukturerade i oberoende milstolpar med tydliga definitioner och mål, vilket säkerställer att varje leverans enkelt kan följas och integreras av valfri teammedlem.</p>
+                            <p>Milstolpar kan sträcka sig från att utforma det statistiska ramverket för ett kommande experiment till att utföra en valideringsgranskning av antagandena i en befintlig modell, eller genomföra en fullständig hypotesprövning på ett viktigt dataset, och utgör grunden för de delar som faktureras vid slutförande, vilket skyddar er budget. Priset avtalas för varje milstolpe och ändras inte om jag behöver extra tid, vilket ger er stabilitet och förutsägbarhet, samtidigt som det ger mig minskad press och möjlighet till kvalitativ studietid.</p>
+                            <p>Denna struktur är utformad för att hjälpa team som stöter på kvantitativa problem (såsom inom finans, medicinsk forskning eller meteorologi) att validera hypoteser och beta av analyser. Den är särskilt anpassad för företag och team som endast behöver vetenskaplig validering på deltid.</p>
+                            <p>Långvariga samarbeten kan förutses för att säkra fördelarna med min inlärningskurva, då jag för närvarande bygger ut mina grunder i statistik, särskilt genom kvantitativ finans.</p>
+                        </div>
+                        <div class="service-commentary">
+                            <h4>Personal Note</h4>
+                            <p>Mina grunder i statistik kommer från fysiken, då jag läste statistisk fysik, och utvecklades särskilt under min doktorstid, där Monte Carlo-metoderna som användes i mina simuleringar krävde noggrann statistisk validering. Att undervisa vid Paris School of Business med studenter på varvade utbildningskontrakt drev mig att förstå hur man tillämpar statistik i olika affärssituationer för att producera mina föreläsningar. Jag vill särskilt gärna hjälpa team att vinna effektivitet genom att förfina sina analyser med en bättre utvärdering av osäkerheten.</p>
+                        </div>
+                        <div class="card-fold-fade"></div>
+                    </div>
+                    <label for="toggle-service-8" class="card-toggle-label"></label>
+
+                    <div class="service-tags">
+                    <span class="tag" onclick="filterByTag('DataScience')">#DataScience</span>
+                    <span class="tag" onclick="filterByTag('AppliedMathematics')">#AppliedMathematics</span>
+                
+                    </div>
+                </div>
+
+                <!-- ==================== SERVICE 9 ==================== -->
+                <div class="service-card" data-tags="MachineLearning,DataScience">
+                    <h3 class="service-title">Tillämpad maskininlärning & Prediktiv modellering</h3>
+
+                    <input type="checkbox" id="toggle-service-9" class="card-toggle-input">
+                    <div class="card-fold-content">
+                        <div class="service-description">
+                            <p>Träning och jämförelse av prediktiva modeller, organisering av dataset och överföring av maskininlärningsflöden till molnplattformar. Levereras främst på distans, med möjlighet till insatser på plats.</p>
+                            <p>Projekten är strukturerade i oberoende milstolpar med tydliga definitioner och mål, vilket säkerställer att varje leverans enkelt kan följas och integreras av valfri teammedlem.</p>
+                            <p>Milstolpar kan sträcka sig från att köra benchmarks på flera modellarkitekturer (som Scikit-Learn ou XGBoost) på ert dataset, till att förbereda ett dataset i BigQuery, eller flytta ett script för modellträning till en miljö på Google Cloud Platform (GCP), och utgör grunden för de delar som faktureras vid slutförande, vilket skyddar er budget. Priset avtalas för varje milstolpe och ändras inte om jag behöver extra tid, vilket ger er stabilitet och förutsägbarhet, samtidigt som det ger mig minskad press och möjlighet till kvalitativ studietid.</p>
+                            <p>Denna struktur är utformad för att hjälpa FoU- eller datateam att prototypera prediktiva flöden och testa alternativa modellarkitekturer medan era kärningenjörer fokuserar på att underhålla stabila produktionssystem.</p>
+                            <p>Långvariga samarbeten kan förutses för att säkra fördelarna med min inlärningskurva, och de kan effektivt paras ihop med mina övriga data- eller specialiserade tjänster, vilket gör att vi kan diskutera hur jag kan hjälpa er att nå kvantifierbara resultat.</p>
+                        </div>
+                        <div class="service-commentary">
+                            <h4>Personal Note</h4>
+                            <p>Jag upptäckte moderna maskininlärningsmetoder inom Scikit-Learn-biblioteket, tillsammans med moderna data science-metoder, efter min doktorsexamen 2016 och specialiserade mig på det, då jag ville vara redo om jag skulle erbjudas en ingenjörstjänst i ett fysiklab, men jag fick undervisningsuppdrag först. Jag blandar en passion för maskininlärning med intresse för numeriska metoder och datavetenskap. Just nu förbereder jag mig för Google Cloud-certifieringen som Machine Learning Engineer för att kunna hjälpa icke-specialiserade team inom valfria domäner (jag tänker personligen mycket på kulturarv, museer och gallerier) att få intuitiva databaserade verktyg som stöd i deras specialitet.</p>
+                        </div>
+                        <div class="card-fold-fade"></div>
+                    </div>
+                    <label for="toggle-service-9" class="card-toggle-label"></label>
+
+                    <div class="service-tags">
+                    <span class="tag" onclick="filterByTag('MachineLearning')">#MachineLearning</span>
+                    <span class="tag" onclick="filterByTag('DataScience')">#DataScience</span>
+                
+                    </div>
+                </div>
+
+                <!-- ==================== SERVICE 10 ==================== -->
+                <div class="service-card" data-tags="GenerativeAI,MachineLearning">
+                    <h3 class="service-title">Djup generativ modellering & Matematiska representationer</h3>
+
+                    <input type="checkbox" id="toggle-service-10" class="card-toggle-input">
+                    <div class="card-fold-content">
+                        <div class="service-description">
+                            <p>Utveckling av djupa generativa arkitekturer, forskning om deras teoretiska ramverk eller arkitekturutveckling. Kan tillämpas för att analysera högdimensionella signaler, modellera okända sannolikhetsfördelningar eller lösa fysikaliska inversproblem. Levereras främst på distans, med möjlighet till insatser på plats.</p>
+                            <p>Projekten är strukturerade i oberoende milstolpar med tydliga definitioner och mål, vilket säkerställer att varje leverans enkelt kan följas och integreras av valfri teammedlem.</p>
+                            <p>Milstolpar kan sträcka sig från att bygga och testa en djup generativ arkitektur (såsom Variational Autoencoders, Normalizing Flows eller diffusionsmodeller) på era data, granska grunderna (såsom härledning av KL-divergens eller utforska invarianta representationer) för att säkerställa att modellen konvergerar mot önskat mål, eller producera en generativ modell som fångar statistiken i ett dataset (användbart för datasekretess när ett dataset måste raderas, så att ni kan producera en syntetisk version för att analysera trender efter raderingen), och utgör grunden för de delar som faktureras vid slutförande, vilket skyddar er budget. Priset avtalas för varje milstolpe och ändras inte om jag behöver extra tid, vilket ger er stabilitet och förutsägbarhet, samtidigt som det ger mig minskad press och möjlighet till kvalitativ studietid.</p>
+                            <p>Denna struktur är utformad för att hjälpa FoU-team och forskare (inklusive medicinska forskare eller verksamma inom kulturarvsområdet) att validera matematiska hypoteser eller prototypera neuronnätsarkitekturer, utan att behöva anställa personal. Den är också lämplig för yrkesverksamma inom områden där data måste raderas periodiskt av sekretesskäl (medicinska data eller konsumentdata).</p>
+                            <p>Långvariga samarbeten kan förutses för att säkra fördelarna med min inlärningskurva, och de kan effektivt paras ihop med mina övriga data- eller specialiserade tjänster, vilket gör och tillåter oss av diskutera hur jag kan hjälpa er att uppnå kvantifierbara resultat.</p>
+                        </div>
+                        <div class="service-commentary">
+                            <h4>Personal Note</h4>
+                            <p>Jag upptäckte generativa modeller 2021 när jag bestämde mig för att läsa Stefano Ermons onlinekurs CS236 (Deep Generative Models) vid Stanford. För protokollet lämnade jag inte in mitt slutprojekt eftersom mina föreläsningar vid PSB och andra skolor inte lämnade mycket tid för det (och jag drog mig undan, då jag idoliserade Stanford-studenterna som jag tycker är imponerande), men jag fick ändå ett C baserat enbart på teorin och kodningsproblemen, vilket jag kände en viss stolthet över med tanke på att nå ett C med endast 75 % av de totala poängen tillgängliga inte var så illa. För en kille från en fransk förort var det att vara Stanford-student en sen revansch som höjde mitt självförtroende (och även min engelska nivå en aning!). Numera har jag börjat titta på och studera Stéphane Mallats lektioner vid Collège de France (samtidigt som jag repeterar de nyaste föreläsningarna i CS236, som nu är offentliga) för att komplettera min teoretiska förståelse av generativa modeller med optimal transport.</p>
+                        </div>
+                        <div class="card-fold-fade"></div>
+                    </div>
+                    <label for="toggle-service-10" class="card-toggle-label"></label>
+
+                    <div class="service-tags">
+                    <span class="tag" onclick="filterByTag('GenerativeAI')">#GenerativeAI</span>
+                    <span class="tag" onclick="filterByTag('MachineLearning')">#MachineLearning</span>
+                
+                    </div>
+                </div>
+
+                <!-- ==================== SERVICE 11 ==================== -->
+                <div class="service-card" data-tags="SignalProcessing,ComputerVision,ResearchCollaboration">
+                    <h3 class="service-title">Medicinsk bild & Biologiska data, Idrottsvetenskap & Signalanalys / Forskningsstöd</h3>
+
+                    <input type="checkbox" id="toggle-service-11" class="card-toggle-input">
+                    <div class="card-fold-content">
+                        <div class="service-description">
+                            <p>Förbehandling, rensning och explorativ analys av medicinska och biologiska dataset, inklusive bildbehandling såsom MRI-DICOM-filer samt biosignaler såsom EKG & EEG. Levereras främst på distans med möjlighet till insatser på plats.</p>
+                            <p>Projekten är strukturerade i oberoende milstolpar med tydliga definitioner och mål, vilket säkerställer jag varje leverans enkelt kan följas och integreras av valfri teammedlem.</p>
+                            <p>Milstolpar kan sträcka sig från dataförbehandlingsuppgifter till forskningsstöd, såsom att undersöka bild- eller signalextraktionsmetoder, utveckla generativa modeller eller sätta upp integritetsmedveten statistisk datainsamling för att behålla viktiga insikter från dataset som måste raderas av efterlevnadsskäl (se tjänsten Djup generativ modellering & Matematiska representationer). Dessa milstolpar utgör grunden för de delar som faktureras vid slutförande, vilket skyddar er budget. Priset avtalas för varje milstolpe och ändras inte om jag behöver extra tid, vilket ger er stabilitet och förutsägbarhet, samtidigt som det ger mig minskad press och möjlighet till kvalitativ studietid.</p>
+                            <p>Denna struktur är utformad för att hjälpa kliniska FoU-team, medicinska forskare eller nystartade digitala hälsoföretag som behöver specialiserat analytiskt stöd, vilket frigör deras kliniker och seniora forskare.</p>
+                            <p>Långvariga samarbeten kan förutses för att säkra fördelarna med min inlärningskurva, då jag är passionerad av biologi och medicinsk vetenskap och lär mig kontinuerligt genom praktisk erfarenhet.</p>
+                        </div>
+                        <div class="service-commentary">
+                            <h4>Personal Note</h4>
+                            <p>Jag är nybörjare i kliniska miljöer, men jag älskar att utforska mänsklig fysiologi. Jag lär mig till och med av att helt enkelt spåra mina egna hjärtdata under löpbandspass med ett Polar H10-bälte, och rapporterar stolt en uppskattad maxpuls runt 180 slag/min, en andra ventilationströskel runt 164 slag/min och en genomsnittlig pulsåterhämtning efter ansträngning på 25 till 30 slag per minut (jag är lika stolt över min fysiska form vid 46 som över hur min förståelse av hjärtat förbättrades genom egna studier och experiment!). Jag är också stolt över att ha varit "försökskanin" i tre studier om autism (en EEG-registrering av reaktionstider for att jämföra autistiska och icke-autistiska personer, en om prosodi och en om perception av konst med en ögonspårare) och jag skulle gärna befinna mig på forskarnas sida för att hjälpa till!</p>
+                        </div>
+                        <div class="card-fold-fade"></div>
+                    </div>
+                    <label for="toggle-service-11" class="card-toggle-label"></label>
+
+                    <div class="service-tags">
+                    <span class="tag" onclick="filterByTag('SignalProcessing')">#SignalProcessing</span>
+                    <span class="tag" onclick="filterByTag('ComputerVision')">#ComputerVision</span>
+                    <span class="tag" onclick="filterByTag('ResearchCollaboration')">#ResearchCollaboration</span>
+                
+                    </div>
+                </div>
+
+                <!-- ==================== SERVICE 12 ==================== -->
+                <div class="service-card" data-tags="ComputerVision,ResearchCollaboration">
+                    <h3 class="service-title">Digital bildbehandling för kulturarv</h3>
+
+                    <input type="checkbox" id="toggle-service-12" class="card-toggle-input">
+                    <div class="card-fold-content">
+                        <div class="service-description">
+                            <p>Numeriskt bevarande, spektralanalys och högkvalitativa digitala visningslösningar för konst, gallerier och kulturinstitutioner.</p>
+                            <p>Projekten är strukturerade i oberoende milstolpar med tydliga definitioner och mål, vilket säkerställer att varje leverans enkelt kan följas och integreras av valfri teammedlem.</p>
+                            <p>Milstolpar kan sträcka sig från digitalisering av ett fotografi eller en målning till forskningsstöd, såsom att digitalt återställa en skadad målning genom att sammanfoga historiska fotografier, eller utföra spektralanalys för att upptäcka spår av tidigare konservering. Dessa milstolpar utgör grunden för de delar som faktureras vid slutförande, vilket skyddar er budget. Priset avtalas för varje milstolpe och ändras inte om jag behöver extra tid, vilket ger er stabilitet och förutsägbarhet, samtidigt som det ger mig minskad press och möjlighet till kvalitativ studietid.</p>
+                            <p>Denna struktur är utformad för att hjälpa museiintendenter, konstkonservatorer, privata gallerier och kulturarvsinstitutioner som behöver dedikerat beräkningsstöd för att digitalisera, analysera eller virtuellt visa sina samlingar utan att lägga till långsiktiga tekniska omkostnader.</p>
+                            <p>Långsiktiga samarbeten är särskilt värdefulla, eftersom de ger den tid som behövs för att studera de fysikaliska och matematiska utmaningar som är specifika för era samlingar och konserveringsflöden.</p>
+                        </div>
+                        <div class="service-commentary">
+                            <h4>Personal Note</h4>
+                            <p>Jag ger professor Robert Erdmann äran för min önskan att utforska området datorbildbehandling tillämpad på kulturarv. Hans arbete med ultra-högupplöst digitalisering av Rembrandts Nattvakten är extremt imponerande, där man kan zooma in på en en millimeter bred spricka i målningen. Museer och gallerier har speciella atmosfärer som är värdefulla för mig som autistisk person. Jag vill här uttrycka min tacksamhet till mina favoritmuseer och gallerier: Kumu konstmuseum och Fotografiska i Tallinn, Estland, samt Finlands nationalmuseum i Helsingfors.</p>
+                        </div>
+                        <div class="card-fold-fade"></div>
+                    </div>
+                    <label for="toggle-service-12" class="card-toggle-label"></label>
+
+                    <div class="service-tags">
+                    <span class="tag" onclick="filterByTag('ComputerVision')">#ComputerVision</span>
+                    <span class="tag" onclick="filterByTag('ResearchCollaboration')">#ResearchCollaboration</span>
+                
+                    </div>
+                </div>
+
+                <!-- ==================== SERVICE 13 ==================== -->
+                <div class="service-card" data-tags="SignalProcessing,QuantitativeFinance">
+                    <h3 class="service-title">Signalbehandling & Tidsserieanalys</h3>
+
+                    <input type="checkbox" id="toggle-service-13" class="card-toggle-input">
+                    <div class="card-fold-content">
+                        <div class="service-description">
+                            <p>Matematisk signalanalys, tid-frekvensrepresentationer och algoritmiskt utvinning av mönster från tidsberoende dataset. Levereras främst på distans, med möjlighet till insatser på plats.</p>
+                            <p>Projekten är strukturerade i oberoende milstolpar med tydliga definitioner och mål, vilket säkerställer att varje leverans enkelt kan följas och integreras av valfri teammedlem.</p>
+                            <p>Milstolpar kan sträcka sig från att analysera tidsberoende dataset till att implementera en diskret transform i ondeletter (wavelets) för att brusreducera en givarsignal, konstruera lokaliserade tid-frekvensspektrogram för extraktion av särdrag, eller utforma ramverk för avvikelsedetektering i finansiella tidsserier. Dessa milstolpar utgör grunden för de delar som faktureras vid slutförande, vilket skyddar er budget. Priset avtalas för varje milstolpe och ändras inte om jag behöver extra tid, vilket ger er stabilitet och förutsägbarhet, samtidigt som det ger mig minskad press och möjlighet till kvalitativ studietid.</p>
+                            <p>Denna struktur är utformad för att hjälpa kvantitativa forskningsteam, startups inom medicinteknik eller ingenjörsteam som hanterar brusiga, tidsberoende fysikaliska mätningar och behöver specialiserat matematiskt stöd för att extrahera meningsfulla mönster utan att lägga till permanenta tekniska omkostnader.</p>
+                            <p>Långvariga samarbeten kan förutses för att säkra fördelarna med min inlärningskurva, då jag fördjupar min förståelse av signalbehandling och transformer genom att kombinera studier av bibliotek med praktisk tillämpning.</p>
+                        </div>
+                        <div class="service-commentary">
+                            <h4>Personal Note</h4>
+                            <p>Min grundläggande förståelse av signalbehandling kommer främst från min bakgrund i fundamental matematik, genom funktionsanalys och spektraltransformer. Jag utformade denna tjänst så att jag effektivt kan stödja forskningsteam samtidigt som jag utökar mina kunskaper genom att studera verk av forskare som Stéphane Mallat eller Ingrid Daubechies inom området ondelet-transformer eller annan forskning i funktionsanalys.</p>
+                        </div>
+                        <div class="card-fold-fade"></div>
+                    </div>
+                    <label for="toggle-service-13" class="card-toggle-label"></label>
+
+                    <div class="service-tags">
+                    <span class="tag" onclick="filterByTag('SignalProcessing')">#SignalProcessing</span>
+                    <span class="tag" onclick="filterByTag('QuantitativeFinance')">#QuantitativeFinance</span>
+                
+                    </div>
+                </div>
+
+                <!-- ==================== SERVICE 14 ==================== -->
+                <div class="service-card" data-tags="ResearchCollaboration">
+                    <h3 class="service-title">Forskningskoppling, tekniköverföring & samarbetsunderlättande</h3>
+
+                    <input type="checkbox" id="toggle-service-14" class="card-toggle-input">
+                    <div class="card-fold-content">
+                        <div class="service-description">
+                            <p>Att bygga broar: mellan akademin (universitet, skolor) och näringslivet (startups, banker), mellan Frankrike och resten av världen, och mellan avlägsna akademiska institutioner, för alla projekt som skulle dra nytta av en vetenskapligt kompetent medambassadör.</p>
+                            <p>Till skillnad från mina andra tjänster, som är strikt strukturerade kring förinställda milstolpar, definierar vi här våra mål och diskuterar hur vi arbetar från fall till fall, beroende på situationen.</p>
+                        </div>
+                        <div class="service-commentary">
+                            <h4>Personal Note</h4>
+                            <p>Jag utformade denna tjänst i första hand på grund av min kärlek till främmande språk (ur mitt franska perspektiv). Jag har sökt möjligheter att vara involverad i samarbetsuppbyggnad på uppdrag av de skolor där jag föreläser, särskilt för att bygga broar mellan Paris och Tallinn. Jag har redan tagit de första stegen i denna riktning, vilket har introducerat mig för extraordinära människor. Eftersom jag har för avsikt att erbjuda min kompetens till flera partner inom olika domäner, finns det goda chanser att vi kan bygga fina synergier över tid!</p>
+                        </div>
+                        <div class="card-fold-fade"></div>
+                    </div>
+                    <label for="toggle-service-14" class="card-toggle-label"></label>
+
+                    <div class="service-tags">
+                    <span class="tag" onclick="filterByTag('ResearchCollaboration')">#ResearchCollaboration</span>
+                
+                    </div>
+                </div>
+            </section>
+
+            <section id="section3">
+                <div class="translation-notice">
+                    Dessa sidor på svenska är en automatisk översättning från engelska. Jag har ett stort intresse för språk och studerar för närvarande svenska. Jag tycker mycket om språket och hoppas nå en nivå där jag kan arbeta tillsammans med er på svenska i framtiden, men just nu måste jag förlita mig på maskinöversättning. Planen är att låta korrekturläsa texten framöver, men er feedback är mycket värdeful för mig – både när det gäller mina tjänster och språket.
+                </div>
+                <h2>Kort biografi</h2>
+
+                <!-- Local Index / Table of Contents -->
+                <nav class="bio-index" aria-label="Biografiunderavsnitt">
+                    <h3>Innehåll</h3>
+                    <ul>
+                        <li>
+                            <a href="#bio-academics">Akademiska studier</a>
+                            <ul>
+                                <li><a href="#bio-physics">Fysik</a></li>
+                                <li><a href="#bio-mathematics">Matematik</a></li>
+                                <li><a href="#bio-languages-acad">Språk</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#bio-miscellaneous">Övrigt</a>
+                            <ul>
+                                <li><a href="#bio-languages-misc">Språk</a></li>
+                                <li><a href="#bio-datascience">Datavetenskap & Maskininlärning</a></li>
+                                <li><a href="#bio-computervision">Datorseende</a></li>
+                                <li><a href="#bio-generative">Generativa modeller</a></li>
+                                <li><a href="#bio-finance">Finans</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+
+                <!-- General Introduction -->
+                <article class="bio-intro">
+                    <p>Hej, jag är Nicolas, en oberoende forskare och föreläsare i datavetenskap. Jag har delat in denna sida i underavsnitt, akademiska studier och övrigt, så gott jag kunnat med tanke på min mycket icke-linjära väg.</p>
+                </article>
+
+                <!-- Academics Subsection -->
+                <div id="bio-academics" class="bio-subsection">
+                    <h3>Akademiska studier</h3>
+                    <p>Mina studier började 1998 med min gymnasieexamen och avslutades 2016 med min disputation. De omfattade, men var inte begränsade till, tre huvudteman: fysik, matematik och språk. Jag ska berätta lite om vad jag gjorde, men utesluter de flesta av de kaotiska åren.</p>
+
+                    <!-- Physics Subtopic -->
+                    <div id="bio-physics" class="bio-subtopic">
+                        <h4>Fysik</h4>
+                        <p class="clearfix">
+                            <a href="../cert_doctorat.webp" target="_blank" class="cert-link right">
+                                <img src="../cert_doctorat.webp" alt="Doktorsexamensbevis" class="inline-cert" loading="lazy">
+                            </a>
+                            Jag började med ett DEUG i fysik vid Jussieu, de två första universitetsåren, innan jag bytte till matematik och sedan återvände till fysiken för det andra masteråret i materialvetenskap (SMNO-mastern vid Sorbonne), följt av mina doktorandstudier från september 2012 till april 2016 vid Sorbonne Université på IMPMC-laboratoriet under handledning av prof. Michele Casula och prof. Francesco Mauri.
+                        </p>
+                        <p>Min doktorsavhandling innefattade numeriska undersökningar av de elektroniska grundtillstånden (främst) och exciterade tillstånden (sekundärt) hos en molekylfamilj som kallas acener. Acener är en familj av linjära molekyler vars struktur kan ses som en smal remsa av ett grafennanoband. Vi fokuserade på elektron- och spindensitet samt korrelationer för att bättre förstå spinkorrelationer i grafenliknande material, vilket kan ha tillämpningar inom områden som solenergi.</p>
+                        <p>Prof. Casula är expert på Quantum Monte Carlo-metoder och en forskare med en imponerande förmåga att fokusera på dussintals saker samtidigt. Han var en krävande och kompromisslös handledare som lärde mig att bedriva vetenskap, medan jag tidigare bara hade ett tankesätt inriktat på att lösa problem i läroböcker. Jag känner mig mycket lyckligt lottad som har fått arbeta med honom.</p>
+                    </div>
+
+                    <!-- Mathematics Subtopic -->
+                    <div id="bio-mathematics" class="bio-subtopic">
+                        <h4>Matematik</h4>
+                        <p class="clearfix">
+                            <a href="../cert_maitrise.webp" target="_blank" class="cert-link right">
+                                <img src="../cert_maitrise.webp" alt="Magisterexamen i matematik" class="inline-cert" loading="lazy">
+                            </a>
+                            Jag bytte till matematik under mitt tredje år. Jag hade redan studerat både fysik och matematik på egen hand via läroböcker sedan 1999, men för att nå mitt personaliga mål att komma in på ENS var det strategiskt fördelaktigt att göra denna avstickare.
+                        </p>
+                        <p>En kort kontextuell notering om franska skolor. Vi har ett elitistiskt alternativ till det vanliga universitetsspåret som kallas Classes Préparatoires aux Grandes Écoles. För att dra en parallell med USA: dessa Grandes Écoles kan jämföras med Ivy League-universiteten. Studenter förbereder sig för svåra prov under två år i Classes Préparatoires (och tar ofta ett tredje år för en bättre skola), och genomgår sedan ett maraton av konkurrensutsatta prov.</p>
+                        <p>Min dröminstitution var École Normale Supérieure (ENS), akademiskt den mest selektiva av dem, tillsammans med Polytechnique. Jag upptäckte den för sent för att söka till en Classe Préparatoire, men bestämde dig för att försöka ändå som oberoende sökande. Så jag tävlade mot framtida potentiella Nobelpristagare och förlitade mig på mina självstudier med läroböcker (och det fungerade inte, men jag tyckte om att försöka!).</p>
+                        <p>Licence de Mathématiques erbjöd den närmaste motsvarigheten till Classes Préparatoires. Under dessa år täckte min läroplan:</p>
+                        <ul>
+                            <li>Två algebrakurser: grunder, följt av ringstrukturer och Galoisteori (ungefär motsvarande första halvan av del II i Serge Langs Algebra)</li>
+                            <li>Grundläggande topologi</li>
+                            <li>Differentialkalkyl</li>
+                            <li>Integration och mått-teori</li>
+                            <li>Differentialekvationer och differentialgeometri</li>
+                            <li>Spektralanalys och Fourieranalys</li>
+                            <li>Dynamiska system och Lie-grupper</li>
+                        </ul>
+                        <p>(Denna sammanfattning utesluter de områden som jag studerade senare genom oberoende forskning, såsom sannolikhetslära och numeriska metoder.)</p>
+                    </div>
+
+                    <!-- Languages (Academic) Subtopic -->
+                    <div id="bio-languages-acad" class="bio-subtopic">
+                        <h4>Språk</h4>
+                        <p>Mitt bakslag vid ENS sänkte mitt mod, så parallellt med min masterexamen i matematik skrev jag in mig på INALCO för att studera ryska.</p>
+                        <p>Jag blev uppslukad av att studera det ryska språket, så det började ta alldeles för stor prioritet över matematiken. Det tog mig därför två år att slutföra min masterexamen eftersom jag var tvungen att göra om ett par tentor (vilket jag inte heller ångrar!).</p>
+                        <p>Min grammatiklärare väckte en passion för poesi på främmande språk. Poesi motiverar mig ofta att påbörja ett nytt språk. När jag började med estniska upptäckte jag Jaan Kaplinski, som förblir en av mina favoritpoeter. Det är nästan ett beroende: jag läser något intressant om en kultur, vill veta lite mer, gör lite efterforskningar, lovar mig själv att inte gräva djupare, gör det ändå och lägger sedan till en ny bokhög på mitt nattduksbord.</p>
+                    </div>
+                </div>
+
+                <!-- Miscellaneous Subsection -->
+                <div id="bio-miscellaneous" class="bio-subsection">
+                    <h3>Övrigt</h3>
+
+                    <!-- Languages (Misc) Subtopic -->
+                    <div id="bio-languages-misc" class="bio-subtopic">
+                        <h4>Språk</h4>
+                        <p>Jag börjar med att tala om min passion med en ansvarsfriskrivning: jag kan många språk väldigt dåligt. Det är en passion, inte en samling att skryta med, men eftersom jag började för mer än tjugo år sedan har jag samlat på mig mycket erfarenhet som jag ibland tror att jag kan använda.</p>
+                        <p>Så, kortfattat. Det började med ryska, med två år på universitetet, och fortsatte på egen hand (vilket alltid kommer att vara fallet, så jag behöver inte specificera det mer). Sedan var de två första språken jag påbörjade helt på egen hand tjeckiska och ungerska, då jag planerade en resa dit. Det första året var det en katastrof när jag försökte prata med människor, men nästa år var bättre. Mina främmande språk i gymnasiet var tyska och engelska, så jag återupptog dem sedan, och lade till italienska på vägen på grund av en vän och gick en sommarskola där. Under sju år har jag lärt mig estniska, med början vid en skola i Saaremaa, och för några år sedan började jag lära mig svenska och lite kinesiska. Det är inte allt, men det är dessa jag är mest aktiv i.</p>
+                        <p>Jag drar dock nytta av för- och nackdelarna med att vara på spektrumet. Jag kan lära mig estnisk eller svensk poesi under min pendling och använda min telefon som ordbok, och numera AI-verktyg för att förklara symbolism eller historia, men samtidigt är det inte alltid lätt för mig att kommunicera, och jag kör ofta fast när jag blir orolig.</p>
+                    </div>
+
+                    <!-- Data Science & Machine Learning Subtopic -->
+                    <div id="bio-datascience" class="bio-subtopic">
+                        <h4>Datavetenskap & Maskininlärning</h4>
+                        <p class="clearfix">
+                            <a href="../cert_datacamp.webp" target="_blank" class="cert-link right">
+                                <img src="../cert_datacamp.webp" alt="DataCamp-certifikat" class="inline-cert" loading="lazy">
+                            </a>
+                            <a href="../cert_coursera.webp" target="_blank" class="cert-link right" style="margin-right: 15px;">
+                                <img src="../cert_coursera.webp" alt="Coursera-certifikat" class="inline-cert" loading="lazy">
+                            </a>
+                            Jag började lära mig datavetenskap online på Coursera eftersom det höll på att växa fram i Frankrike vid den tidpunkt då jag avslutade min doktorsexamen, och det var ett fascinerande nytt fält som visade hur man använder dessa metoder på offentliga data för att upptäcka saker inom olika ämnen. Matematikentusiaster har enkel tillgång till massor av nya metoder, intressanta i sig att studera, men också för att enkelt bedriva numerisk forskning även hemifrån.
+                        </p>
+                    </div>
+
+                    <!-- Computer Vision Subtopic -->
+                    <div id="bio-computervision" class="bio-subtopic">
+                        <h4>Datorseende</h4>
+                        <p>Efter ett par deep learning-tutorials om klassiska arkitekturer, som Andrew Ng:s deep learning-kurs, ville jag gräva djupare i detta fält och inte begränas till maskininlärningsmetoder, eftersom äldre algoritmer har fascinerande matematiska grunder, särskilt inom geometri, med Fouriertransformationer eller differentialkalkyl.</p>
+                    </div>
+
+                    <!-- Generative Models Subtopic -->
+                    <div id="bio-generative" class="bio-subtopic">
+                        <h4>Generativa modeller</h4>
+                        <p>År 2021 hade jag sparat tillräckligt med pengar för att läsa en kurs på Stanford Online, och jag valde CS236. Då var det på sätt och vis ett sätt att ta en sen revansch på mitt ENS-misslyckande och känna mig som student vid ett Ivy League-universitet. Jag hade inte rätt personlighet för att knyta kontakter med mina kurskamrater online, skriva i forumet eller ställa frågor, så jag fick inte ut mer än om jag hade läst en bok, men jag fick tidig undervisning av en av de ledande experterna på området och han var fascinerande. Nu är jag passionerad av detta.</p>
+                    </div>
+
+                    <!-- Finance Subtopic -->
+                    <div id="bio-finance" class="bio-subtopic">
+                        <h4>Finans</h4>
+                        <p>Jag upptäckte ett sent intresse för finansiell matematik genom att föreläsa vid handelshögskolor. Jag är intresserad av att beräkna Value-at-Risk för portföljer med hjälp av maskininlärningsmetoder (PCA och normalizing flows). Samtidigt upptäckte jag att det var mindre komplicerat än jag trodde att investera i enlighet med mina personliga värderingar, särskilt att investera i norra Europa.</p>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+    </body>
+</html>
+
+<script src="../script.js"></script>

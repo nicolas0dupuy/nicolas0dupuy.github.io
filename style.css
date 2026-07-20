@@ -562,6 +562,61 @@ section {
 }
 
 /* Version responsive pour les écrans mobiles */
+/* Sélecteur de Langue (Dropdown) */
+.lang-selector-container {
+    position: absolute;
+    top: 2rem;
+    right: 2.5rem;
+    z-index: 1000;
+}
+
+.lang-select {
+    background-color: #1e1e1e;
+    color: #a3a3a3;
+    border: 1px solid #333333;
+    border-radius: 6px;
+    padding: 0.4rem 2rem 0.4rem 0.8rem;
+    font-size: 0.82rem;
+    outline: none;
+    cursor: pointer;
+    font-family: inherit;
+    transition: all 0.2s ease;
+    appearance: none;
+    -webkit-appearance: none;
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23a3a3a3' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 0.6rem center;
+    background-size: 0.8rem;
+}
+
+.lang-select:hover {
+    border-color: #82b1ff;
+    color: #ffffff;
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23ffffff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'/%3E%3C/svg%3E");
+}
+
+.lang-select option {
+    background-color: #1e1e1e;
+    color: #ffffff;
+}
+
+.lang-select option:disabled {
+    color: #555555;
+    background-color: #121212;
+}
+
+/* Bannière d'avertissement de traduction automatique */
+.translation-notice {
+    background-color: #24211a;
+    border-left: 4px solid #d9a75d;
+    color: #e0d0b8;
+    padding: 0.8rem 1.2rem;
+    border-radius: 4px;
+    margin-bottom: 2rem;
+    font-size: 0.88rem;
+    line-height: 1.5;
+}
+
 @media (max-width: 768px) {
     /* Force la sidebar à reprendre une place normale dans le flux de la page */
     .sidebar {
@@ -655,5 +710,13 @@ section {
     .services-grid {
         grid-template-columns: 1fr;
         gap: 1rem;
+    }
+
+    .lang-selector-container {
+        position: static;
+        display: flex;
+        justify-content: flex-end;
+        margin-bottom: 1rem;
+        padding-right: 0.5rem;
     }
 }

@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="fi">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Nicolas Dupuy</title>
+        <link rel="stylesheet" href="../style.css">
+    </head>
+    <body>
+
+        <nav class="sidebar">
+            <img src="../profile.webp" alt="Nicolas Dupuy" class="profile-pic">
+            <h1 class="sidebar-name">Nicolas Dupuy</h1>
+            <p class="sidebar-title">Riippumaton tutkija | FT laskennallisessa fysiikassa</p>
+            <ul class="nav-links">
+                <li><a href="#home">Etusivu</a></li>
+                <li><a href="#section1">Tämän hankkeen filosofia</a></li>
+                <li><a href="#section2">Palvelut</a></li>
+                <li><a href="#section3">Lyhyt elämäkerta</a></li>
+                <li class="nav-contact-item"><a href="mailto:nicolas0dupuy@gmail.com" class="email-link">nicolas0dupuy@gmail.com</a></li>
+            </ul>
+        </nav>
+
+        <main class="content">
+            <div class="lang-selector-container">
+                <select class="lang-select" onchange="if(this.value) window.location.href=this.value;">
+                    <option value="../index.html">English</option>
+                    <option value="../fr/index.html">Français</option>
+                    <option value="../de/index.html">Deutsch</option>
+                    <option value="../sv/index.html">Svenska</option>
+                    <option value="../et/index.html">Eesti</option>
+                    <option value="" selected>Suomi</option>
+                    <option value="../ru/index.html">Русский</option>
+                    <option value="../uk/index.html">Українська</option>
+                </select>
+            </div>
+            <section id="home">
+                <div class="translation-notice">
+                    Nämä suomenkieliset sivut ovat automaattinen käännös englannista. Olen intohimoinen kielten harrastaja. Opiskelen ennen kaikkea viroa, jota olen opiskellut jo 7 vuotta, mutta pidän todella paljon myös suomen kielestä, vaikka opiskelenkin sitä satunnaisemmin – kahden näin samankaltaisen kielen opiskelu samanaikaisesti on nimittäin haastavaa. Toivon kuitenkin siirtymistä yhteistyöhön kumppaneiden kanssa Suomessa, maassa, jossa vierailen usein, sillä rakastan sen kulttuuria ja ihailen sen teknologista dynamiikkaa. Joudun toistaiseksi luottamaan konekäännökseen, mutta aion luetuttaa nämä tekstit myöhemmin kielenammattilaisella. Sillä välin palautteenne on minulle erittäin arvokasta – niin palvelujeni kuin kielenkin osalta.
+                </div>
+                <div class="intro-cadre">
+                    <p><strong>Tervetuloa! Ensimmäinen huomio tästä Beta-esikatselusta.</strong></p>
+                    <p>Tämä verkkosivusto antaa yleiskuvan digitaalisista T&K-palveluistani. Koska välitön prioriteettini on ilmoittaa saatavuudestani, suunnittelin vähimmäisversion, jota voidaan jatkossa parantaa.</p>
+                    <p>Luemme paljon tekoälyjärjestelmien tohtoritason kyvyistä, ja minullakin on alikäytettyjä tohtoritason kykyjä, joita haluan tarjota. Neuroatyyppisyys on ollut suurin esteeni perinteisissä työnkuluissa, joten olen rakentanut autismikirjon profiiliini mukautetun työnkulun, joka poistaa perinteisen kitkan pääasiassa asynkronisen työn, virallisen EOR-palvelun / laskutuspalvelun kautta delegoitujen hallinnollisten tehtävien ja virstanpylväiden perusteella tapahtuvan toimituksen avulla.</p>
+                    <p>Koska työskentelen kahdella energiatasolla (matala ja korkea), palveluni kattavat eriasteisten vaativuustasojen kirjon. Kun minulla on vähän energiaa vaativaan tutkimukseen, voin aina tarttua tietojenkäsittelyn rästeihinne; aina on jotain, mitä voin käsitellä työnne nopeuttamiseksi.</p>
+                    <p>Hion tätä verkkosivustoa ajan myötä tehdäkseni siitä inhimillisemmän, paremmin selitetyn ja lisätäkseni henkilökohtaisemman osion. Työskennellessäni jatkuvasti kahdessa energiajärjestelmässä kehitän tätä alustaa kahdella vastaavalla viimeistelytasolla; sen hidas inhimillistäminen intohimojeni jakamisen kautta on minulle keino ladata energiaani samalla kun olen vuorovaikutuksessa älyllisesti uteliaiden kollegoiden kanssa.</p>
+                </div>
+            </section>
+            <section id="section1">
+                <div class="translation-notice">
+                    Nämä suomenkieliset sivut ovat automaattinen käännös englannista. Olen intohimoinen kielten harrastaja. Opiskelen ennen kaikkea viroa, jota olen opiskellut jo 7 vuotta, mutta pidän todella paljon myös suomen kielestä, vaikka opiskelenkin sitä satunnaisemmin – kahden näin samankaltaisen kielen opiskelu samanaikaisesti on nimittäin haastavaa. Toivon kuitenkin siirtymistä yhteistyöhön kumppaneiden kanssa Suomessa, maassa, jossa vierailen usein, sillä rakastan sen kulttuuria ja ihailen sen teknologista dynamiikkaa. Joudun toistaiseksi luottamaan konekäännökseen, mutta aion luetuttaa nämä tekstit myöhemmin kielenammattilaisella. Sillä välin palautteenne on minulle erittäin arvokasta – niin palvelujeni kuin kielenkin osalta.
+                </div>
+                <h2>Tämän hankkeen filosofia</h2>
+
+                <!-- Unified Introduction Context Block -->
+                <div class="philosophy-intro-text">
+                    <p><strong>Olen Nicolas, riippumaton tutkija, joka pyörittää tätä tutkimuksen ja datatieteen tukipalvelua.</strong></p>
+                    <p>Tarjoan modulaarisen palveluvalikon aina tieteellisestä tutkimuksesta datatieteeseen tarjoten ulkoista tukea tehtäviin, joita tiiminne on siirrettävä eteenpäin.</p>
+                    <p>Rakensin tämän raamiston ohjelmistotekniikasta inspiroituneen lippujärjestelmän (ticket-based system) ympärille, joka on mukautettu muuttuvaan työkuormaani autismikirjon tutkijana. Maksaminen tapahtuu virstanpylväittäin tulosten hyväksymisen jälkeen EOR-palvelun (laskutuspalvelun) kautta, mikä tekee koko yhteistyöstä valmiiksi käyttövalmiin (plug-and-play).</p>
+                    <p><strong>Yksityiskohtaisemmin:</strong></p>
+                </div>
+                <div class="tabs-container">
+                    <!-- Barre de navigation à 3 onglets -->
+                    <div class="tab-buttons grid-three">
+                        <button class="tab-btn active" data-target="phil-what">Mitä teen...</button>
+                        <button class="tab-btn" data-target="phil-why">Miksi</button>
+                        <button class="tab-btn" data-target="phil-autism">Autismikirjon profiili</button>
+                    </div>
+
+                    <!-- Contenu des onglets -->
+                    <div class="tab-content">
+
+                        <!-- Onglet 1 : What I do -->
+                        <div id="phil-what" class="tab-panel active">
+
+                            <h4 style="margin-top: 1.5rem; color: #ffffff;">Mitä teen muutamalla rivillä:</h4>
+                            <ul style="padding-left: 1.2rem; color: #e0e0e0;">
+                                <li style="margin-bottom: 0.8rem;"><strong>Kertyneiden projektien ja insinöörityön rästien purkaminen:</strong> Otan vastuun kertyneistä tutkimus- ja datatiedetyökuormistanne. Tämä sisältää syrjään jätettyjen toissijaisten hypoteesien tutkimisen tai tiiminne suorituskyvyn laajentamisen kiireellisissä laskentatehtävissä. Toimin toimiala-agnostisena tutkijana.</li>
+                                <li style="margin-bottom: 0.8rem;"><strong>Arvopohjaiset virstanpylväät:</strong> Jaamme teknisen tiekartan yhdessä projektilipuiksi, määrittäen kullekin virstanpylväälle kiinteän arvon ja arvioidut aikataulut. Siitä eteenpäin hallitsen aikatauluani täysin itsenäisesti. Pidämme toisemme ajan tasalla asynkronisten päivitysten kautta, mikä poistaa muodollisten kokousten lisäkuorman.</li>
+                                <li style="margin-bottom: 0rem;"><strong>Mukautuva toteutus:</strong> Käsittelen työvaiheet aina alusdatan tutkimisesta erikoistuneisiin numeerisiin simulointeihin tai teoreettisiin tutkimuksiin. Työnkulkuni mukautuu kognitiiviseen saatavuuteeni suuntaamalla huippukeskittymisen vaativiin matemaattisiin tutkimuksiin samalla kun sovellan lineaarista tietojenkäsittelyä tasaisen operatiivisen vauhdin ylläpitämiseksi.</li>
+                            </ul>
+                        </div>
+
+                        <!-- Onglet 2 : Why -->
+                        <div id="phil-why" class="tab-panel">
+                            <ul style="padding-left: 1.2rem; color: #e0e0e0;">
+                                <li style="margin-bottom: 0.8rem;"><p><strong>Tutkimus intohimona:</strong> Vuosia sitten en uskonut voivani tulla tutkijaksi hyvästä akateemisesta menestyksestä huolimatta. Pysyin yliopistolla, koska rakastin oppimista, ja sain lopulta mahdollisuuden väitellä tohtoriksi. Teknisten tiimien tukeminen on minun tapani tehdä yhteistyötä erinomaisten tutkijoiden kanssa kiehtovissa projekteissa, mikä mahdollistaa oppimisen jatkamisen samalla kun edistän heidän edistystään ja menen väitöskirjaani pidemmälle.</p></li>
+                                <li style="margin-bottom: 0.8rem;"><p><strong>Oppimisvauhtini hyödyntäminen:</strong> Olen akadeeminen kirjatoukka. Näin pääasiassa opiskelinkin: työskentelin kotiopettajana ja ostin sitten läjiittäin oppikirjoja ja tutkimuskirjoja. En ole koskaan lopettanut. Tänään, käyttämällä historiallisten instituutioiden kuten Collège de Francen tai Stanford digitaalista mediaa, opiskelulistani on pidempi kuin lapsen joululahjalista (kuten sitä kutsun). Autismiin liittyvä intensiivinen keskittyminen ei ole legendaa. Kun minulle kehittyy pakkomielle, en tee asioita puolitiehen. Tämä antaa minulle vauhdin tehdä laadukasta ja keskittynyttä työtä pitkiä aikoja.</p></li>
+                                <li style="margin-bottom: 0.8rem;"><p><strong>Tieteidenvälinen dynamiikka:</strong> Päinvastoin kuin perinteiset tutkimuspolut, jotka vaativat äärimmäistä erikoistumista yhdelle alalle, kukoistan useiden alojen tutkimisessa. Vaikka tämä olisi rajoite pysyvässä akadeemisessa tehtävässä, riippumaton raamistani muuttaa tämän monipuolisuuden tarpeen voimavaraksi. Se mahdollistaa matemaattisten taitojeni soveltamisen agnostisesti eri sektoreilla siirtäen analyyttisiä työkaluja rahoituksen, lääketieteen, teoreettisen fysiikan ja sovellettujen dataputkien välillä.</p></li>
+                            </ul>
+                        </div>
+
+                        <!-- Onglet 3 : Autism Notes -->
+                        <div id="phil-autism" class="tab-panel">
+                            <p><em>„Autismikirjon häiriöt (ASD) ovat moninainen sairauksien ryhmä. Niille on omaista tietty vaikeus sosiaalisessa vuorovaikutuksessa ja viestinnässä. Muita ominaisuuksia ovat epätyypilliset toiminta- ja käyttäytymismallit, kuten vaikeus siirtyä toiminnasta toiseen, keskittyminen yksityiskohtiin ja epätavalliset reaktiot aistimuksiin,“</em> toteaa WHO, joka arvioi esiintyvyydeksi noin 1 ihmisen 127:stä maailman väestössä.</p>
+                            <p>Miten on laita akadeemisessa maailmassa? Vaikka akateemisen maailman esiintyvyydestä ei ole suoria maailmanlaajuisia väestönlaskentatilastoja, Simon Baron-Cohen julkaisi vuonna 2001 artikkelin, jossa mitattiin keskimääräistä autismi-osamäärää (AQ) eri populaatioissa. Asteikolla 0–50, jossa yleisväestön keskiarvo on 16,4 (± 6,4) ja kliinisesti diagnosoidun autistisen väestön keskiarvo 35,8 (± 6,5), matematiikan opiskelijat saivat pistemäärän 21,5 (± 6,5), mikä oli hieman alhaisempi kuin 16 UK:n olympiavoittajalla (24,5 ± 5,7).</p>
+                            <p>Tarkasteltaessa autismia työelämässä, erikoistuneiden järjestöjen, kuten National Autistic Societyn ja Yhdistyneen kuningaskunnan tilastokeskuksen (ONS) tiedot osoittavat, että autismilla on alhaisin työllisyysaste kaikista vammaisuusluokista – vain noin 21,7 % autistisista aikuisista on mielekkäässä työssä (vuoden 2020 tiedot), hieman vaikeavammaisten aikuisten alapuolella.</p>
+                            <p>Silti autismikirjo kattaa laajan valikoiman tilanteita ja älyllisiä tasoja. Tohtori Neil Kenny keräsi arvokkaita todistuksia Irlannin korkeakoulutuksen akateemikoilta (<em>„Tell me what my job is“: A Qualitative Exploration of the Experiences of Autistic Academic Staff working in Higher Education in Ireland</em>), ja voin lisätä omani. Jos luette sen, tässä on joitain käsiteltyjä teemoja:</p>
+
+                            <ol style="padding-left: 1.2rem; color: #e0e0e0; margin-top: 1rem;">
+                                <li style="margin-bottom: 0.8rem;"><strong>Diagnosin saaminen poistaa suuren taakan:</strong> Todellakin, minusta se tuntui kuin olisin kani, joka päätyi vahingossa kissaperheeseen ja jolle vihdoin kerrotaan, että vaikka rakastan heitä, pienet mukautukset, kuten lintujen metsästyksestä tai öisestä vaeltelusta pidättäytyminen, tekisivät elämästäni paljon parempaa.</li>
+                                <li style="margin-bottom: 0.8rem;"><strong>Ajan hahmottaminen on drastisesti erilainen</strong> neurodivergenttien ja neurotyypillisten ihmisten välillä ja jopa kahden autistisen henkilön välillä. Tutkimuksessa yksi osallistuja kuvailee pystyvänsä keskittymään yhteen tehtävään tunteja tajuamatta ajan kulumista, kun taas toinen tarvitsee taukoja useammin kuin kollegansa. Olen täysin sen keskellä: rakastin shakkikilpailuja 17-vuotiaana, joissa klo 9 aamulla alkavat koko päivän kestävät pelit saattoivat kestää jopa 8 tuntia. Kokeilin yhtä vaikeimmista pääsykokeista École Normale Supérieureen (ENS); koska en seurannut perinteistä polkua, minulla oli kamalat tulokset, mutta nautin haasteesta erittäin paljon. Silti jopa tehtävässä, jossa olen erinomainen, jos mieleni on myrkyllisten ajatusten peitossa, ajan hahmottamiseni on täysin päinvastainen.</li>
+                                <li style="margin-bottom: 0.8rem;"><strong>Rutiinit ja organisaatio:</strong> Meillä kaikilla on omat rutiinimme ja organisaatio voi olla sotkuinen. Minulle moniajo (multitasking) on kuin yrittäisi jongleerata useilla keiloilla samanaikaisesti, ja jopa kaksi määräaikaa, jopa erittäin kaukaiset, voivat lukita minut täysin.</li>
+                                <li style="margin-bottom: 0.8rem;"><strong>Naamioituminen (masking):</strong> Takaisin kani-rooliin teidät adoptoineen kissaperheen keskellä. Rakastatte heitä, haluatte viettää aikaa ja tehdä asioita heidän kanssaan, mutta heillä on instinktejä, joita teillä ei ole. Joten yritätte tehdä samoin tiedostamattoman kopiointimekanismin kautta, mutta mielenne huutaa kivusta. Tämä on usein uupumuksen pääsyy, joka johtaa loppuunpalamiseen.</li>
+                                <li style="margin-bottom: 0.8rem;"><strong>Aistien ylikuormitus:</strong> Lisään sen uupumuksen ja loppuunpalamisen kriittisenä syynä. Väsyneenä ruuhkaisissa julkisissa tiloissa toistuvat kuulutukset junaa odotettaessa, moottorin paukahdukset tai skannerin piippaukset supermarketin kassalla pakottavat aivojamme työskentelemään jatkuvasti, ikään kuin käsittelisimme aktiivisesti dataa.</li>
+                                <li style="margin-bottom: 0rem;"><strong>Enemmän vastineeksi vaivoistamme:</strong> Varmasti autistina oleminen tekee elämästä monimutkaista, mutta en haluaisi olla erilainen. Tutkimukseen osallistujat ylistävät huippukeskittymistään ja haluaan mennä syvemmälle intohimoihinsa. En minäkään haluaisi koskaan menettää iloa oppia loogisia asioita tällaisella intensiteetillä.</li>
+                            </ol>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+            <section id="section2">
+                <div class="translation-notice">
+                    Nämä suomenkieliset sivut ovat automaattinen käännös englannista. Olen intohimoinen kielten harrastaja. Opiskelen ennen kaikkea viroa, jota olen opiskellut jo 7 vuotta, mutta pidän todella paljon myös suomen kielestä, vaikka opiskelenkin sitä satunnaisemmin – kahden näin samankaltaisen kielen opiskelu samanaikaisesti on nimittäin haastavaa. Toivon kuitenkin siirtymistä yhteistyöhön kumppaneiden kanssa Suomessa, maassa, jossa vierailen usein, sillä rakastan sen kulttuuria ja ihailen sen teknologista dynamiikkaa. Joudun toistaiseksi luottamaan konekäännökseen, mutta aion luetuttaa nämä tekstit myöhemmin kielenammattilaisella. Sillä välin palautteenne on minulle erittäin arvokasta – niin palvelujeni kuin kielenkin osalta.
+                </div>
+                <!-- Services Section Header & Introduction (Ultra-Clean & Pure HTML) -->
+                <div class="services-container">
+                    <div class="services-header">
+                        <h2>Palvelut</h2>
+                        <span class="status-badge">
+                            🌱 <strong>Aloitusvaihe:</strong> palautteenne on tärkeää vastataksemme paremmin tarpeisiinne
+                        </span>
+                    </div>
+
+                    <div class="services-intro-text">
+                        <p>
+                            Täältä löydätte palvelulistani, jota voin laajentaa ajan myötä alkaessani opiskella jotain uutta. Nämä on suunniteltu ennen kaikkea tuomaan teille taitoja, joita olen kehittänyt jatkuvan oppimisen kautta vuosien varrella useilla akateemisilla poluilla.
+                        </p>
+                        <p class="framework-note">
+                            Ennustettavan, erittäin ammattimaisen ja stressittömän yhteistyön varmistamiseksi meille molemmille sovellan useimpiin näistä moduuleista yhtenäistä raamistoa:
+                        </p>
+                    </div>
+
+                    <div class="services-grid">
+                        <div class="feature-card">
+                            <h3>💼 Hallinnollinen helppous</h3>
+                            <p>Natiivi Employer of Record (EOR) -palvelun tai ranskaisen laskutuspalvelun käyttö kaikkien sopimusten, laskujen ja vaatimustenmukaisuuden hoitamiseksi.</p>
+                        </div>
+                        <div class="feature-card">
+                            <h3>✅ Riskittömät virstanpylväät</h3>
+                            <p>Maksu tapahtuu tiukasti <strong>virstanpylvään hyväksymisen jälkeen</strong>, ottaen mallia lippujen ja rästien hallinnasta nykyaikaisissa IT-yrityksissä.</p>
+                        </div>
+                        <div class="feature-card">
+                            <h3>📥 Työkuorman purkaminen</h3>
+                            <p>Erityisesti suunniteltu ottamaan vastaan tietojenkäsittelyn rästejänne ja toissijaisia hypoteesejanne vapauttaen ydintiiminne tehtävistä, joihin heillä ei ole aikaa.</p>
+                        </div>
+                        <div class="feature-card">
+                            <h3>🧩 Mukautettu kognitiivinen tahti</h3>
+                            <p>Laaja vaativuustasojen kirjo aina junioritehtävistä syvälliseen tutkimukseen. Tämä mahdollistaa minulle autismikirjon tutkijana aikani ja kognitiivisen kuormitukseni hallinnan nykyisen keskittymiskykyni mukaan.</p>
+                        </div>
+                    </div>
+
+                    <div class="services-footer">
+                        <p>Onko teillä mukautettu vaatimus tämän vakiokatalogin ulkopuolella?</p>
+                        <a href="mailto:nicolas0dupuy@gmail.com" class="contact-button">✉️ Ota yhteyttä: nicolas0dupuy@gmail.com</a>
+                    </div>
+                </div>
+
+                <div id="hashtag-menu" class="hashtag-menu-container"></div>
+
+                <!-- ==================== SERVICE 1 ==================== -->
+                <div class="service-card" data-tags="ComputationalPhysics,AppliedMathematics">
+                    <h3 class="service-title">Tieteellinen laskenta & Numeerinen simulointi</h3>
+
+                    <input type="checkbox" id="toggle-service-1" class="card-toggle-input">
+                    <div class="card-fold-content">
+                        <div class="service-description">
+                            <p>Tekninen ja teoreettinen tuki tutkimukselle, koodin toteutukselle, fysikaalisten järjestelmien simuloinneille ja matemaattiselle mallinnukselle. Toimitetaan pääasiassa etätyönä, valinnaisilla panostuksilla paikan päällä.</p>
+                            <p>Projektit on jäsennelty itsenäisiksi virstanpylväiksi, joissa on selkeät määritelmät ja päätepisteet, mikä varmistaa, että kuka tahansa tiimin jäsen voi helposti seurata ja integroida kunkin tuloksen.</p>
+                            <p>Virstanpylväät voivat olla teoreettinen tutkimus tai algoritmin toteutus ja muodostavat perustan valmistuttua laskutettaville elementeille, mikä suojaa budjettianne. Hinnasta sovitaan kullekin virstanpylväälle eikä se muutu, jos tarvitsen lisäaikaa, mikä tarjoaa teille vakautta ja ennustettavuutta antaen samalla minulle vähemmän painetta ja mahdollisuuden laadukkaaseen oppimisaikaan.</p>
+                            <p>Tämä rakenne on suunniteltu auttamaan tiimejä tai tutkijoita purkamaan kesken eräisiä sivuvirtaprojekteja ja arvioimaan vaihtoehtoisia hypoteeseja samalla kun päätiiminne keskittyvät ensisijaisiin projekteihinsa.</p>
+                            <p>Pitkäaikaisia kumppanuuksia voidaan ennakoida oppimiskäyräni hyötyjen varmistamiseksi, sillä opiskelen aktiivisesti numeerisia menetelmiä tutkijatason aloitustasolla.</p>
+                        </div>
+                        <div class="service-commentary">
+                            <h4>Henkilökohtainen huomio</h4>
+                            <p>Löysin tieteellisen laskennan maisteriharjoitteluni aikana ennen väitöskirjaani. Noina aikoina sovellin useita kvanttikemian menetelmiä (joita tarjoan palvelussa Kvanttikemia & Materiaalien mallinnus), ja sisälläni oleva matemaatikko halusi jo ymmärtää niiden perusteet. Tarjoan tätä palvelua, koska jatkuva oppimiseni tällä alalla yhdistettynä kokemukseeni voi löytää monenlaista käyttöä sekä teollisuudessa että akateemisessa maailmassa, joissa käytännön lisätuesta on usein puutetta. Viitteinä käytän käytännössäni muun muassa: Quarteroni et al.:n *Numerical Mathematics*, Grégoire Allairen *Analyse numérique et optimisation* (Éditions de l'École Polytechnique), Mallatin kirjoja ja luentoja aallokkeista sekä Pohjolaisen *Mathematical Modeling*.</p>
+                        </div>
+                        <div class="card-fold-fade"></div>
+                    </div>
+                    <label for="toggle-service-1" class="card-toggle-label"></label>
+
+                    <div class="service-tags">
+                    <span class="tag" onclick="filterByTag('ComputationalPhysics')">#ComputationalPhysics</span>
+                    <span class="tag" onclick="filterByTag('AppliedMathematics')">#AppliedMathematics</span>
+                
+                    </div>
+                </div>
+
+                <!-- ==================== SERVICE 2 ==================== -->
+                <div class="service-card" data-tags="ComputationalPhysics">
+                    <h3 class="service-title">Kvanttikemia & Materiaalien mallinnus</h3>
+
+                    <input type="checkbox" id="toggle-service-2" class="card-toggle-input">
+                    <div class="card-fold-content">
+                        <div class="service-description">
+                            <p>Molekyylimallinnus, elektronisen tai geometrisen rakenneen laskelmat sekä kvanttisimuloinnit perus- ja viritystiloille, mukaan lukien DFT- ja Quantum Monte Carlo -työvoot. Toimitetaan pääasiassa etätyönä, valinnaisilla panostuksilla paikan päällä.</p>
+                            <p>Projektit on jäsennelty itsenäisiksi virstanpylväiksi, joissa on selkeät määritelmät ja päätepisteet, mikä varmistaa, että kuka tahansa tiimin jäsen voi helposti seurata ja integroida kunkin tuloksen.</p>
+                            <p>Virstanpylväät voivat olla yksinkertaisesti elektronisen rakenteen DFT-optimointi (tutkittavien molekyylien erässä) tai vaihtoehtoisten menetelmien teoreettinen tutkimus, ja ne muodostavat perustan valmistuttua laskutettaville elementeille, mikä suojaa budjettianne. Hinnasta sovitaan kullekin virstanpylväälle eikä se muutu, jos tarvitsen lisäaikaa, mikä tarjoaa teille vakautta ja ennustettavuutta antaen samalla minulle vähemmän painetta ja mahdollisuuden laadukkaaseen oppimisaikaan.</p>
+                            <p>Tämä rakenne on suunniteltu auttamaan tiimejä tai tutkijoita purkamaan kesken eräisiä sivuvirtaprojekteja ja arvioimaan vaihtoehtoisia hypoteeseja samalla kun päätiiminne keskittyvät ensisijaisiin projekteihinsa.</p>
+                            <p>Pitkäaikaisia kumppanuuksia voidaan ennakoida oppimiskäyräni hyötyjen varmistamiseksi, sillä mukautan aktiivisesti olemassa olevia laskentatyövoogojani teidän erityisiin tutkimusongelmiinne.</p>
+                        </div>
+                        <div class="service-commentary">
+                            <h4>Henkilökohtainen huomio</h4>
+                            <p>Sain väitöskirjani (2012–2016) valmiiksi laskennallisessa fysiikassa keskittyen grafeenin kaltaisten molekyylien Quantum Monte Carlo -optimointiin, perustilan elektronirakenteisiin, singletti/tripletti-viritystiloihin ja voimakkaasti korreloituneiden järjestelmien geometriaan. Vaikka en ole vielä ottanut käyttöön molekyylidynamiikan dataputkia tai integroinut koneoppimista perinteisiin fysiikan työnkulkuihin, haluan erittäin mielelläni oppia, toteuttaa ja mukauttaa näitä menetelmiä projekteissanne. Fysiikan intohimoni lisäksi minulle kehittyi varhainen kiinnostus kvanttilaskentaan. Suoritin MITxPRO:n ammatilliset sertifikaattiohjelmat 'Quantum Computing Fundamentals' ja 'Quantum Computing Realities' ja haluan mielelläni edistää tämän alan kehitystä.</p>
+                        </div>
+                        <div class="card-fold-fade"></div>
+                    </div>
+                    <label for="toggle-service-2" class="card-toggle-label"></label>
+
+                    <div class="service-tags">
+                    <span class="tag" onclick="filterByTag('ComputationalPhysics')">#ComputationalPhysics</span>
+                
+                    </div>
+                </div>
+
+                <!-- ==================== SERVICE 3 ==================== -->
+                <div class="service-card" data-tags="QuantitativeFinance,AppliedMathematics">
+                    <h3 class="service-title">Numeeriset menetelmät kvantitatiivisessa rahoituksessa</h3>
+
+                    <input type="checkbox" id="toggle-service-3" class="card-toggle-input">
+                    <div class="card-fold-content">
+                        <div class="service-description">
+                            <p>Numeeristen mallien, stokastisten simulointien ja matemaattisten raamien toteutus ja validointi kvantitatiiviselle rahoitukselle. Toimitetaan pääasiassa etätyönä, valinnaisilla panostuksilla paikan päällä.</p>
+                            <p>Projektit on jäsennelty itsenäisiksi virstanpylväiksi, joissa on selkeät määritelmät ja päätepisteet, mikä varmistaa, että kuka tahansa tiimin jäsen voi helposti seurata ja integroida kunkin tuloksen.</p>
+                            <p>Virstanpylväs voi olla Value-at-Risk (VaR) -arviointi, käsiteltävä, kehitettävä tai analysoitava dataerä tai tutkittava teoreettinen malli, ja se muodostaa perustan valmistuttua laskutettaville elementeille, mikä suojaa budjettianne. Hinnasta sovitaan kullekin virstanpylväälle eikä se muutu, jos tarvitsen lisäaikaa, mikä tarjoaa teille vakautta ja ennustettavuutta antaen samalla minulle vähemmän painetta ja mahdollisuuden laadukkaaseen oppimisaikaan.</p>
+                            <p>Tämä rakenne on suunniteltu auttamaan tiimejä tai tutkijoita purkamaan kesken eräisiä sivuvirtaprojekteja ja arvioimaan vaihtoehtoisia hypoteeseja samalla kun päätiiminne keskittyvät ensisijaisiin projekteihinsa.</p>
+                            <p>Pitkäaikaisia kumppanuuksia voidaan ennakoida oppimiskäyräni hyötyjen varmistamiseksi, sillä erikoistun aktiivisesti kvantitatiivisen rahoituksen menetelmiin nojaten kvantitatiivisen tutkimuksen taustaani.</p>
+                        </div>
+                        <div class="service-commentary">
+                            <h4>Henkilökohtainen huomio</h4>
+                            <p>Aloitin viime vuonna aktiivisesti erikoistumisen kvantitatiivisen rahoituksen menetelmiin nojaten seitsemän vuoden datatieteen opetukseeni Paris School of Businessissa tiiviissä kontaktissa rahoitusalan ammattilaisten kanssa. Seuraava henkilökohtainen virstanpylvääni on tehdä yhteistyötä aktiivisten tutkijoiden ja käytännön toimijoiden kanssa oppien tekemällä. Kumppanuus mahdollistaa sen, että koulutatte pitkäaikaisen yhteistyökumppanin, joka ymmärtää syvällisesti ympäristöänne. Ottaen huomioon vahvojen kvantitatiivisten osaajien napuuden nykymarkkinoilla, tämä kumppanuus mahdollistaa harvinaisten maisteriprofiilien vaikean etsinnän ohittamisen ja tohtoritason tutkijan varmistamisen, jolla on osoitettu analyyttinen kypsyys. Otan mielelläni vastaan aloitustason tehtäviä opiskellessani perusasioita, ja kokeneena lehtorina voin myös edistää harjoittelijoidenne kouluttamista tuoreesti hankkimillani tiedoilla. Positioimalla itseni tutkijoiden ja käytännön toimijoiden rajapintaan, älkää epäröikö ottaa yhteyttä, jos tarvitsette yhdistäjää. Keskitän eurooppalaiset panokseni Ranskaan, kotimaahani, sekä Pohjoismaihin ja Baltiaan, jotka ovat lempialueitani.</p>
+                        </div>
+                        <div class="card-fold-fade"></div>
+                    </div>
+                    <label for="toggle-service-3" class="card-toggle-label"></label>
+
+                    <div class="service-tags">
+                    <span class="tag" onclick="filterByTag('QuantitativeFinance')">#QuantitativeFinance</span>
+                    <span class="tag" onclick="filterByTag('AppliedMathematics')">#AppliedMathematics</span>
+                
+                    </div>
+                </div>
+
+                <!-- ==================== SERVICE 4 ==================== -->
+                <div class="service-card" data-tags="AppliedMathematics">
+                    <h3 class="service-title">Konveksi optimointi & Matemaattinen ohjelmointi</h3>
+
+                    <input type="checkbox" id="toggle-service-4" class="card-toggle-input">
+                    <div class="card-fold-content">
+                        <div class="service-description">
+                            <p>Optimointiongelmien (kuten LP, QP, SOCP, SDP) muotoilu ja ratkaiseminen fysikaalisten tai operatiivisten rajoitteiden alaisuudessa. Toimitetaan pääasiassa etätyönä, valinnaisilla panostuksilla paikan päällä.</p>
+                            <p>Projektit on jäsennelty itsenäisiksi virstanpylväiksi, joissa on selkeät määritelmät ja päätepisteet, mikä varmistaa, että kuka tahansa tiimin jäsen voi helposti seurata ja integroida kunkin tuloksen.</p>
+                            <p>Virstanpylväät voivat olla fysikaalisten tai operatiivisten rajoitteiden kääntäminen konveksin ohjelmoinnin malliksi tai suorituskyvyn vertailusarja, joka vertailee eri ratkaisijoita aineistossa, ja ne muodostavat perustan valmistuttua laskutettaville elementeille, mikä suojaa budjettianne. Hinnasta sovitaan kullekin virstanpylväälle eikä se muutu, jos tarvitsen lisäaikaa, mikä tarjoaa teille vakautta ja ennustettavuutta antaen samalla minulle vähemmän painetta ja mahdollisuuden laadukkaaseen oppimisaikaan.</p>
+                            <p>Tämä rakenne on suunniteltu auttamaan tiimejä tai tutkijoita purkamaan kesken eräisiä sivuvirtaprojekteja ja arvioimaan vaihtoehtoisia hypoteeseja samalla kun päätiiminne keskittyvät ensisijaisiin projekteihinsa.</p>
+                            <p>Pitkäaikaisia kumppanuuksia voidaan ennakoida oppimiskäyräni hyötyjen varmistamiseksi, sillä hiot jatkuvasti käytännön hallintaani Stephen Boydin raameja käyttäen.</p>
+                        </div>
+                        <div class="service-commentary">
+                            <h4>Henkilökohtainen huomio</h4>
+                            <p>Aloitin konveksin optimoinnin opiskelun vasta äskettäin numeeristen menetelmien kiinnostukseni jatkeena. Otan lähtökohdakseni Stephen Boydin julkisesti saatavilla olevat luennot ja oppikirjan sekä Yang Zhengin algoritmiset luentomuistiinpanot ja Ben-Talin ja Nemirovskin klassikkoteoksen *Lectures on Modern Convex Optimization*. Varhainen kumppanuus varmistaa teille yhä erikoistuneemman optimointiasiantuntijan operatiivisten ja fysikaalisten pullonkaulojenne mallintamiseen. Jos tarvitsette osaamista, jota minulla ei vielä ole, älkää epäröikö ilmoittaa minulle taitojen hankkimisen tavoitteiden asettamiseksi, jotta voin tukea teitä tehtävissä, joissa teiltä puuttuu ammattitaitoista työvoimaa.</p>
+                        </div>
+                        <div class="card-fold-fade"></div>
+                    </div>
+                    <label for="toggle-service-4" class="card-toggle-label"></label>
+
+                    <div class="service-tags">
+                    <span class="tag" onclick="filterByTag('AppliedMathematics')">#AppliedMathematics</span>
+                
+                    </div>
+                </div>
+
+                <!-- ==================== SERVICE 5 ==================== -->
+                <div class="service-card" data-tags="ComputerVision,MachineLearning">
+                    <h3 class="service-title">Tietokonenäön tutkimus</h3>
+
+                    <input type="checkbox" id="toggle-service-5" class="card-toggle-input">
+                    <div class="card-fold-content">
+                        <div class="service-description">
+                            <p>Tekninen ja teoreettinen tuki tietokonenäköalgoritmien, matemaattisten perusteiden ja numeeristen toteutusten kehittämiseen kattaen klassiset geometriset lähestymistavat, koneoppimisen arkkitehtuurit ja generatiiviset mallit. Toimitetaan pääasiassa etätyönä, valinnaisilla panostuksilla paikan päällä.</p>
+                            <p>Projektit on jäsennelty itsenäisiksi virstanpylväiksi, joissa on selkeät määritelmät ja päätepisteet, mikä varmistaa, että kuka tahansa tiimin jäsen voi helposti seurata ja integroida kunkin tuloksen.</p>
+                            <p>Virstanpylväät voivat vaihdella yksinkertaisesta kuvankäsittelytehtävästä tai tutkimuspaperin algoritmisesta toteutuksesta teoreettisen kehyksen matemaattiseen auditointiin, ja ne muodostavat perustan valmistuttua laskutettaville elementeille, mikä suojaa budjettianne. Hinnasta sovitaan kullekin virstanpylväälle eikä se muutu, jos tarvitsen lisäaikaa, mikä tarjoaa teille vakautta ja ennustettavuutta antaen samalla minulle vähemmän painetta ja mahdollisuuden laadukkaaseen oppimisaikaan.</p>
+                            <p>Tämä rakenne on suunniteltu auttamaan tiimejä tai tutkijoita purkamaan kesken eräisiä sivuvirtaprojekteja ja arvioimaan vaihtoehtoisia hypoteeseja samalla kun päätiiminne keskittyvät ensisijaisiin projekteihinsa.</p>
+                            <p>Pitkäaikaisia kumppanuuksia voidaan ennakoida oppimiskäyräni hyötyjen varmistamiseksi, sillä mukautan matemaattiset taitoni nopeasti teidän erityisiin visio-ongelmiinne.</p>
+                        </div>
+                        <div class="service-commentary">
+                            <h4>Henkilökohtainen huomio</h4>
+                            <p>Löysin tietokonenäön syväoppimisbuumin jälkeen, ja sen taustalla oleva matematiikka kiehtoi minua nopeasti. Seurasin verkossa HSE-yliopiston tietokonenäön maisteriohjelman ensimmäistä vuotta (jonka keskeytti sodan syttyminen Ukrainassa) ja suoritin Stanford CS236 -generatiivisten mallien kursseja vuonna 2021. Olen yhtä lailla innostunut perusmatematiikkaa hyödyntävistä klassisista menetelmistä kuin koneoppimisesta johdetuista menetelmistä. Viitteiksi oppikirjoja, joita käytän käytännössäni, ovat muun muassa Szeliskin *Computer Vision: Algorithms and Applications* ja Gonzalez & Woodsin *Digital Image Processing*. Lisäksi akateeminen taustani sisältää differentiaaligeometrian eri tasoja – mukaan lukien Riemanni-, simplektiset ja Lie-ryhmät –, mikä tarjoaa vankan geometrisen perspektiivin työskenneltäessä korkeulotteisen visuaalisen datan tai invarianttien arkkitehtuurien parissa.</p>
+                        </div>
+                        <div class="card-fold-fade"></div>
+                    </div>
+                    <label for="toggle-service-5" class="card-toggle-label"></label>
+
+                    <div class="service-tags">
+                    <span class="tag" onclick="filterByTag('ComputerVision')">#ComputerVision</span>
+                    <span class="tag" onclick="filterByTag('MachineLearning')">#MachineLearning</span>
+                
+                    </div>
+                </div>
+
+                <!-- ==================== SERVICE 6 ==================== -->
+                <div class="service-card" data-tags="ComputerVision,DataEngineering">
+                    <h3 class="service-title">Tietokonenäön sovellukset</h3>
+
+                    <input type="checkbox" id="toggle-service-6" class="card-toggle-input">
+                    <div class="card-fold-content">
+                        <div class="service-description">
+                            <p>Tietokonenäön työnkulkujen käytännön toteutus teollisuusautomaatiota, laadunvalvontaa ja datan esikäsittelyä varten käyttäen klassista kuvankäsittelyä ja koneoppimismalleja. Toimitetaan pääasiassa etätyönä, valinnaisilla panostuksilla paikan päällä.</p>
+                            <p>Projektit on jäsennelty itsenäisiksi virstanpylväiksi, joissa on selkeät määritelmät ja päätepisteet, mikä varmistaa, että kuka tahansa tiimin jäsen voi helposti seurata ja integroida kunkin tuloksen.</p>
+                            <p>Virstanpylväät voivat vaihdella OpenCV-esikäsittelyputken rakentamisesta kuvan suodatusta ja kohdistusta varten mukautetun ominaisuuksien täsmäytysskriptin kirjoittamiseen tai kevyen esikoulutetun mallin käyttöönottoon, ja ne muodostavat perustan valmistuttua laskutettaville elementeille, mikä suojaa budjettianne. Hinnasta sovitaan kullekin virstanpylväälle eikä se muutu, jos tarvitsen lisäaikaa, mikä tarjoaa teille vakautta ja ennustettavuutta antaen samalla minulle vähemmän painetta ja mahdollisuuden laadukkaaseen oppimisaikaan.</p>
+                            <p>Tämä rakenne on suunniteltu auttamaan tiimejä tai tutkijoita purkamaan kesken eräisiä sivuvirtaprojekteja ja arvioimaan vaihtoehtoisia hypoteeseja samalla kun päätiiminne keskittyvät ensisijaisiin projekteihinsa.</p>
+                            <p>Pitkäaikaisia kumppanuuksia voidaan ennakoida oppimiskäyräni hyötyjen varmistamiseksi, sillä laajennan aktiivisesti käytännön työkalupakkiani teollisuustason ohjelmistokirjastoilla.</p>
+                        </div>
+                        <div class="service-commentary">
+                            <h4>Henkilökohtainen huomio</h4>
+                            <p>Vaikka olen ensisijaisesti teoreetikko, olen viimeisen viiden vuoden aikana työskennellyt aktiivisesti tullakseni tietokonenäön käytännön osaajaksi. Aloitin suorittamalla varhaisia tietokonenäön kursseja alustoilla kuten Coursera, Udacity ja LearnOpenCV, ennen kuin nopeutin koulutustani ilmoittautumalla HSE-yliopiston verkkomaisteriohjelmaan – yritys, jonka valitettavasti keskeytti Ukrainan hyökkäyksen syttyminen. Tarjoan näitä palveluita täydentämään teoreettista taustaani käytännön kokemuksella kehyksessä, jossa taloudellinen riskinne on täysin poistettu virstanpylväspohjaisilla maksuilla.</p>
+                        </div>
+                        <div class="card-fold-fade"></div>
+                    </div>
+                    <label for="toggle-service-6" class="card-toggle-label"></label>
+
+                    <div class="service-tags">
+                    <span class="tag" onclick="filterByTag('ComputerVision')">#ComputerVision</span>
+                    <span class="tag" onclick="filterByTag('DataEngineering')">#DataEngineering</span>
+                
+                    </div>
+                </div>
+
+                <!-- ==================== SERVICE 7 ==================== -->
+                <div class="service-card" data-tags="DataEngineering,DataScience">
+                    <h3 class="service-title">Data-insinöörityö & Raportointi</h3>
+
+                    <input type="checkbox" id="toggle-service-7" class="card-toggle-input">
+                    <div class="card-fold-content">
+                        <div class="service-description">
+                            <p>Datankäsittelyputkien, liiketoimintatiedon koontinäyttöjen ja datan laadun auditointien kehittäminen. Toimitetaan pääasiassa etätyönä, valinnaisilla panostuksilla paikan päällä.</p>
+                            <p>Projektit on jäsennelty itsenäisiksi virstanpylväiksi, joissa on selkeät määritelmät ja päätepisteet, mikä varmistaa, että kuka tahansa tiimin jäsen voi helposti seurata ja integroida kunkin tuloksen.</p>
+                            <p>Virstanpylväät voivat vaihdella mukautetun Python-skriptin kirjoittamisesta eri aineistojen puhdistamiseen ja yhdistämiseen SQL-kyselyiden kirjoittamiseen Google BigQueryssä tai automatisoidun koontinäytön rakentamiseen, ja ne muodostavat perustan valmistuttua laskutettaville elementeille, mikä suojaa budjettianne. Hinnasta sovitaan kullekin virstanpylväälle eikä se muutu, jos tarvitsen lisäaikaa, mikä tarjoaa teille vakautta ja ennustettavuutta antaen samalla minulle vähemmän painetta ja mahdollisuuden laadukkaaseen oppimisaikaan.</p>
+                            <p>Tämä rakenne on suunniteltu auttamaan data- tai IT-tiimejä purkamaan kesken eräisiä datarästejä ja rakentamaan operatiivisia koontinäyttöjä samalla kun ydintiiminne keskittyvät päivittäisiin päätyönkulkuihinsa, mutta myös auttamaan ei-asiantuntijatiimejä kehittämään ensimmäistä infrastruktuuriaan.</p>
+                            <p>Pitkäaikaisia kumppanuuksia voidaan ennakoida oppimiskäyräni hyötyjen varmistamiseksi, sillä haluan erittäin mielelläni edistää projektejanne, kunnes saavutamme havaittavia ja mitattavia tuloksia.</p>
+                        </div>
+                        <div class="service-commentary">
+                            <h4>Henkilökohtainen huomio</h4>
+                            <p>Olen opettanut datatietoa ja tietokantojen perusteita Paris School of Businessissa vuodesta 2019 lähtien terästäen samalla jatkuvasti taitojani alustoilla kuten DataCamp ja Coursera niiden alusta alkaen. Lopulta aloin luennoida muissa tunnetuissa instituutioissa opettaakseni dataa erittäin erikoistuneissa konteksteissa, kuten kyberturvallisuudessa ja rahoituksessa. Tarjoan tätä palvelua ottamaan kertyneitä rästitehtäviä pois tiiminne pöydältä – kuten datan valmistelu tai perusdataputket –, sillä se antaa minulle keskeistä käytännön kokemusta, joka syöttää suoraan henkilökohtaista T&K-työtäni.</p>
+                        </div>
+                        <div class="card-fold-fade"></div>
+                    </div>
+                    <label for="toggle-service-7" class="card-toggle-label"></label>
+
+                    <div class="service-tags">
+                    <span class="tag" onclick="filterByTag('DataEngineering')">#DataEngineering</span>
+                    <span class="tag" onclick="filterByTag('DataScience')">#DataScience</span>
+                
+                    </div>
+                </div>
+
+                <!-- ==================== SERVICE 8 ==================== -->
+                <div class="service-card" data-tags="DataScience,AppliedMathematics">
+                    <h3 class="service-title">Sovellettu tilastotiede & Hypoteesien testaus</h3>
+
+                    <input type="checkbox" id="toggle-service-8" class="card-toggle-input">
+                    <div class="card-fold-content">
+                        <div class="service-description">
+                            <p>Koesuunnitelmien muotoilu, hypoteesien testaus, tilastollinen validointi ja taustalla olevien kaavojen erottaminen monimuuttujaisista tai korkeulotteisista aineistoista. Toimitetaan pääasiassa etätyönä, valinnaisilla panostuksilla paikan päällä.</p>
+                            <p>Projektit on jäsennelty itsenäisiksi virstanpylväiksi, joissa on selkeät määritelmät ja päätepisteet, mikä varmistaa, että kuka tahansa tiimin jäsen voi helposti seurata ja integroida kunkin tuloksen.</p>
+                            <p>Virstanpylväät voivat vaihdella tulevan kokeen tilastollisen kehyksen suunnittelusta olemassa olevan mallin oletusten validointiauditointiin tai täydellisen hypoteesitestin suorittamiseen avainaineistossa, ja ne muodostavat perustan valmistuttua laskutettaville elementeille, mikä suojaa budjettianne. Hinnasta sovitaan kullekin virstanpylväälle eikä se muutu, jos tarvitsen lisäaikaa, mikä tarjoaa teille vakautta ja ennustettavuutta antaen samalla minulle vähemmän painetta ja mahdollisuuden laadukkaaseen oppimisaikaan.</p>
+                            <p>Tämä rakenne on suunniteltu auttamaan kvantitatiivisten ongelmien parissa työskenteleviä tiimejä (kuten rahoituksessa, lääketieteellisessä tutkimuksessa tai meteorologiassa) hypoteesien validoinnissa ja analyysirästien purkamisessa. Se on mukautettu erityisesti yrityksille ja tiimeille, jotka tarvitsevat vain osittaista tieteellistä validointia.</p>
+                            <p>Pitkäaikaisia kumppanuuksia voidaan ennakoida oppimiskäyräni hyötyjen varmistamiseksi, sillä laajennan parhaillaan tilastotieteen perusteitani erityisesti kvantitatiivisen rahoituksen kautta.</p>
+                        </div>
+                        <div class="service-commentary">
+                            <h4>Henkilökohtainen huomio</h4>
+                            <p>Perustani tilastotieteessä pärinevät fysiikasta, kun opiskelin tilastollista fysiikkaa, ja kehittyivät erityisesti väitöskirjani aikana, jossa simuloinneissani käytetyt Monte Carlo -menetelmät vaativat huolellisia tilastollisia validointeja. Luennointi Paris School of Businessissa oppisopisuusopiskelijoille sai minut ymmärtämään, miten tilastotiedettä sovelletaan eri liiketoimintatilanteissa luentojeni sisällön luomiseksi. Olen erityisen innokas auttamaan tiimejä saavuttamaan tehokkuutta tarkentamalla analyysejaan siihen liittyvän epävarmuuden paremmalla arvioinnilla.</p>
+                        </div>
+                        <div class="card-fold-fade"></div>
+                    </div>
+                    <label for="toggle-service-8" class="card-toggle-label"></label>
+
+                    <div class="service-tags">
+                    <span class="tag" onclick="filterByTag('DataScience')">#DataScience</span>
+                    <span class="tag" onclick="filterByTag('AppliedMathematics')">#AppliedMathematics</span>
+                
+                    </div>
+                </div>
+
+                <!-- ==================== SERVICE 9 ==================== -->
+                <div class="service-card" data-tags="MachineLearning,DataScience">
+                    <h3 class="service-title">Sovellettu koneoppiminen & Ennustava mallinnus</h3>
+
+                    <input type="checkbox" id="toggle-service-9" class="card-toggle-input">
+                    <div class="card-fold-content">
+                        <div class="service-description">
+                            <p>Ennustavien mallien koulutus ja vertailu, aineistojen järjestäminen ja koneoppimisen työnkulkujen siirtäminen pilvialustoille. Toimitetaan pääasiassa etätyönä, valinnaisilla panostuksilla paikan päällä.</p>
+                            <p>Projektit on jäsennelty itsenäisiksi virstanpylväiksi, joissa on selkeät määritelmät ja päätepisteet, mikä varmistaa, että kuka tahansa tiimin jäsen voi helposti seurata ja integroida kunkin tuloksen.</p>
+                            <p>Virstanpylväät voivat vaihdella useiden malliarkkitehtuurien (kuten Scikit-Learn tai XGBoost) vertailusta aineistossanne aineiston valmisteluun BigQueryssä tai mallin koulutusskriptin siirtämiseen Google Cloud Platform (GCP) -ympäristöön, ja ne muodostavat perustan valmistuttua laskutettaville elementeille, mikä suojaa budjettianne. Hinnasta sovitaan kullekin virstanpylväälle eikä se muutu, jos tarvitsen lisäaikaa, mikä tarjoaa teille vakautta ja ennustettavuutta antaen samalla minulle vähemmän painetta ja mahdollisuuden laadukkaaseen oppimisaikaan.</p>
+                            <p>Tämä rakenne on suunniteltu auttamaan T&K- tai datatiimejä ennustavien työnkulkujen prototyyppien luomisessa ja vaihtoehtoisten malliarkkitehtuurien testaamisessa samalla kun insinöörinne keskittyvät stabiilien tuotantojärjestelmien ylläpitämiseen.</p>
+                            <p>Pitkäaikaisia kumppanuuksia voidaan ennakoida oppimiskäyräni hyötyjen varmistamiseksi, ja ne voidaan yhdistää tehokkaasti muihin data- tai erikoispalveluihini, jolloin voimme keskustella siitä, miten voin auttaa teitä saavuttamaan mitattavia tuloksia.</p>
+                        </div>
+                        <div class="service-commentary">
+                            <h4>Henkilökohtainen huomio</h4>
+                            <p>Löysin nykyaikaiset koneoppimisen menetelmät Scikit-Learn-kirjastossa yhdessä nykyaikaisten datatiedemenetelmien kanssa väitöskirjani valmistumisen jälkeen vuonna 2016 ja erikoistuin siihen, koska halusin olla valmis, jos minulle tarjottaisiin insinöörin tehtävää fysiikan laboratoriossa, mutta sainkin luentotjouksia. Yhdistän intohimon koneoppimiseen numeerisiin menetelmiin ja datatieteeseen. Valmistaudun parhaillaan Google Cloud -sertifiointiin Machine Learning Engineerinä voidakseni auttaa eri alojen ei-asiantuntijatiimejä (ajattelen henkilökohtaisesti paljon kulttuuriperintöä, museoita ja gallerioita) saamaan intuitiivisia datapohjaisia työkaluja heidän erikoisalansa tukemiseksi.</p>
+                        </div>
+                        <div class="card-fold-fade"></div>
+                    </div>
+                    <label for="toggle-service-9" class="card-toggle-label"></label>
+
+                    <div class="service-tags">
+                    <span class="tag" onclick="filterByTag('MachineLearning')">#MachineLearning</span>
+                    <span class="tag" onclick="filterByTag('DataScience')">#DataScience</span>
+                
+                    </div>
+                </div>
+
+                <!-- ==================== SERVICE 10 ==================== -->
+                <div class="service-card" data-tags="GenerativeAI,MachineLearning">
+                    <h3 class="service-title">Syvägeneratiivinen mallinnus & Matemaattiset esitykset</h3>
+
+                    <input type="checkbox" id="toggle-service-10" class="card-toggle-input">
+                    <div class="card-fold-content">
+                        <div class="service-description">
+                            <p>Syvägeneratiivisten arkkitehtuurien kehittäminen, tutkimus niiden teoreettisissa kehyksissä tai arkkitehtuurikehityksessä. Voidaan soveltaa korkeulotteisten signaalien analysointiin, tuntemattomien todennäköisyysjakaumien mallintamiseen tai fysikaalisten käänteisongelmien ratkaisemiseen. Toimitetaan pääasiassa etätyönä, valinnaisilla panostuksilla paikan päällä.</p>
+                            <p>Projektit on jäsennelty itsenäisiksi virstanpylväiksi, joissa on selkeät määritelmät ja päätepisteet, mikä varmistaa, että kuka tahansa tiimin jäsen voi helposti seurata ja integroida kunkin tuloksen.</p>
+                            <p>Virstanpylväät voivat vaihdella syvägeneratiivisen arkkitehtuurin (kuten Variational Autoencoders, Normalizing Flows tai diffuusiomallit) rakentamisesta ja testaamisesta datassanne perusteiden auditointiin (kuten KL-divergenssin johdonmukaisuus tai invarianttien esitysten tutkiminen) varmistaakseen mallin konvergoitumisen haluttuun tavoitteeseen tai andmestikon tilastoja tallentavan generatiivisen mallin luomisesta (hyödyllinen tietosuojalle, kun aineisto on poistettava, jotta voitte luoda synteettisen version suuntauksien analysoimiseksi poiston jälkeen), ja ne muodostavat perustan valmistuttua laskutettaville elementeille, mikä suojaa budjettianne. Hinnasta sovitaan kullekin virstanpylväälle eikä se muutu, jos tarvitsen lisäaikaa, mikä tarjoaa teille vakautta ja ennustettavuutta antaen samalla minulle vähemmän painetta ja mahdollisuuden laadukkaaseen oppimisaikaan.</p>
+                            <p>Tämä rakenne on suunniteltu auttamaan T&K-tiimejä, tutkijoita (mukaan lukien lääketieteen tutkijoita tai kulttuuriperintöalan tutkijoita) matemaattisten hypoteesien validoinnissa tai neuroverkkoarkkitehtuurien prototyyppien luomisessa ilman henkilöstön lisäämistä. Se sopii myös ammattilaisille aloilla, joilla dataa on poistettava määräajoin tietosuojasSyistä (lääketieteellinen tai kuluttajadata).</p>
+                            <p>Pitkäaikaisia kumppanuuksia voidaan ennakoida oppimiskäyräni hyötyjen varmistamiseksi, ja ne voidaan yhdistää tehokkaasti muihin data- tai erikoispalveluihini, jolloin voimme keskustella siitä, miten voin auttaa teitä saavuttamaan mitattavia tuloksia.</p>
+                        </div>
+                        <div class="service-commentary">
+                            <h4>Henkilökohtainen huomio</h4>
+                            <p>Löysin generatiiviset mallit vuonna 2021, kun päätin suorittaa Stefano Ermonin verkkokurssin CS236 (Deep Generative Models) Stanfordissa. Tiedoksi, etten palauttanut loppuprojektiani, koska luentoni PSB:ssä ja muissa kouluissa eivät jättäneet sille paljon aikaa (ja vetäydyin idolisoiden Stanfordin opiskelijoita, joita pidin vaikuttavina), mutta sain silti C-arvosanan pelkän teorian ja koodaustehtävien perusteella ja otin sen tietyllä ylpeydellä ottaen huomioon, että C:n saavuttaminen vain 75 prosentilla saatavilla olevasta kokonaisarvosanasta ei ollut liian huono. Ranskalaiselle lähiöpojalle Stanfordin opiskelijana olo oli myöhäinen kosto, joka nosti itsetuntoani (ja myös hieman englannin tasoani!). Nykyään olen aloittanut Stéphane Mallatin luentojen katselun ja opiskelun Collège de Francessa (kertaamalla samalla CS236:n uusimpia luentoja, jotka ovat nyt julkisesti saatavilla) täydentääkseni teoreettista ymmärrystäni generatiivisista malleista optimaalisen kuljetuksen näkökulmilla.</p>
+                        </div>
+                        <div class="card-fold-fade"></div>
+                    </div>
+                    <label for="toggle-service-10" class="card-toggle-label"></label>
+
+                    <div class="service-tags">
+                    <span class="tag" onclick="filterByTag('GenerativeAI')">#GenerativeAI</span>
+                    <span class="tag" onclick="filterByTag('MachineLearning')">#MachineLearning</span>
+                
+                    </div>
+                </div>
+
+                <!-- ==================== SERVICE 11 ==================== -->
+                <div class="service-card" data-tags="SignalProcessing,ComputerVision,ResearchCollaboration">
+                    <h3 class="service-title">Lääketieteellinen kuvantaminen & Biologinen data, Urheilutiede & Signaalianalyysi / Tutkimustuki</h3>
+
+                    <input type="checkbox" id="toggle-service-11" class="card-toggle-input">
+                    <div class="card-fold-content">
+                        <div class="service-description">
+                            <p>Lääketieteellisten ja biologisten aineistojen esikäsittely, puhdistus ja eksploratiivinen analyysi, mukaan lukien kuvantaminen kuten MRI DICOM -tiedostot sekä biosignaalit kuten EKG ja EEG. Toimitetaan pääasiassa etätyönä valinnaisella paikan päällä -vaihtoehdolla.</p>
+                            <p>Projektit on jäsennelty itsenäisiksi virstanpylväiksi, joissa on selkeät määritelmät ja päätepisteet, mikä varmistaa, että kuka tahansa tiimin jäsen voi helposti seurata ja integroida kunkin tuloksen.</p>
+                            <p>Virstanpylväät voivat vaihdella datan esikäsittelytehtävistä tutkimusapuun, kuten kuvantamis- tai signaalinpoistomenetelmien tutkimiseen, generatiivisten mallien kehittämiseen tai tietosuojan huomioivan tilastollisen datankaappauksen määrittämiseen keskeisten oivallusten säilyttämiseksi aineistoista, jotka on poistettava vaatimustenmukaisuuden vuoksi (katso palvelu Syvägeneratiivinen mallinnus & Matemaattiset esitykset). Nämä virstanpylväät muodostavat perustan valmistuttua laskutettaville elementeille, mikä suojaa budjettianne. Hinnasta sovitaan kullekin virstanpylväälle eikä se muutu, jos tarvitsen lisäaikaa, mikä tarjoaa teille vakautta ja ennustettavuutta antaen samalla minulle vähemmän painetta ja mahdollisuuden laadukkaaseen oppimisaikaan.</p>
+                            <p>Tämä rakenne on suunniteltu auttamaan kliinisiä T&K-tiimejä, lääketieteen tutkijoita tai digitaalisen terveydenhuollon kasvuyrityksiä, jotka tarvitsevat erikoistunutta analyyttistä tukea vapauttaen heidän kliinikkonsa ja vanhemmat tutkijansa.</p>
+                            <p>Pitkäaikaisia kumppanuuksia voidaan ennakoida oppimiskäyräni hyötyjen varmistamiseksi, sillä olen innostunut biologiasta ja lääketieteestä ja opin jatkuvasti käytännön kokemuksen kautta.</p>
+                        </div>
+                        <div class="service-commentary">
+                            <h4>Henkilökohtainen huomio</h4>
+                            <p>Olen aloittelija kliinisissä ympäristöissä, mutta rakastan ihmisen fysiologian tutkimista. Opin jopa sykekäyräni yksinkertaisesta seurannasta juoksumattoharjoitusten aikana Polar H10 -vyöllä ja olen ylpeä voidessani ilmoittaa arvioidun maksimisykkeeni olevan noin 180 bpm, toisen ventilaatiokynnyksen noin 164 bpm ja harjoituksen jälkeisen palautumissykeen laskun keskimäärin 25-30 bpm minuutissa (olen yhtä ylpeä fyysisestä kunnostani 46-vuotiaana kuin siitä, miten ymmärrykseni sydämestä parani omien tutkimusten ja kokeilujen kautta!). Olen myös ylpeä „laboratoriokoe“ kolmessa autismitutkimuksessa (yksi EEG-reaktioaikojen tallennus autististen ja ei-autististen ihmisten vertailemiseksi, yksi prosodiasta ja yksi taiteen havainnoinnista katseenseurantalaitteella), ja olisin erittäin mielelläni tutkijoiden puolella auttamassa!</p>
+                        </div>
+                        <div class="card-fold-fade"></div>
+                    </div>
+                    <label for="toggle-service-11" class="card-toggle-label"></label>
+
+                    <div class="service-tags">
+                    <span class="tag" onclick="filterByTag('SignalProcessing')">#SignalProcessing</span>
+                    <span class="tag" onclick="filterByTag('ComputerVision')">#ComputerVision</span>
+                    <span class="tag" onclick="filterByTag('ResearchCollaboration')">#ResearchCollaboration</span>
+                
+                    </div>
+                </div>
+
+                <!-- ==================== SERVICE 12 ==================== -->
+                <div class="service-card" data-tags="ComputerVision,ResearchCollaboration">
+                    <h3 class="service-title">Digitaalinen kuvantaminen kulttuuriperinnölle</h3>
+
+                    <input type="checkbox" id="toggle-service-12" class="card-toggle-input">
+                    <div class="card-fold-content">
+                        <div class="service-description">
+                            <p>Laskennallinen säilyttäminen, spektrianalyysi ja laadukkaat digitaaliset esittelyratkaisut kuvataiteelle, gallerioille ja kulttuurilaitoksille.</p>
+                            <p>Projektit on jäsennelty itsenäisiksi virstanpylväiksi, joissa on selkeät määritelmät ja päätepisteet, mikä varmistaa, että kuka tahansa tiimin jäsen voi helposti seurata ja integroida kunkin tuloksen.</p>
+                            <p>Virstanpylväät voivat vaihdella valokuvan tai maalauksen digitoinnista tutkimustukeen, kuten vaurioituneen maalauksen digitaaliseen ennallistamiseen yhdistämällä historiallisia valokuvia tai spektrianalyysin suorittamiseen aiempien ennallistamisjälkien havaitsemiseksi. Nämä virstanpylväät muodostavat perustan valmistuttua laskutettaville elementeille, mikä suojaa budjettianne. Hinnasta sovitaan kullekin virstanpylväälle eikä se muutu, jos tarvitsen lisäaikaa, mikä tarjoaa teille vakautta ja ennustettavuutta antaen samalla minulle vähemmän painetta ja mahdollisuuden laadukkaaseen oppimisaikaan.</p>
+                            <p>Tämä rakenne on suunniteltu auttamaan museokuraattoreita, taiteen konservaattoreita, yksityisiä gallerioita ja perintölaitoksia, jotka tarvitsevat omistautunutta laskennallista tukea kokoelmiensa digitointiin, analysointiin tai virtuaaliseen esittelyyn ilman pitkäaikaisia teknisiä yleiskustannuksia.</p>
+                            <p>Pitkäaikaiset yhteistyöt ovat erityisen arvokkaita, sillä ne antavat aikaa tutkia kokoelmienne ja säilytystyönkulkujenne fysikaalisia ja matemaattisia haasteita.</p>
+                        </div>
+                        <div class="service-commentary">
+                            <h4>Henkilökohtainen huomio</h4>
+                            <p>Kiitän professori Robert Erdmannia halustani tutkia kulttuuriperintöön sovellettavaa tietokonekuvantamista. Hän työnsä Rembrandtin *Yövartio*-maalauksen ultrakorkearesoluutioisessa digitoinnissa on erittäin vaikuttavaa, sillä maalauksen yhden millimetrin levyiseen halkeamaan voi lähentää. Museoilla ja gallerioilla on minulle autistisena henkilönä arvokkaita erityisiä ilmapiirejä. Haluan tässä yhteydessä ilmaista kiitollisuuteni lempimuseoilleni ja -gallerioilleni: Kumu-taidemuseolle ja Fotografiskalle Tallinnassa, Virossa, sekä Suomen kansallismuseolle Helsingissä.</p>
+                        </div>
+                        <div class="card-fold-fade"></div>
+                    </div>
+                    <label for="toggle-service-12" class="card-toggle-label"></label>
+
+                    <div class="service-tags">
+                    <span class="tag" onclick="filterByTag('ComputerVision')">#ComputerVision</span>
+                    <span class="tag" onclick="filterByTag('ResearchCollaboration')">#ResearchCollaboration</span>
+                
+                    </div>
+                </div>
+
+                <!-- ==================== SERVICE 13 ==================== -->
+                <div class="service-card" data-tags="SignalProcessing,QuantitativeFinance">
+                    <h3 class="service-title">Signaalinkäsittely & Aikasarja-analyysi</h3>
+
+                    <input type="checkbox" id="toggle-service-13" class="card-toggle-input">
+                    <div class="card-fold-content">
+                        <div class="service-description">
+                            <p>Matemaattinen signaalianalyysi, aika-taajuusesitykset ja algoritminen kaavojen erottaminen ajasta riippuvista aineistoista. Toimitetaan pääasiassa etätyönä, valinnaisilla panostuksilla paikan päällä.</p>
+                            <p>Projektit on jäsennelty itsenäisiksi virstanpylväiksi, joissa on selkeät määritelmät ja päätepisteet, mikä varmistaa, että kuka tahansa tiimin jäsen voi helposti seurata ja integroida kunkin tuloksen.</p>
+                            <p>Virstanpylväät voivat vaihdella ajasta riippuvien aineistojen analysoinnista diskreetin aallokemuunnoksen toteuttamiseen anturisignaalin kohinan vaimentamiseksi, lokalisoitujen aika-taajuusspektrogrammien rakentamisesta ominaisuuksien erottamiseksi tai poikkeamien havaitsemiskehysten suunnittelusta rahoituksen aikasarjoille. Nämä virstanpylväät muodostavat perustan valmistuttua laskutettaville elementeille, mikä suojaa budjettianne. Hinnasta sovitaan kullekin virstanpylväälle eikä se muutu, jos tarvitsen lisäaikaa, mikä tarjoaa teille vakautta ja ennustettavuutta antaen samalla minulle vähemmän painetta ja mahdollisuuden laadukkaaseen oppimisaikaan.</p>
+                            <p>Tämä rakenne on suunniteltu auttamaan kvantitatiivisia tutkimustiimejä, lääkinnällisten laitteiden kasvuyrityksiä tai insinööritiimejä, jotka käsittelevät kohinaisia ajasta riippuvia fysikaalisia mittauksia ja tarvitsevat erikoistunutta matemaattista tukea mielenkiintoisten kaavojen erottamiseen ilman pysyviä teknisiä yleiskustannuksia.</p>
+                            <p>Pitkäaikaisia kumppanuuksia voidaan ennakoida oppimiskäyräni hyötyjen varmistamiseksi, sillä syvennän ymmärrystäni signaalinkäsittelystä ja muunnoksista yhdistämällä kirjastotutkimukset käytännön sovelluksiin.</p>
+                        </div>
+                        <div class="service-commentary">
+                            <h4>Henkilökohtainen huomio</h4>
+                            <p>Perusymmärrykseni signaalinkäsittelystä pärinevät pääasiassa taustastani perusmatematiikassa funktioanalyysin ja spektrimuunnosten kautta. Suunnittelin tämän palvelun siten, että voin tehokkaasti tukea tutkimustiimejä laajentaen samalla tietojani tutkimalla sellaisten tutkijoiden töitä kuin Stéphane Mallat tai Ingrid Daubechies aallokemuunnosten alalla tai muuta funktioanalyysin tutkimusta.</p>
+                        </div>
+                        <div class="card-fold-fade"></div>
+                    </div>
+                    <label for="toggle-service-13" class="card-toggle-label"></label>
+
+                    <div class="service-tags">
+                    <span class="tag" onclick="filterByTag('SignalProcessing')">#SignalProcessing</span>
+                    <span class="tag" onclick="filterByTag('QuantitativeFinance')">#QuantitativeFinance</span>
+                
+                    </div>
+                </div>
+
+                <!-- ==================== SERVICE 14 ==================== -->
+                <div class="service-card" data-tags="ResearchCollaboration">
+                    <h3 class="service-title">Tutkimusrajapinta, Teknologiansiirto & Yhteistyön edistäminen</h3>
+
+                    <input type="checkbox" id="toggle-service-14" class="card-toggle-input">
+                    <div class="card-fold-content">
+                        <div class="service-description">
+                            <p>Siltojen rakentaminen: akateemisen maailman (yliopistot, koulut) ja teollisuuden (kasvuyritykset, pankit) välille, Ranskan ja muun maailman välille sekä kaukaisten akateemisten instituutioiden välille mihin tahansa projektiin, joka hyötyisi tieteellisesti pätevästä lähettiläästä.</p>
+                            <p>Päinvastoin kuin muut palveluni, jotka on tiukasti jäsennelty ennalta asetettujen virstanpylväiden ympärille, tässä määrittelemme tavoitteemme ja keskustelemme toimintatavastamme tapaus- ja tilannekohtaisesti.</p>
+                        </div>
+                        <div class="service-commentary">
+                            <h4>Henkilökohtainen huomio</h4>
+                            <p>Suunnittelin tämän palvelun ensisijaisesti rakkaudestani vieraisiin kieliin (ranskalaisesta näkökulmastani). Olen etsinyt mahdollisuuksia osallistua kumppanuuksien rakentamiseen niiden koulujen puolesta, joissa luennoin, erityisesti rakentaakseni siltoja Pariisin ja Tallinnan välille. Olen jo ottanut ensiaskeleita tähän suuntaan, mikä on tutustuttanut minut upeisiin ihmisiin. Koska aion tarjota taitojani useille kumppaneille eri aloilla, on suuri mahdollisuus, että voimme luoda hienoja synergioita ajan myötä!</p>
+                        </div>
+                        <div class="card-fold-fade"></div>
+                    </div>
+                    <label for="toggle-service-14" class="card-toggle-label"></label>
+
+                    <div class="service-tags">
+                    <span class="tag" onclick="filterByTag('ResearchCollaboration')">#ResearchCollaboration</span>
+                
+                    </div>
+                </div>
+            </section>
+
+            <section id="section3" class="section-3">
+                <div class="translation-notice">
+                    Nämä suomenkieliset sivut ovat automaattinen käännös englannista. Olen intohimoinen kielten harrastaja. Opiskelen ennen kaikkea viroa, jota olen opiskellut jo 7 vuotta, mutta pidän todella paljon myös suomen kielestä, vaikka opiskelenkin sitä satunnaisemmin – kahden näin samankaltaisen kielen opiskelu samanaikaisesti on nimittäin haastavaa. Toivon kuitenkin siirtymistä yhteistyöhön kumppaneiden kanssa Suomessa, maassa, jossa vierailen usein, sillä rakastan sen kulttuuria ja ihailen sen teknologista dynamiikkaa. Joudun toistaiseksi luottamaan konekäännökseen, mutta aion luetuttaa nämä tekstit myöhemmin kielenammattilaisella. Sillä välin palautteenne on minulle erittäin arvokasta – niin palvelujeni kuin kielenkin osalta.
+                </div>
+                <h2>Lyhyt elämäkerta</h2>
+
+                <!-- Local Index / Table of Contents -->
+                <nav class="bio-index" aria-label="Elämäkerran sisällysluettelo">
+                    <h3>Sisällysluettelo</h3>
+                    <ul>
+                        <li>
+                            <a href="#bio-academics">Akateeminen tausta</a>
+                            <ul>
+                                <li><a href="#bio-physics">Fysiikka</a></li>
+                                <li><a href="#bio-mathematics">Matematiikka</a></li>
+                                <li><a href="#bio-languages-acad">Kielet</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#bio-miscellaneous">Muuta</a>
+                            <ul>
+                                <li><a href="#bio-languages-misc">Kielet</a></li>
+                                <li><a href="#bio-datascience">Datatiede & Koneoppiminen</a></li>
+                                <li><a href="#bio-computervision">Tietokonenäkö</a></li>
+                                <li><a href="#bio-generative">Generatiiviset mallit</a></li>
+                                <li><a href="#bio-finance">Rahoitus</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+
+                <!-- General Introduction -->
+                <article class="bio-intro">
+                    <p>Hei, olen Nicolas, riippumaton tutkija ja datatieteen lehtori. Jaoin tämän sivun alaosioihin, Akateeminen ja Muuta, parhaalla mahdollisella tavalla ottaen huomioon erittäin epälineaarisen polkuni.</p>
+                </article>
+
+                <!-- Academics Subsection -->
+                <div id="bio-academics" class="bio-subsection">
+                    <h3>Akateeminen tausta</h3>
+                    <p>Opintoni alkoivat vuonna 1998 lukion päättämisellä ja päättyivät vuonna 2016 tohtoriväitökseeni. Ne sisälsivät muun muassa kolme pääteemaa: fysiikka, matematiikka ja kielet. Kerron hieman siitä, mitä tein, mutta jätän suurimman osan sekavista vuosista pois.</p>
+
+                    <!-- Physics Subtopic -->
+                    <div id="bio-physics" class="bio-subtopic">
+                        <h4>Fysiikka</h4>
+                        <p class="clearfix">
+                            <a href="../cert_doctorat.webp" target="_blank" class="cert-link right">
+                                <img src="../cert_doctorat.webp" alt="Tohtorin tutkintotodistus" class="inline-cert" loading="lazy">
+                            </a>
+                            Aloitin fysiikan DEUG-tutkinnolla Jussieussa (kaksi ensimmäistä yliopistovuotta), ennen kuin siirryin matematiikkaan ja palasin sitten fysiikkaan materiaalitieteen maisteriohjelman toisena vuonna (SMNO-maisteri Sorbonnessa), jota seurasi tohtorikoulutukseni syyskuusta 2012 huhtikuuhun 2016 Sorbonne Universitéssä IMPMC-laboratoriossa prof. Michele Casulan ja prof. Francesco Maurin ohjauksessa.
+                        </p>
+                        <p>Väitöskirjani käsitteli molekyyliperheen nimeltä aseeneja elektronisten perustilojen (pääasiassa) ja viritystilojen (toissijaisesti) numeerisia tutkimuksia. Aseenit ovat lineaaristen molekyylien perhe, joiden rakenne voidaan nähdä grafeeninauhan ohuena suikaleena. Keskityimme elektronien ja spinnien tiheyksiin ja korrelaatioihin ymmärtääksemme paremmin spinnikorrelaatioita grafeenin kaltaisissa materiaaleissa, joilla voi olla sovelluksia esimerkiksi aurinkoenergian alalla.</p>
+                        <p>Prof. Casula on Quantum Monte Carlo -menetelmien asiantuntija ja tutkija, jolla on vaikuttava kyky keskittyä kymmeniin asioihin samanaikaisesti. Hän oli vaativa ja tinkimätön ohjaaja, joka opetti minut tekemään tiedettä, kun aiemmin olin vain oppikirjaongelmien ratkaisemisen mielentilassa. Tunnen olevani erittäin onnekas saatuanikertaa työskennellä hänen kanssaan.</p>
+                    </div>
+
+                    <!-- Mathematics Subtopic -->
+                    <div id="bio-mathematics" class="bio-subtopic">
+                        <h4>Matematiikka</h4>
+                        <p class="clearfix">
+                            <a href="../cert_maitrise.webp" target="_blank" class="cert-link right">
+                                <img src="../cert_maitrise.webp" alt="Matematiikan maisteri" class="inline-cert" loading="lazy">
+                            </a>
+                            Siirryin matematiikkaan kolmantena vuotena. Olin opiskellut sekä fysiikkaa että matematiikkaa oppikirjojen kautta jo vuodesta 1999, mutta henkilökohtaisen ENS-tavoitteeni saavuttamiseksi tämä siirtymä oli strategisesti parempi.
+                        </p>
+                        <p>Lyhyt kontekstihuomio ranskalaista kouluista: Meillä on eliittivaihtoehto tavalliselle yliopistopolulle nimeltä Classes Préparatoires aux Grandes Écoles. Paralleelin vetämiseksi USA:han: näitä Grandes Écoles -kouluja voidaan verrata Ivy League -yliopistoihin. Opiskelijat valmistautuvat koviin kokeisiin kaksi vuotta Classes Préparatoiresissa (ja ottavat usein kolmannen vuoden paremman koulun saavuttamiseksi) ja osallistuvat sitten kilpailukokeiden maratoniin.</p>
+                        <p>Unelmainstituutioni oli École Normale Supérieure (ENS), luultavasti valikoivin niistä yhdessä Polytechniquen kanssa. Löysin sen liian myöhään hakeakseni Classe Préparatoireen, mutta päätin silti kokeilla itsenäisenä hakijana. Joten kilpailin tulevien mahdollisten Nobelin palkinnon voittajien kanssa nojaten oppikirjojeni itseopiskeluun (ja se ei toiminut, mutta nautin yrittämisestä!).</p>
+                        <p>Licence de Mathématiques tarjosi lähimmän vastaavuuden Classes Préparatoiresiin. Noina vuosina opinto-ohjelmani kattasivat:</p>
+                        <ul>
+                            <li>Kaksi algebran kurssia: perusteet, joita seurasivat rengasrakenteet ja Galois'n teoria (vastaa suunnilleen Serge Langin Algebra II osan ensimmäistä puoliskoa)</li>
+                            <li>Yleinen topologia</li>
+                            <li>Differentiaalilaskenta</li>
+                            <li>Integrointi ja mittateoria</li>
+                            <li>Differentiaaliyhtälöt ja differentiaaligeometria</li>
+                            <li>Spektri- ja Fourier-analyysi</li>
+                            <li>Dynaamiset järjestelmät ja Lie-ryhmät</li>
+                        </ul>
+                        <p>(Tämä yhteenveto ei sisällä aloja, joita opiskelin myöhemmin itsenäisen tutkimuksen kautta, kuten todennäköisyyslaskentaa ja numeerisia menetelmiä.)</p>
+                    </div>
+
+                    <!-- Languages (Academic) Subtopic -->
+                    <div id="bio-languages-acad" class="bio-subtopic">
+                        <h4>Kielet</h4>
+                        <p>Takaiskuni ENS:ssä laski moraaliani, joten matematiikan maisterintutkinnon rinnalla ilmoittauduin INALCOon opiskelemaan venäjää.</p>
+                        <p>Uppoauduin venäjän kielen opiskeluun, joten se alkoi viedä liikaa etusijaa matematiikalta. Niinpä maisterintutkintoni suorittaminen kesti kaksi vuotta, koska minun piti uusia muutama koe (en kadu sitäkään!).</p>
+                        <p>Grammatiikan lehtorini herätti intohimon vieraskieliseen runouteen. Runous motivoi minua usein aloittamaan uuden kielen. Kun aloitin viron kielen, löysin Jaan Kaplinskin, joka on edelleen yksi lempirunoilijoistani. Se on jopa riippuvuus: luen jotain mielenkiintoista kulttuurista, haluan tietää siitä vähän, tutkin vain vähän, lupaan itselleni olla kaivamatta syvemmälle, teen niin silti ja lisään sitten uuden kirjakasan yöpöydälleni.</p>
+                    </div>
+                </div>
+
+                <!-- Miscellaneous Subsection -->
+                <div id="bio-miscellaneous" class="bio-subsection">
+                    <h3>Muuta</h3>
+
+                    <!-- Languages (Misc) Subtopic -->
+                    <div id="bio-languages-misc" class="bio-subtopic">
+                        <h4>Kielet</h4>
+                        <p>Aloitan puhumalla intohimostani vastuuvapauslausekkeella: osaan monia kieliä erittäin huonosti. Se on intohimo, ei kokoelma kerskumista varten, mutta koska aloitin sen yli kaksikymmentä vuotta sitten, minulle on kertynyt paljon kokemusta, jota joskus ajattelen voivani käyttää.</p>
+                        <p>Joten lyhyesti: Se alkoi venäjästä (kaksi vuotta yliopistossa) ja jatkui omalla ajalla (se on aina niin, joten minun ei tarvitse enää täsmentää). Sitten kaksi ensimmäistä kieltä, jotka aloitin täysin itsekseni, olivat tšekki ja unkari matkan suunnittelun vuoksi. Ensimmäisellä kerralla se oli katastrofi, kun yritin puhua ihmisille, mutta seuraavana vuonna oli parempi. Lukion vieraat kieleni olivat saksa ja englanti, joten jatkoin niitä seuraavaksi ja lisäsin matkan varrella italian (ystävän vuoksi) ja kävin siellä kesäkoulun. Seitsemän vuotta olen opiskellut viroa alkaen Saaremaan koulusta, ja pari vuotta sitten aloitin ruotsin ja hieman kiinan opiskelun. Siinä ei ole kaikki, mutta nuo ovat ne, joissa olen aktiivisin.</p>
+                        <p>Silti hyödyn autismikirjolla olon plussista ja miinuksista. Voin työmatkalla opiskella viron tai ruotsin runoutta käyttäen puhelintani sanakirjana ja nykyään tekoälytyökaluja symboliikan tai historian selittämiseen, mutta samaan aikaan minun ei ole aina helppoa viestiä ja jään usein jumiin, kun ahdistun.</p>
+                    </div>
+
+                    <!-- Data Science & Machine Learning Subtopic -->
+                    <div id="bio-datascience" class="bio-subtopic">
+                        <h4>Datatiede & Koneoppiminen</h4>
+                        <p class="clearfix">
+                            <a href="../cert_datacamp.webp" target="_blank" class="cert-link right">
+                                <img src="../cert_datacamp.webp" alt="DataCamp sertifikaatti" class="inline-cert" loading="lazy">
+                            </a>
+                            <a href="../cert_coursera.webp" target="_blank" class="cert-link right" style="margin-right: 15px;">
+                                <img src="../cert_coursera.webp" alt="Coursera sertifikaatti" class="inline-cert" loading="lazy">
+                            </a>
+                            Aloitin datatieteen opiskelun verkossa Courserassa, koska se oli nousemassa Ranskassa samaan aikaan kun sain väitöskirjani valmiiksi, ja se oli kiehtova uusi ala, joka osoitti, miten näitä menetelmiä käytetään julkisella datalla asioiden löytämiseksi mistä tahansa aiheesta. Matematiikan harrastajilla on helppo pääsy moniin uusiin menetelmiin, jotka ovat itsessään mielenkiintoisia opiskella, mutta myös numeerisen tutkimuksen tekemiseen helposti vaikka kotoa käsin.
+                        </p>
+                    </div>
+
+                    <!-- Computer Vision Subtopic -->
+                    <div id="bio-computervision" class="bio-subtopic">
+                        <h4>Tietokonenäkö</h4>
+                        <p>Muutaman perinteisiä arkkitehtuureja käsittelevän syväoppimisen opastusohjelman jälkeen, kuten Andrew Ng:n syväoppimiskurssi, halusin kaivautua syvemmälle tälle alalle enkä rajoittua koneoppimisen menetelmiin, koska perinteisillä algoritmeilla on kiehtovia matemaattisia perusteita erityisesti geometriassa käyttäen Fourier-muunnoksia tai differentiaalilaskentaa.</p>
+                    </div>
+
+                    <!-- Generative Models Subtopic -->
+                    <div id="bio-generative" class="bio-subtopic">
+                        <h4>Generatiiviset mallit</h4>
+                        <p>Vuonna 2021 olisin säästänyt tarpeeksi rahaa ottaakseni kurssin Stanford Onlinessa, ja valitsin CS236:n. Tuolloin se oli minulle ikään kuin tapa ottaa myöhäinen kosto ENS-epäonnistumisestani ja tulla Ivy League -yliopiston opiskelijaksi. Minulla ei ollut oikeaa persoonallisuutta luodakseni suhteita opiskelukavereihini verkossa, ottaakseni kantaa foorumilla tai esittääkseni kysymyksiä, joten en saanut enempää kuin kirjaa lukemalla, mutta minulla oli varhainen opetus yhdeltä alan johtavista asiantuntijoista ja hän oli kiehtova. Nyt olen siitä intohimoinen.</p>
+                    </div>
+
+                    <!-- Finance Subtopic -->
+                    <div id="bio-finance" class="bio-subtopic">
+                        <h4>Rahoitus</h4>
+                        <p>Löysin myöhäisen kiinnostuksen rahoitusmatematiikkaan luennoidessani kauppakorkeakouluissa. Olen kiinnostunut salkkujen riskiarvon (Value-at-Risk) laskemisesta koneoppimismenetelmien (PCA ja normalisointivoot) avulla. Sillä välin huomasin, että sijoittaminen henkilökohtaisten arvojeni mukaisesti oli vähemmän monimutkaista kuin luulin, erityisesti sijoittaminen Pohjois-Eurooppaan.</p>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+    </body>
+</html>
+
+<script src="../script.js"></script>
