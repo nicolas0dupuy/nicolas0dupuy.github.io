@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="cs">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Nicolas Dupuy</title>
+        <link rel="stylesheet" href="../style.css">
+    </head>
+    <body>
+
+        <nav class="sidebar">
+            <img src="../profile.webp" alt="Nicolas Dupuy" class="profile-pic">
+            <h1 class="sidebar-name">Nicolas Dupuy</h1>
+            <p class="sidebar-title">Nezávislý výzkumník | PhD v oblasti výpočetní fyziky</p>
+            <ul class="nav-links">
+                <li><a href="#home">Domů</a></li>
+                <li><a href="#section1">Filosofie projektu</a></li>
+                <li><a href="#section2">Služby</a></li>
+                <li><a href="#section3">Stručný životopis</a></li>
+                <li class="nav-contact-item"><a href="mailto:nicolas0dupuy@gmail.com" class="email-link">nicolas0dupuy@gmail.com</a></li>
+            </ul>
+        </nav>
+
+        <main class="content">
+            <div class="lang-selector-container">
+                <select class="lang-select" onchange="if(this.value) window.location.href=this.value;">
+                    <option value="../index.html">English</option>
+                    <option value="../fr/index.html">Français</option>
+                    <option value="../de/index.html">Deutsch</option>
+                    <option value="../sv/index.html">Svenska</option>
+                    <option value="../et/index.html">Eesti</option>
+                    <option value="../fi/index.html">Suomi</option>
+                    <option value="../ru/index.html">Русский</option>
+                    <option value="../uk/index.html">Українська</option>
+                    <option value="" selected>Čeština</option>
+                    <option value="../hu/index.html">Magyar</option>
+                </select>
+            </div>
+            <section id="home">
+                <div class="translation-notice">
+                    Tyto stránky v češtině jsou automatickým překladem z angličtiny. Jsem nadšenec do jazyků, a zejména do slovanských. V letech 2005 až 2007 jsem studoval ruštinu na univerzitě (v čemž pokračuji sám) a poté jsem se sám učil česky. Před několika měsíci jsem také začal s ukrajinštinou. Má úroveň byla dostatečná pro přátelskou konverzaci před několika lety, kdy jsem často navštěvoval Prahu, ale zdaleka nestačí na překlad mé anglické verze webu. Spoléhám se tedy na strojový překlad svých stránek, ale plánuji nechat tuto práci v budoucnu zkontrolovat. Moc rád bych spolupracoval s odborníky z České republiky a vaše zpětná vazba pro mě bude velmi cenná, ať už ohledně mých služeb, nebo z lingvistického hlediska.
+                </div>
+                <div class="intro-cadre">
+                    <p><strong>Vítejte! První poznámka k této beta verzi.</strong></p>
+                    <p>Tato webová stránka poskytuje přehled mých digitálních služeb v oblasti výzkumu a vývoje (R&D). Jelikož je mým okamžitým cílem signalizovat svou dostupnost, navrhl jsem minimální verzi k dalšímu vylepšení.</p>
+                    <p>Mnoho čteme o schopnostech systémů AI na úrovni PhD a i já mám nevyužité kapacity z mého PhD výzkumu, které chci nabídnout. Neuroatypičnost byla mou hlavní překážkou v tradičních pracovních postupech, proto jsem strukturoval pracovní postup přizpůsobený mému profilu na spektru autismu, přičemž eliminuji běžné překážky zejména díky asynchronní práci, administrativním úkolům delegovaným na společnost EOR / portage salarial a dodávkám vázaným na milníky.</p>
+                    <p>Jelikož pracuji ve dvou energetických režimech (nízkém a vysokém), mé služby pokrývají spektrum různé složitosti. Pokud mám příliš málo energie na náročný výzkum, mohu se vždy věnovat vašim nahromaděným úkolům v oblasti zpracování dat; vždy se najde něco, co mohu zpracovat a urychlit tak vaši práci.</p>
+                    <p>Časem budu tento web zdokonalovat, aby byl lidštější, lépe vysvětlený a doplněný o osobnější sekci. Vzhledem k tomu, že neustále pracuji ve dvou energetických režimech, navrhuji tuto platformu se dvěma odpovídajícími úrovněmi detailu; její postupné oživování sdílením mých koníčků je pro mě způsobem, jak dobít energii komunikací s intelektuálně zvídavými kolegy.</p>
+                </div>
+            </section>
+            <section id="section1">
+                <div class="translation-notice">
+                    Tyto stránky v češtině jsou automatickým překladem z angličtiny. Jsem nadšenec do jazyků, a zejména do slovanských. V letech 2005 až 2007 jsem studoval ruštinu na univerzitě (v čemž pokračuji sám) a poté jsem se sám učil česky. Před několika měsíci jsem také začal s ukrajinštinou. Má úroveň byla dostatečná pro přátelskou konverzaci před několika lety, kdy jsem často navštěvoval Prahu, ale zdaleka nestačí na překlad mé anglické verze webu. Spoléhám se tedy na strojový překlad svých stránek, ale plánuji nechat tuto práci v budoucnu zkontrolovat. Moc rád bych spolupracoval s odborníky z České republiky a vaše zpětná vazba pro mě bude velmi cenná, ať už ohledně mých služeb, nebo z lingvistického hlediska.
+                </div>
+                <h2>Filosofie projektu</h2>
+
+                <!-- Unified Introduction Context Block -->
+                <div class="philosophy-intro-text">
+                    <p><strong>Jsem Nicolas, nezávislý výzkumník vedený touto podpůrnou službou pro výzkum a datovou vědu (Data Science).</strong></p>
+                    <p>Nabízím modulární nabídku služeb, od vědeckého výzkumu po datovou vědu, a poskytuji externí podporu pro úkoly, které váš tým potřebuje odlehčit.</p>
+                    <p>Tento systém jsem vybudoval kolem systému tiketu inspirovaného softwarovým inženýrstvím, přizpůsobeného mým proměnlivým kapacitním limitům jako výzkumníka s autismem. Platba probíhá striktně za výsledky po schválení milníků prostřednictvím Employer of Record (portage salarial), díky čemuž je celá spolupráce připravena k okamžitému použití („plug-and-play“).</p>
+                    <p><strong>Více informací:</strong></p>
+                </div>
+                <div class="tabs-container">
+                    <!-- Barre de navigation à 3 onglets -->
+                    <div class="tab-buttons grid-three">
+                        <button class="tab-btn active" data-target="phil-what">Co dělám...</button>
+                        <button class="tab-btn" data-target="phil-why">Proč</button>
+                        <button class="tab-btn" data-target="phil-autism">Profil na spektru autismu</button>
+                    </div>
+
+                    <!-- Contenu des onglets -->
+                    <div class="tab-content">
+
+                        <!-- Onglet 1 : What I do -->
+                        <div id="phil-what" class="tab-panel active">
+
+                            <h4 style="margin-top: 1.5rem; color: #ffffff;">Co dělám v několika řádcích:</h4>
+                            <ul style="padding-left: 1.2rem; color: #e0e0e0;">
+                                <li style="margin-bottom: 0.8rem;"><strong>Likvidace nahromaděných projektů a inženýrského dluhu:</strong> Přebírám odpovědnost za vaše nahromaděné pracovní vytížení v oblasti výzkumu a datové vědy. To zahrnuje zkoumání odložených sekundárních hypotéz nebo rozšíření kapacit vašeho týmu pro naléhavé výpočetní práce. Působím jako výzkumník bez vazby na konkrétní obor.</li>
+                                <li style="margin-bottom: 0.8rem;"><strong>Milníky založené na hodnotě:</strong> Společně rozbijeme technickou mapu na projektové tikety a každému milníku přiřadíme pevnou cenu a orientační časový rámec. Od té chvíle řídím svůj harmonogram zcela autonomně. Udržujeme se navzájem v obraze pomocí asynchronních aktualizací, což eliminuje režijní náklady na formální schůzky.</li>
+                                <li style="margin-bottom: 0rem;"><strong>Adaptivní provádění:</strong> Zpracovávám pracovní postupy od základního průzkumu dat až po specializované numerické simulace nebo teoretický výzkum. Můj pracovní postup se přizpůsobuje mé kognitivní dostupnosti, přičemž vrchol soustředění směřuji na složité matematické výzkumy a lineární zpracování dat využívám k udržení stabilního operačního tempa.</li>
+                            </ul>
+                        </div>
+
+                        <!-- Onglet 2 : Why -->
+                        <div id="phil-why" class="tab-panel">
+                            <ul style="padding-left: 1.2rem; color: #e0e0e0;">
+                                <li style="margin-bottom: 0.8rem;"><p><strong>Výzkum jako vášeň:</strong> Před lety jsem nevěřil, že bych se mohl stát výzkumníkem, i přes dobré akademické výsledky. Zůstal jsem na univerzitě, protože jsem miloval učení, a nakonec jsem dostal příležitost obhájit doktorát. Podpora technických týmu je můj způsob, jak spolupracovat se skvělými výzkumníky na vzrušujících projektech, což mi umožňuje pokračovat v učení, přispívat k jejich pokroku a překračovat rámec mé doktorské práce.</p></li>
+                                <li style="margin-bottom: 0.8rem;"><p><strong>Využití mého studijního impulsu:</strong> Jsem akademický knihomol. Většinou jsem se takto učil: pracoval jsem jako soukromý doučovatel a pak kupoval hory učebnic a vědeckých knih. Nikdy jsem nepřestal. Dnes, s digitálními médii od historických institucí jako Collège de France nebo Stanford, je můj seznam četby delší než seznam vánočních přání dítěte (jak mu říkám). Intenzivní zaměření spojené s autismem není mýtus. Když pro něco vzplanu, nedělám věci napůl. To mi dává impuls vykonávat kvalitní a soustředěnou práci po dlouhou dobu.</p></li>
+                                <li style="margin-bottom: 0.8rem;"><p><strong>Interdisciplinární dynamika:</strong> Na rozdíl od tradičních výzkumných dráh vyžadujících extrémní specializaci v jediné oblasti vzkvétám při zkoumání více sfér. Zatímco na stálé akademické pozici by to bylo omezením, moje nezávislá struktura mění tuto potřebu rozmanitosti ve výhodu. Umožňuje mi to aplikovat mé matematické dovednosti agnosticky napříč různými sektory a přenášet analytické nástroje mezi financemi, medicínou, teoretickou fyzikou a aplikovanými datovými kanály.</p></li>
+                            </ul>
+                        </div>
+
+                        <!-- Onglet 3 : Autism Notes -->
+                        <div id="phil-autism" class="tab-panel">
+                            <p><em>«Poruchy autistického spektra (PAS) představují rozmanitou skupinu stavů. Jsou charakterizovány určitým stupněm obtíží v sociální interakci a komunikaci. Mezi další charakteristiky patří netypické vzorce aktivit a chování, jako jsou obtíže při přechodu od jedné činnosti ke druhé, zaměření na detaily a neobvyklé reakce na smyslové podněty,»</em> — podle WHO, která odhaduje prevalenci na přibližně 1 ze 127 osob v celosvětové populaci.</p>
+                            <p>A co akademické prostředí? Ačkoli neexistují přímé celosvětové statistiky o prevalenci v akademickém prostředí, Simon Baron-Cohen publikoval v roce 2001 studii měřící průměrný koeficient autistického spektra (AQ) u různých skupin populace. Na stupnici od 0 do 50, kde průměr pro běžnou populaci činí 16,4 (± 6,4) a pro klinicky diagnostikovanou autistickou populaci 35,8 (± 6,5), dosáhli studenti matematiky 21,5 (± 6,5), což je jen o málo méně než 16 vítězů olympiád ve Velké Británii (24,5 ± 5,7).</p>
+                            <p>Pokud jde o autismus v práci, data specializovaných organizací jako National Autistic Society a Britský národní statistický úřad (ONS) ukazují, že autismus vykazuje nejnižší míru zaměstnanosti ze všech kategorií zdravotního postižení — pouze přibližně 21,7 % autistických dospělých má oficiální práci (údaje z roku 2020), což je těsně pod dospělými s těžkými poruchami učení.</p>
+                            <p>Přesto spektrum autismu pokrývá širokou škálu situací a intelektuálních úrovní. Dr. Niall Kenny shromáždil cenná svědectví akademiků z irského vysokoškolského vzdělávání (<em>«Tell me what my job is»: A Qualitative Exploration of the Experiences of Autistic Academic Staff working in Higher Education in Ireland</em>) a ja mohu přidat své vlastní. Pokud si je přečtete, zde je několik zdůrazněných témat:</p>
+
+                            <ol style="padding-left: 1.2rem; color: #e0e0e0; margin-top: 1rem;">
+                                <li style="margin-bottom: 0.8rem;"><strong>Získání diagnózy snese obrovskou zátěž:</strong> Pro mě to bylo opravdu podobné, jako kdybych byl králíkem, který se náhodou dostal do kočičí rodiny, kterému nakonec řeknou, že ačkoli je miluji, drobné úpravy, jako zdržet se lovu ptáků nebo nočního toulání, udělají můj život mnhem lepším.</li>
+                                <li style="margin-bottom: 0.8rem;"><strong>Vnímání času se kardinálně liší</strong> u neurodivergentních a neurotypických lidí, a dokonce i u dvou autistických jednotlivců. Ve studii jeden účastník popisuje schopnost soustředit se na jediný úkol po celé hodiny, aniž by vnímal ubíhající čas, zatímco druhý potřebuje přestávky častěji než jeho kolegové. Já jsem přesně uprostřed: v 17 letech jsem miloval šachové turnaje, kde celodenní partie začínající v 9 ráno mohly trvat až 8 hodin. Zkuste složit jednu z nejnáročnějších přijímacích zkoušek na École Normale Supérieure (ENS); protože jsem nešel tradiční cestou, měl jsem hrozné výsledky, ale výzvu jsem si velmi užil. Přesto, i u úkolu, ve kterém vynikám, pokud je má mysl zastřena toxickými myšlenkami, se mé vnímání času zcela převrátí.</li>
+                                <li style="margin-bottom: 0.8rem;"><strong>Rutiny a organizace:</strong> Všichni máme své rutiny a organizace může být chaotická. Pro mě je multitasking jako pokus žonglovat s několika kužely najednou a mít i jen dva termíny, i velmi vzdálené, mě může zcela zablokovat.</li>
+                                <li style="margin-bottom: 0.8rem;"><strong>Maskování (masking):</strong> Zpět k roli králíka v kočičí rodině, která vás přijala. Milujete je, chcete s nimi trávit čas a dělat věci společně, ale mají instinkty, které vy nemáte. Zkoušíte tedy dělat to samé prostřednictvím podvědomého kopírovacího mechanismu, ale vaše mysl křičí bolestí. To bývá hlavní příčinou vyčerpání vedoucího k vyhoření.</li>
+                                <li style="margin-bottom: 0.8rem;"><strong>Senzorické přetížení:</strong> Přidávám ho jako kritickou příčinu vyčerpání a vyhoření. Při únavě na rušných veřejných místech opakovaná hlášení během čekání na vlak, výfukové plyny nebo pípání skeneru u pokladny v supermarketu nutí náš mozek pracovat nepřetržitě, jako bychom aktivně zpracovávali data.</li>
+                                <li style="margin-bottom: 0rem;"><strong>Více odměn za naše obtíže:</strong> Být autistickým člověkem samozřejmě komplikuje život, ale nechtěl bych být jiný. Účastníci studie chválí své hyperfokusování a touhu ponořit se hlouběji do svých koníčků. Ani já bych nikdy nechěl ztratit radost z učení se logických věcí s takovou intenzitou.</li>
+                            </ol>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+            <section id="section2">
+                <div class="translation-notice">
+                    Tyto stránky v češtině jsou automatickým překladem z angličtiny. Jsem nadšenec do jazyků, a zejména do slovanských. V letech 2005 až 2007 jsem studoval ruštinu na univerzitě (v čemž pokračuji sám) a poté jsem se sám učil česky. Před několika měsíci jsem také začal s ukrajinštinou. Má úroveň byla dostatečná pro přátelskou konverzaci před několika lety, kdy jsem často navštěvoval Prahu, ale zdaleka nestačí na překlad mé anglické verze webu. Spoléhám se tedy na strojový překlad svých stránek, ale plánuji nechat tuto práci v budoucnu zkontrolovat. Moc rád bych spolupracoval s odborníky z České republiky a vaše zpětná vazba pro mě bude velmi cenná, ať už ohledně mých služeb, nebo z lingvistického hlediska.
+                </div>
+                <!-- Services Section Header & Introduction (Ultra-Clean & Pure HTML) -->
+                <div class="services-container">
+                    <div class="services-header">
+                        <h2>Služby</h2>
+                        <span class="status-badge">
+                            🌱 <strong>Počáteční fáze:</strong> vaše zpětná vazba je důležitá pro lepší přizpůsobení vašim potřebám
+                        </span>
+                    </div>
+
+                    <div class="services-intro-text">
+                        <p>
+                            Zde najdete seznam mých služeb, který mohu postupně rozšiřovat, jakmile se začnu učit něco nového. Jsou určeny především k tomu, aby vám poskytly dovednosti, které jsem rozvíjel průběžným studiem po mnoho let napříč několika akademickými obory.
+                        </p>
+                        <p class="framework-note">
+                            Pro zajištění předvídatelné, vysoce profesionální a bezstresové spolupráce pro nás oba uplatňuji u většiny těchto modulů jednotnou strukturu:
+                        </p>
+                    </div>
+
+                    <div class="services-grid">
+                        <div class="feature-card">
+                            <h3>💼 Administrativní jednoduchost</h3>
+                            <p>Využití Employer of Record (EOR) nebo francouzského systému portage salarial pro vyřízení všech smluv, faktur a dodržování předpisů.</p>
+                        </div>
+                        <div class="feature-card">
+                            <h3>✅ Bezrizikové milníky</h3>
+                            <p>Platba probíhá striktně <strong>po schválení milníku</strong>, inspirováno fungováním tiketů a backlogů v moderních IT společnostech.</p>
+                        </div>
+                        <div class="feature-card">
+                            <h3>📥 Odlehčení backlogu</h3>
+                            <p>Speciálně navrženo pro převzetí nahromaděných úkolů v oblasti zpracování dat a sekundárních hypotéz, čímž uvolníte svůj hlavní tým pro úkoly, na které nemá čas.</p>
+                        </div>
+                        <div class="feature-card">
+                            <h3>🧩 Přizpůsobené kognitivní tempo</h3>
+                            <p>Široké spektrum složitosti, od úkolů základní úrovně až po hluboký výzkum. To mi jako výzkumníkovi s autismem umožňuje řídit svůj čas a kognitivní zátěž v závislosti na aktuální schopnosti soustředění.</p>
+                        </div>
+                    </div>
+
+                    <div class="services-footer">
+                        <p>Máte individuální požadavky nad rámec tohoto standardního katalogu?</p>
+                        <a href="mailto:nicolas0dupuy@gmail.com" class="contact-button">✉️ Kontakt: nicolas0dupuy@gmail.com</a>
+                    </div>
+                </div>
+
+                <div id="hashtag-menu" class="hashtag-menu-container"></div>
+
+                <!-- ==================== SERVICE 1 ==================== -->
+                <div class="service-card" data-tags="ComputationalPhysics,AppliedMathematics">
+                    <h3 class="service-title">Výpočetní fyzika & Numerické modelování</h3>
+
+                    <input type="checkbox" id="toggle-service-1" class="card-toggle-input">
+                    <div class="card-fold-content">
+                        <div class="service-description">
+                            <p>Technická a teoretická podpora výzkumu, realizace kódu, simulací fyzikálních systémů a matematického modelování. Dodáváno převážně vzdáleně, s možností osobní účasti.</p>
+                            <p>Projekty jsou strukturovány do nezávislých milníků s jasnými definicemi a koncovými body, což zaručuje, že každý výsledek lze snadno sledovat a integrovat kterýmkoli členem týmu.</p>
+                            <p>Milníky mohou představovat teoretický výzkum nebo realizaci algoritmu a tvoří základ pro položky placené po dokončení, což chrání váš rozpočet. Cena se sjednává pro každý milník a nemění se, pokud budu potřebovat dodatečný čas, což vám zajišťuje stabilitu a předvídatelnost, zatímco mně to dává snížení tlaku a příležitost ke kvalitnímu učení.</p>
+                            <p>Tato struktura je navržena tak, aby pomohla týmům nebo výzkumníkům dokončit odložené vedlejší projekty a vyhodnotit alternativní hypotézy, zatímco se vaše hlavní týmy soustředí na své prvořadé projekty.</p>
+                            <p>Dlouhodobé partnerství lze předvídat pro upevnění výhod mé křivky učení, protože aktivně studuji numerické metody na počáteční výzkumné úrovni.</p>
+                        </div>
+                        <div class="service-commentary">
+                            <h4>Osobní poznámka</h4>
+                            <p>Výpočetní fyziku jsem objevil během magisterské stáže před doktorskou дисертаcí. V té době jsem aplikoval několik metod kvantové chemie (které nabízím v rámci služby «Kvantová chemie & Modelování materiálů») a matematik ve mně už tehdy chtěl pochopit jejich základy. Nabízím tuto službu, protože mé průběžné studium v této oblasti v kombinaci s mými zkušenostmi může najít praktické uplatnění jak v průmyslu, tak v akademickém prostředí, kde často chybí praktická podpora. Pro informaci, některé publikace, ke kterým se ve své praxi obracím: Quarteroni et al. *Numerical Mathematics*, Grégoire Allaire *Analyse numérique et optimisation* (Éditions de l'École Polytechnique), knihy a přednášky Mallata o wavelet ech a Pohjolainen *Mathematical Modeling*.</p>
+                        </div>
+                        <div class="card-fold-fade"></div>
+                    </div>
+                    <label for="toggle-service-1" class="card-toggle-label"></label>
+
+                    <div class="service-tags">
+                    <span class="tag" onclick="filterByTag('ComputationalPhysics')">#ComputationalPhysics</span>
+                    <span class="tag" onclick="filterByTag('AppliedMathematics')">#AppliedMathematics</span>
+                
+                    </div>
+                </div>
+
+                <!-- ==================== SERVICE 2 ==================== -->
+                <div class="service-card" data-tags="ComputationalPhysics">
+                    <h3 class="service-title">Kvantová chemie & Modelování materiálů</h3>
+
+                    <input type="checkbox" id="toggle-service-2" class="card-toggle-input">
+                    <div class="card-fold-content">
+                        <div class="service-description">
+                            <p>Molekulární modelování, výpočty elektronové nebo geometrické struktury a kvantové simulace pro základní a excitované stavy, včetně pracovních postupů DFT a Quantum Monte Carlo. Dodáváno převážně vzdáleně, s možností osobní účasti.</p>
+                            <p>Projekty jsou strukturovány do nezávislých milníků s jasnými definicemi a koncovými body, což zaručuje, že každý výsledek lze snadno sledovat a integrovat kterýmkoli členem týmu.</p>
+                            <p>Milníky mohou představovat jednoduše optimalizaci elektronové struktury DFT (u šarže zkoumaných molekul) nebo teoretické studium alternativních metod a tvoří základ pro položky placené po dokončení, což chrání váš rozpočet. Cena se sjednává pro každý milník a nemění se, pokud budu potřebovat dodatečný čas, což vám zajišťuje stabilitu a předvídatelnost, zatímco mně to dává snížení tlaku a příležitost ke kvalitnímu učení.</p>
+                            <p>Tato struktura je navržena tak, aby pomohla týmům nebo výzkumníkům dokončit odložené vedlejší projekty a vyhodnotit alternativní hypotézy, zatímco se vaše hlavní týmy soustředí na své prvořadé projekty.</p>
+                            <p>Dlouhodobé partnerství lze předvídat pro upevnění výhod mé křivky učení, protože aktivně přizpůsobuji své stávající výpočetní postupy vašim konkrétním výzkumným úkolům.</p>
+                        </div>
+                        <div class="service-commentary">
+                            <h4>Osobní poznámka</h4>
+                            <p>Obhájil jsem doktorát (2012–2016) z výpočetní fyziky se zaměřením na optimalizaci kvantového Monte Carla pro molekuly podobné grafenu, elektronové struktury základního stavu, singletní/tripletní excitované stavy a geometrii silně korelovaných systémů. Ačkoli jsem dosud nezavedl kanály molekulární dynamiky ani neintegroval strojové učení do tradičních fyzikálních postupů, s obrovským zájmem jsem připraven se tyto metody učit, zavádět a přizpůsobovat pro vaše projekty. Kromě vášně pro fyziku se u mě brzy rozvinul také zájem o kvantové počítače. Absolvoval jsem certifikační programy 'Quantum Computing Fundamentals' a 'Quantum Computing Realities' na MITxPRO a velmi toužím přispět k rozvoji této oblasti.</p>
+                        </div>
+                        <div class="card-fold-fade"></div>
+                    </div>
+                    <label for="toggle-service-2" class="card-toggle-label"></label>
+
+                    <div class="service-tags">
+                    <span class="tag" onclick="filterByTag('ComputationalPhysics')">#ComputationalPhysics</span>
+                
+                    </div>
+                </div>
+
+                <!-- ==================== SERVICE 3 ==================== -->
+                <div class="service-card" data-tags="QuantitativeFinance,AppliedMathematics">
+                    <h3 class="service-title">Numerické metody v kvantitativních financích</h3>
+
+                    <input type="checkbox" id="toggle-service-3" class="card-toggle-input">
+                    <div class="card-fold-content">
+                        <div class="service-description">
+                            <p>Zavádění a validace numerických modelů, stochastických simulací a matematických struktur pro kvantitativní finance. Dodáváno převážně vzdáleně, s možností osobní účasti.</p>
+                            <p>Projekty jsou strukturovány do nezávislých milníků s jasnými definicemi a koncovými body, což zaručuje, že každý výsledek lze snadno sledovat a integrovat kterýmkoli členem týmu.</p>
+                            <p>Milník může představovat hodnocení Value-at-Risk (VaR), přípravu, inženýrství nebo analýzu balíčku dat nebo zkoumaný teoretický model a tvoří základ pro položky placené po dokončení, což chrání váš rozpočet. Cena se sjednává pro každý milník a nemění se, pokud budu potřebovat dodatečný čas, což vám zajišťuje stabilitu a předvídatelnost, zatímco mně to dává snížení tlaku a příležitost ke kvalitnímu učení.</p>
+                            <p>Tato struktura je navržena tak, aby pomohla týmům nebo výzkumníkům dokončit odložené vedlejší projekty a vyhodnotit alternativní hypotézy, zatímco se vaše hlavní týmy soustředí na své prvořadé projekty.</p>
+                            <p>Dlouhodobé partnerství lze předvídat pro upevnění výhod mé křivky učení, protože se aktivně specializuji na metody kvantitativních financí, přičemž stavím na svých zkušenostech z vědeckého výzkumu.</p>
+                        </div>
+                        <div class="service-commentary">
+                            <h4>Osobní poznámka</h4>
+                            <p>V minulém roce jsem se začal aktivně specializovat na metody kvantitativních financí, přičemž čerpám ze sedmiletých zkušeností s výukou Data Science na Paris School of Business v těsném kontaktu s finančními odborníky. Mým dalším osobním krokem je spolupráce s aktivními výzkumníky a praktiky pro učení se v praxi. Partnerství vám umožňuje vyškolit dlouhodobého spolupracovníka, který bude hluboce rozumět vašemu prostředí. Vzhledem k nedostatku spolehlivých kvantitativních talentů na dnešním trhu vám toto partnerství umožňuje obejít obtížné hledání vzácných profilů absolventů a získat výzkumníka na úrovni PhD s prokázanou analytickou zralostí. Rád přijímám úkoly základní úrovně při studiu základů a jako zkušený lektor mohu také přispět k výuce vašich stážistů pomocí svých čerstvě nabytých znalostí. Pozicionováním na rozhraní mezi výzkumníky a praktiky se neváhejte ozvat, pokud potřebujete spojovací článek. Mé evropské příspěvky soustředím na Francii, mou vlast, a také na země Skandinávie a Pobaltí, které patří mezi mé nejoblíbenější regiony.</p>
+                        </div>
+                        <div class="card-fold-fade"></div>
+                    </div>
+                    <label for="toggle-service-3" class="card-toggle-label"></label>
+
+                    <div class="service-tags">
+                    <span class="tag" onclick="filterByTag('QuantitativeFinance')">#QuantitativeFinance</span>
+                    <span class="tag" onclick="filterByTag('AppliedMathematics')">#AppliedMathematics</span>
+                
+                    </div>
+                </div>
+
+                <!-- ==================== SERVICE 4 ==================== -->
+                <div class="service-card" data-tags="AppliedMathematics">
+                    <h3 class="service-title">Konvexní optimalizace & Matematické programování</h3>
+
+                    <input type="checkbox" id="toggle-service-4" class="card-toggle-input">
+                    <div class="card-fold-content">
+                        <div class="service-description">
+                            <p>Formulování a řešení optimalizačních úloh (jako LP, QP, SOCP, SDP) při fyzikálních nebo operačních omezeních. Dodáváno převážně vzdáleně, s možností osobní účasti.</p>
+                            <p>Projekty jsou strukturovány do nezávislých milníků s jasnými definicemi a koncovými body, což zaručuje, že každý výsledek lze snadno sledovat a integrovat kterýmkoli členem týmu.</p>
+                            <p>Milníky mohou představovat převod fyzikálních nebo operačních omezení do modelu konvexního programování nebo srovnávací testy porovnávající různé solvery na datovém souboru a tvoří základ pro položky placené po dokončení, což chrání váš rozpočet. Cena se sjednává pro každý milník a nemění se, pokud budu potřebovat dodatečný čas, což vám zajišťuje stabilitu a předvídatelnost, zatímco mně to dává snížení tlaku a příležitost ke kvalitnímu učení.</p>
+                            <p>Tato struktura je navržena tak, aby pomohla týmům nebo výzkumníkům dokončit odložené vedlejší projekty a vyhodnotit alternativní hypotézy, zatímco se vaše hlavní týmy soustředí na své prvořadé projekty.</p>
+                            <p>Dlouhodobé partnerství lze předvídat pro upevnění výhod mé křivky učení, protože neustále zdokonaluji své praktické dovednosti pomocí rámců Stephena Boyda.</p>
+                        </div>
+                        <div class="service-commentary">
+                            <h4>Osobní poznámka</h4>
+                            <p>Konvexní optimalizaci jsem začal studovat teprve nedávno jako rozšíření svého zájmu o numerické metody. Jako výchozí bod využívám veřejné přednášky a učebnici Stephena Boyda spolu s algoritmickými poznámkami Yana Zhenga a klasickým dílem Ben-Tala a Nemirovského *Lectures on Modern Convex Optimization*. Ranné partnerství vám zajistí úzce zaměřeného odborníka na optimalizaci pro modelování vašich operačních a fyzikálních úzkých míst. Pokud potřebujete znalosti, které dosud nemám, neváhejte mi to sdělit, abych si mohl stanovit cíle v oblasti získávání dovedností a podpořil vás při plnění úkolů, kde vám chybí kvalifikovaní pracovníci.</p>
+                        </div>
+                        <div class="card-fold-fade"></div>
+                    </div>
+                    <label for="toggle-service-4" class="card-toggle-label"></label>
+
+                    <div class="service-tags">
+                    <span class="tag" onclick="filterByTag('AppliedMathematics')">#AppliedMathematics</span>
+                
+                    </div>
+                </div>
+
+                <!-- ==================== SERVICE 5 ==================== -->
+                <div class="service-card" data-tags="ComputerVision,MachineLearning">
+                    <h3 class="service-title">Výzkum v oblasti počítačového vidění</h3>
+
+                    <input type="checkbox" id="toggle-service-5" class="card-toggle-input">
+                    <div class="card-fold-content">
+                        <div class="service-description">
+                            <p>Technická a teoretická podpora vývoje algoritmů počítačového vidění, matematických základů a numerických realizací, zahrnující klasické geometrické přístupy, architektury strojového učení a generativní modely. Dodáváno převážně vzdáleně, s možností osobní účasti.</p>
+                            <p>Projekty jsou strukturovány do nezávislých milníků s jasnými definicemi a koncovými body, což zaručuje, že každý výsledek lze snadno sledovat a integrovat kterýmkoli členem týmu.</p>
+                            <p>Milníky se mohou pohybovat od jednoduchého úkolu zpracování obrazu nebo algoritmické realizace výzkumné práce až po matematický audit teoretické základny a tvoří základ pro položky placené po dokončení, což chrání váš rozpočet. Cena se sjednává pro každý milník a nemění se, pokud budu potřebovat dodatečný čas, což vám zajišťuje stabilitu a předvídatelnost, zatímco mně to dává snížení tlaku a příležitost ke kvalitnímu učení.</p>
+                            <p>Tato struktura je navržena tak, aby pomohla týmům nebo výzkumníkům dokončit odložené vedlejší projekty a vyhodnotit alternativní hypotézy, zatímco se vaše hlavní týmy soustředí na své prvořadé projekty.</p>
+                            <p>Dlouhodobé partnerství lze předvídat pro upevnění výhod mé křivky učení, protože rychle přizpůsobuji své matematické dovednosti vašim konkrétním úkolům v oblasti vidění.</p>
+                        </div>
+                        <div class="service-commentary">
+                            <h4>Osobní poznámka</h4>
+                            <p>Počítačové vidění jsem objevil po rozmachu hlubokého učení a matematický základ, který za ním stojí, mě rychle fascinoval. Sledoval jsem online první ročník magisterského programu počítačového vidění na HSE (přerušený začátkem války na Ukrajině) a v roce 2021 jsem absolvoval kurz generativních modelů CS236 na Stanfordu. Jsem stejně fascinován klasickými metodami využívajícími základní matematiku jako metodami založenými na strojovém učení. Ve své praxi používám jako literaturu učebnice Szeliskiho *Computer Vision: Algorithms and Applications* a Gonzaleze a Woodse *Digital Image Processing*. Můj akademický základ navíc zahrnuje různé úrovně diferenciální geometrie — včetně riemannovské, symplektické geometrie a Lieových skupin —, což poskytuje solidní geometrickou perspektivu při práci s vícerozměrnými vizuálními daty nebo invariantními architekturami.</p>
+                        </div>
+                        <div class="card-fold-fade"></div>
+                    </div>
+                    <label for="toggle-service-5" class="card-toggle-label"></label>
+
+                    <div class="service-tags">
+                    <span class="tag" onclick="filterByTag('ComputerVision')">#ComputerVision</span>
+                    <span class="tag" onclick="filterByTag('MachineLearning')">#MachineLearning</span>
+                
+                    </div>
+                </div>
+
+                <!-- ==================== SERVICE 6 ==================== -->
+                <div class="service-card" data-tags="ComputerVision,DataEngineering">
+                    <h3 class="service-title">Aplikace počítačového vidění</h3>
+
+                    <input type="checkbox" id="toggle-service-6" class="card-toggle-input">
+                    <div class="card-fold-content">
+                        <div class="service-description">
+                            <p>Praktické zavádění procesů počítačového vidění pro průmyslovou automatizaci, kontrolu kvality a předzpracování dat s využitím klasického zpracování obrazu a modelů strojového učení. Dodáváno převážně vzdáleně, s možností osobní účasti.</p>
+                            <p>Projekty jsou strukturovány do nezávislých milníků s jasnými definicemi a koncovými body, což zaručuje, že každý výsledek lze snadno sledovat a integrovat kterýmkoli členem týmu.</p>
+                            <p>Milníky se mohou pohybovat od vytvoření kanálu předzpracování OpenCV pro filtraci a zarovnání snímků až po napsání vlastního skriptu pro porovnávání příznaků nebo nasazení lehkého předtrénovaného modelu a tvoří základ pro položky placené po dokončení, což chrání váš rozpočet. Cena se sjednává pro každý milník a nemění se, pokud budu potřebovat dodatečný čas, což vám zajišťuje stabilitu a předvídatelnost, zatímco mně to dává snížení tlaku a příležitost ke kvalitnímu učení.</p>
+                            <p>Tato struktura je navržena tak, aby pomohla týmům nebo výzkumníkům dokončit odložené vedlejší projekty a vyhodnotit alternativní hypotézy, zatímco se vaše hlavní týmy soustředí na své prvořadé projekty.</p>
+                            <p>Dlouhodobé partnerství lze předvídat pro upevnění výhod mé křivky učení, protože aktivně rozšiřuji své praktické dovednosti o softwarové knihovny průmyslové úrovně.</p>
+                        </div>
+                        <div class="service-commentary">
+                            <h4>Osobní poznámka</h4>
+                            <p>Jakožto v první řadě teoretik jsem posledních pět let aktivně pracoval na tom, abych se stal praktikem v oblasti počítačového vidění. Začal jsem absolvováním raných kurzů počítačového vidění na platformách Coursera, Udacity a LearnOpenCV a poté jsem zrychlil své studium zápisem do online magisterského studia na HSE — pokus, který byl bohužel přerušen začátkem invaze na Ukrajinu. Tyto služby nabízím jako doplnění svého teoretického základu o praktické zkušenosti, přičemž svůj přínos stavím do role podpůrné služby pro odlehčení backlogu, kde je vaše finanční riziko zcela vyloučeno díky platbám na základě milníků.</p>
+                        </div>
+                        <div class="card-fold-fade"></div>
+                    </div>
+                    <label for="toggle-service-6" class="card-toggle-label"></label>
+
+                    <div class="service-tags">
+                    <span class="tag" onclick="filterByTag('ComputerVision')">#ComputerVision</span>
+                    <span class="tag" onclick="filterByTag('DataEngineering')">#DataEngineering</span>
+                
+                    </div>
+                </div>
+
+                <!-- ==================== SERVICE 7 ==================== -->
+                <div class="service-card" data-tags="DataEngineering,DataScience">
+                    <h3 class="service-title">Datové inženýrství & Reportování</h3>
+
+                    <input type="checkbox" id="toggle-service-7" class="card-toggle-input">
+                    <div class="card-fold-content">
+                        <div class="service-description">
+                            <p>Vývoj kanálů zpracování dat, analytických nástěnek (Business Intelligence) a audit kvality dat. Dodáváno převážně vzdáleně, s možností osobní účasti.</p>
+                            <p>Projekty jsou strukturovány do nezávislých milníků s jasnými definicemi a koncovými body, což zaručuje, že každý výsledek lze snadno sledovat a integrovat kterýmkoli členem týmu.</p>
+                            <p>Milníky se mohou pohybovat od napsání vlastního Python skriptu pro čištění a propojování různých datových sad až po psaní SQL dotazů v Google BigQuery nebo vytvoření automatizované nástěnky a tvoří základ pro položky placené po dokončení, což chrání váš rozpočet. Cena se sjednává pro každý milník a nemění se, pokud budu potřebovat dodatečný čas, což vám zajišťuje stabilitu a předvídatelnost, zatímco mně to dává snížení tlaku a příležitost ke kvalitnímu učení.</p>
+                            <p>Tato struktura je navržena tak, aby pomohla datovým nebo IT týmům vyřešit nahromaděné úkoly a vytvořit provozní nástěnky, zatímco se vaše hlavní týmy soustředí na své každodenní pracovní postupy, a také pomohla nespecializovaným týmům vytvořit jejich počáteční infrastrukturu.</p>
+                            <p>Dlouhodobé partnerství lze předvídat pro upevnění výhod mé křivky učení, protože velmi toužím přispívat k vašim projektům, dokud nedosáhneme hmatatelných a měřitelných výsledků.</p>
+                        </div>
+                        <div class="service-commentary">
+                            <h4>Osobní poznámka</h4>
+                            <p>Vyučuji Data Science a základy databází na Paris School of Business od roku 2019, přičemž se neustále zdokonaluji na platformách DataCamp a Coursera od jejich založení. Časem jsem začal přednášet i na dalších renomovaných institucích, abych vyučoval data v úzce specializovaných kontextech, jako je kybernetická bezpečnost a finance. Tuto službu nabízím proto, abych z vašeho týmu sňal nahromaděné úkoly — například přípravu dat nebo základní kanály —, protože mi to poskytuje klíčové praktické zkušenosti, které napájejí mé vlastní výzkumy.</p>
+                        </div>
+                        <div class="card-fold-fade"></div>
+                    </div>
+                    <label for="toggle-service-7" class="card-toggle-label"></label>
+
+                    <div class="service-tags">
+                    <span class="tag" onclick="filterByTag('DataEngineering')">#DataEngineering</span>
+                    <span class="tag" onclick="filterByTag('DataScience')">#DataScience</span>
+                
+                    </div>
+                </div>
+
+                <!-- ==================== SERVICE 8 ==================== -->
+                <div class="service-card" data-tags="DataScience,AppliedMathematics">
+                    <h3 class="service-title">Aplikovaná statistika & Testování hypotéz</h3>
+
+                    <input type="checkbox" id="toggle-service-8" class="card-toggle-input">
+                    <div class="card-fold-content">
+                        <div class="service-description">
+                            <p>Formulování plánů experimentů, ověřování hypotéz, statistická validace a extrakce základních vzorců z vícerozměrných datových sad. Dodáváno převážně vzdáleně, s možností osobní účasti.</p>
+                            <p>Projekty jsou strukturovány do nezávislých milníků s jasnými definicemi a koncovými body, což zaručuje, že každý výsledek lze snadno sledovat a integrovat kterýmkoli členem týmu.</p>
+                            <p>Milníky se mohou pohybovat od návrhu statistické základny nadcházejícího experimentu až po provedení auditu validace předpokladů stávajícího modelu nebo przeprowadzení úplného testu hypotézy na klíčovém datovém souboru a tvoří základ pro položky placené po dokončení, což chrání váš rozpočet. Cena se sjednává pro každý milník a nemění se, pokud budu potřebovat dodatečný čas, což vám zajišťuje stabilitu a předvídatelnost, zatímco mně to dává snížení tlaku a příležitost ke kvalitnímu učení.</p>
+                            <p>Tato struktura je navržena tak, aby pomohla týmům čelícím kvantitativním výzvám (například ve financích, lékařském výzkumu nebo meteorologii) při validaci hypotéz a odlehčení analytického dluhu. Je zvláště přizpůsobena pro společnosti a týmy, které potřebují pouze částečnou vědeckou validaci.</p>
+                            <p>Dlouhodobé partnerství lze předvídat pro upevnění výhod mé křivky učení, protože v současné době rozšiřuji své statistické základy, zejména prostřednictvím kvantitativních financí.</p>
+                        </div>
+                        <div class="service-commentary">
+                            <h4>Osobní poznámka</h4>
+                            <p>Můj základ ve statistice leží ve fyzice, když jsem studoval statistickou fyziku, a zvláště se rozvinul během mého doktorátu, kde metody Monte Carlo pro mé simulace vyžadovaly pečlivou statistickou validaci. Přednášení na Paris School of Business se studenty kombinovaného studia mě přimělo pochopit, jak aplikovat statistiku v různých podnikatelských situacích pro tvorbu obsahu mých přednášek. Zvláště jsem se snažil pomáhat týmům zvyšovat efektivitu díky zpřesnění jejich analýz s pomocí lepšího odhadu související nejistoty.</p>
+                        </div>
+                        <div class="card-fold-fade"></div>
+                    </div>
+                    <label for="toggle-service-8" class="card-toggle-label"></label>
+
+                    <div class="service-tags">
+                    <span class="tag" onclick="filterByTag('DataScience')">#DataScience</span>
+                    <span class="tag" onclick="filterByTag('AppliedMathematics')">#AppliedMathematics</span>
+                
+                    </div>
+                </div>
+
+                <!-- ==================== SERVICE 9 ==================== -->
+                <div class="service-card" data-tags="MachineLearning,DataScience">
+                    <h3 class="service-title">Aplikované strojové učení & Prediktivní modelování</h3>
+
+                    <input type="checkbox" id="toggle-service-9" class="card-toggle-input">
+                    <div class="card-fold-content">
+                        <div class="service-description">
+                            <p>Trénování a porovnávání prediktivních modelů, organizace datových sad a přenos pracovních postupů strojového učení na cloudové platformy. Dodáváno převážně vzdáleně, s možností osobní účasti.</p>
+                            <p>Projekty jsou strukturovány do nezávislých milníků s jasnými definicemi a koncovými body, což zaručuje, že každý výsledek lze snadno sledovat a integrovat kterýmkoli členem týmu.</p>
+                            <p>Milníky se mohou pohybovat od srovnávací analýzy několika architektur modelů (jako Scikit-Learn nebo XGBoost) na vaší datové sadě až po přípravu dat v BigQuery nebo přenos skriptu trénování modelu do prostředí Google Cloud Platform (GCP) a tvoří základ pro položky placené po dokončení, což chrání váš rozpočet. Cena se sjednává pro každý milník a nemění se, pokud budu potřebovat dodatečný čas, což vám zajišťuje stabilitu a předvídatelnost, zatímco mně to dává snížení tlaku a příležitost ke kvalitnímu učení.</p>
+                            <p>Tato struktura je navržena tak, aby pomohla R&D nebo data týmům při prototypování prediktivních procesů a testování alternativních architektur modelů, zatímco se vaši hlavní inženýři soustředí na udržování stabilních produkčních systémů.</p>
+                            <p>Dlouhodobé partnerství lze předvídat pro upevnění výhod mé křivky učení a lze je efektivně kombinovat s mémi dalšími datovými nebo specializovanými službami, abychom projednali, jak vám mohu pomoci dosáhnout měřitelných výsledků.</p>
+                        </div>
+                        <div class="service-commentary">
+                            <h4>Osobní poznámka</h4>
+                            <p>Objevil jsem moderní metody strojového učení v knihovně Scikit-Learn spolu s moderními metodami datové vědy po obhajobě doktorátu v roce 2016 a specializoval jsem se na ně, protože jsem chtěl být připraven, pokud by mi byla nabídnuta pozice inženýra ve fyzikální laboratoři, ale nakonec jsem dostal nabídky přednášení. Spojuji vášeň pro strojové učení s numerickými metodami a datovou vědou. V současnosti se připravuji na certifikaci Google Cloud jako inženýr strojového učení (Machine Learning Engineer), abych pomáhal nespecializovaným týmům v jakémkoli oboru (osobně hodně přemýšlím o kulturním dědictví, muzeích a galeriích) získávat intuitivní nástroje založené na datech pro pomoc v jejich specializaci.</p>
+                        </div>
+                        <div class="card-fold-fade"></div>
+                    </div>
+                    <label for="toggle-service-9" class="card-toggle-label"></label>
+
+                    <div class="service-tags">
+                    <span class="tag" onclick="filterByTag('MachineLearning')">#MachineLearning</span>
+                    <span class="tag" onclick="filterByTag('DataScience')">#DataScience</span>
+                
+                    </div>
+                </div>
+
+                <!-- ==================== SERVICE 10 ==================== -->
+                <div class="service-card" data-tags="GenerativeAI,MachineLearning">
+                    <h3 class="service-title">Hluboké generativní modelování & Matematické reprezentace</h3>
+
+                    <input type="checkbox" id="toggle-service-10" class="card-toggle-input">
+                    <div class="card-fold-content">
+                        <div class="service-description">
+                            <p>Vývoj hlubokých generativních architektur, výzkum jejich teoretických základů nebo návrh architektur. Lze aplikovat na analýzu vícerozměrných signálů, modelování neznámých rozdělení pravděpodobnosti nebo řešení fyzikálních inverzních úloh. Dodáváno převážně vzdáleně, s možností osobní účasti.</p>
+                            <p>Projekty jsou strukturovány do nezávislých milníků s jasnými definicemi a koncovými body, což zaručuje, že každý výsledek lze snadno sledovat a integrovat kterýmkoli členem týmu.</p>
+                            <p>Milníky se mohou pohybovat od vytvoření a testování hluboké generativní architektury (jako jsou variační autoenkodéry, normalizační toky nebo difúzní modely) na vašich datech až po audit základů (jako je odvození KL divergencí nebo zkoumání invariantních reprezentací), aby byla zaručena konvergence modelu k požadovanému cíli, nebo vytvoření generativního modelu zachycujícího statistiku datové sady (užitečné pro soukromí dat, když musí být datová sada smazána, abyste mohli vytvořit syntetickou verzi pro analýzu trendů po smazání), a tvoří základ pro položky placené po dokončení, což chrání váš rozpočet. Cena se sjednává pro každý milník a nemění se, pokud budu potřebovat dodatečný čas, což vám zajišťuje stabilitu a předvídatelnost, zatímco mně to dává snížení tlaku a příležitost ke kvalitnímu učení.</p>
+                            <p>Tato struktura je navržena tak, aby pomohla R&D týmům a výzkumníkům (včetně lékařských výzkumníků nebo odborníků v oblasti kulturního dědictví) při validaci matematických hypotéz nebo prototypování architektur neuronových sítí bez rozšiřování stavu zaměstnanců. Je také vhodná pro odborníky v oborech, kde musí být data periodicky mazána z důvodu ochrany soukromí (lékařská nebo spotřebitelská data).</p>
+                            <p>Dlouhodobé partnerství lze předvídat pro upevnění výhod mé křivky učení a lze je efektivně kombinovat s mémi dalšími datovými nebo specializovanými službami, abychom projednali, jak vám mohu pomoci dosáhnout měřitelných výsledků.</p>
+                        </div>
+                        <div class="service-commentary">
+                            <h4>Osobní poznámka</h4>
+                            <p>Generativní modely jsem objevil v roce 2021, kdy jsem se rozhodl absolvovat online kurz Stefana Ermona CS236 (Deep Generative Models) na Stanfordu. Pro informaci: neodevzdal jsem svůj závěrečný projekt, protože mé přednášky na PSB a dalších školách mi pro to nenechávaly mnoho času (a ustoupil jsem s tím, že jsem idealizoval stanfordské studenty, které považuji za obdivuhodné), ale i tak jsem získal známku C výhradně na základě teorie a úkolů v kódování. Přijal jsem to s jistou hrdostí vzhledem k tomu, že dosažení známky C při dostupnosti pouhých 75 % celkových bodů nebylo vůbec špatné. Pro francouzského chlapce z předměstí byl status stanfordského studenta pozdním revanšem, který zvýšil mé sebevědomí (a trochu i úroveň mé angličtiny!). V současnosti jsem začal sledovat a studovat lekce Stéphanem Mallatem na Collège de France (přičemž opakuji čerstvé lekce CS236 veřejně dostupné), abych doplnil své teoretické porozumění generativním modelům o aspekty optimálního transportu.</p>
+                        </div>
+                        <div class="card-fold-fade"></div>
+                    </div>
+                    <label for="toggle-service-10" class="card-toggle-label"></label>
+
+                    <div class="service-tags">
+                    <span class="tag" onclick="filterByTag('GenerativeAI')">#GenerativeAI</span>
+                    <span class="tag" onclick="filterByTag('MachineLearning')">#MachineLearning</span>
+                
+                    </div>
+                </div>
+
+                <!-- ==================== SERVICE 11 ==================== -->
+                <div class="service-card" data-tags="SignalProcessing,ComputerVision,ResearchCollaboration">
+                    <h3 class="service-title">Lékařská zobrazovací technika & Biologická data, Sportovní věda & Analýza signálů / Výzkumná podpora</h3>
+
+                    <input type="checkbox" id="toggle-service-11" class="card-toggle-input">
+                    <div class="card-fold-content">
+                        <div class="service-description">
+                            <p>Předzpracování, čištění a průzkumná analýza lékařských a biologických datových sad, včetně zobrazování (například soubory MRI DICOM) a biosignálů (například EKG a EEG). Dodáváno převážně vzdáleně s možností osobní účasti.</p>
+                            <p>Projekty jsou strukturovány do nezávislých milníků s jasnými definicemi a koncovými body, což zaručuje, že každý výsledek lze snadno sledovat a integrovat kterýmkoli členem týmu.</p>
+                            <p>Milníky se mohou pohybovat od úkolů předzpracování dat až po výzkumnou pomoc, jako je studium metod zobrazování nebo extrakce signálů, vývoj generativních modelů nebo nastavení statistického sběru dat s ohledem na soukromí pro zachování klíčových poznatků z datových sad podléhajících smazání (viz služba «Hluboké generativní modelování & Matematické reprezentace»). Tyto milníky tvoří základ pro položky placené po dokončení, což chrání váš rozpočet. Cena se sjednává pro každý milník a nemění se, pokud budu potřebovat dodatečný čas, což vám zajišťuje stabilitu a předvídatelnost, zatímco mně to dává snížení tlaku a příležitost ke kvalitnímu učení.</p>
+                            <p>Tato struktura je navržena tak, aby pomohla klinickým R&D týmům, lékařským výzkumníkům nebo start-upům v oblasti digitálního zdravotnictví, které potřebují specializovanou analytickou podporu, uvolnit jejich lékaře a vedoucí výzkumníky.</p>
+                            <p>Dlouhodobé partnerství lze předvídat pro upevnění výhod mé křivky učení, protože mě fascinuje biologie a medicína a neustále se učím v praxi.</p>
+                        </div>
+                        <div class="service-commentary">
+                            <h4>Osobní poznámka</h4>
+                            <p>Jsem nováčkem v klinickém prostředí, ale miluji studium lidské fyziologie. Učím se i na pouhém sledování svých srdečních dat během běžeckého tréninku s hrudním pásem Polar H10 a s hrdostí mohu nahlásit maximální tepovou frekvenci kolem 180 tepů/min, druhý ventilační práh kolem 164 tepů/min a průměrný pokles tepu po zátěži o 25–30 tepů/min za minutu (jsem stejně hrdý na svou fyzickou kondici ve 46 letech jako na to, jak se mé porozumění srdci zlepšilo díky vlastnímu výzkumu!). Jsem také hrdý na to, že jsem se stal «laboratorním králíkem» ve třech studiích autismu (jeden záznam EEG reakčního času pro srovnání autistických a neautistických lidí, jeden o prosodii a jeden o vnímání umění přes eye-tracker), a byl bych velmi rád na straně výzkumníků, abych mohl pomoci!</p>
+                        </div>
+                        <div class="card-fold-fade"></div>
+                    </div>
+                    <label for="toggle-service-11" class="card-toggle-label"></label>
+
+                    <div class="service-tags">
+                    <span class="tag" onclick="filterByTag('SignalProcessing')">#SignalProcessing</span>
+                    <span class="tag" onclick="filterByTag('ComputerVision')">#ComputerVision</span>
+                    <span class="tag" onclick="filterByTag('ResearchCollaboration')">#ResearchCollaboration</span>
+                
+                    </div>
+                </div>
+
+                <!-- ==================== SERVICE 12 ==================== -->
+                <div class="service-card" data-tags="ComputerVision,ResearchCollaboration">
+                    <h3 class="service-title">Digitální zpracování obrazu pro kulturní dědictví</h3>
+
+                    <input type="checkbox" id="toggle-service-12" class="card-toggle-input">
+                    <div class="card-fold-content">
+                        <div class="service-description">
+                            <p>Digitální uchování, spektrální analýza a высокоkvalitní digitální řešení pro prezentaci výtvarného umění, galerií a kulturních institucí.</p>
+                            <p>Projekty jsou strukturovány do nezávislých milníků s jasnými definicemi a koncovými body, což zaručuje, že každý výsledek lze snadno sledovat a integrovat kterýmkoli členem týmu.</p>
+                            <p>Milníky se mohou pohybovat od digitalizace fotografie nebo obrazu až po výzkumnou podporu, jako je digitální restaurace poškozeného plátna spojením historických fotografií nebo provedení spektrální analýzy pro odhalení stop minulého restaurování. Tyto milníky tvoří základ pro položky placené po dokončení, což chrání váš rozpočet. Cena se sjednává pro každý milník a nemění se, pokud budu potřebovat dodatečný čas, což vám zajišťuje stabilitu a předvídatelnost, zatímco mně to dává snížení tlaku a příležitost ke kvalitnímu učení.</p>
+                            <p>Tato struktura je navržena tak, aby pomohla muzejním kurátorům, restaurátorům umění, soukromým galeriím a institucím dědictví, které potřebují specializovanou výpočetní podporu pro digitalizaci, analýzu nebo virtuální prezentaci svých sbírek bez dlouhodobých technických režijních nákladů.</p>
+                            <p>Dlouhodobá spolupráce je zvláště cenná, protože poskytuje čas potřebný k prostudování fyzikálních a matematických výzev specifických pro vaše sbírky a procesy uchování.</p>
+                        </div>
+                        <div class="service-commentary">
+                            <h4>Osobní poznámka</h4>
+                            <p>Jsem vděčný profesoru Robertu Erdmannovi za mé přání zkoumat oblast počítačové vizualizace v aplikaci na kulturní dědictví. Jeho práce na digitalizaci Rembrandtova obrazu *Noční hlídka* v ultravysokém rozlišení je mimořádně působivá, protože lze přiblížit obraz až k prasklině široké jeden milimetr. Muzea a galerie mají zvláštní atmosféru, která je pro mě jako člověka s autismem vzácná. Chci zde vyjádřit svůj dík svým nejoblíbenějším muzeím a galeriím: Muzeu umění Kumu a Fotografiska v Tallinnu v Estonsku a Národnímu muzeu Finska v Helsinkách.</p>
+                        </div>
+                        <div class="card-fold-fade"></div>
+                    </div>
+                    <label for="toggle-service-12" class="card-toggle-label"></label>
+
+                    <div class="service-tags">
+                    <span class="tag" onclick="filterByTag('ComputerVision')">#ComputerVision</span>
+                    <span class="tag" onclick="filterByTag('ResearchCollaboration')">#ResearchCollaboration</span>
+                
+                    </div>
+                </div>
+
+                <!-- ==================== SERVICE 13 ==================== -->
+                <div class="service-card" data-tags="SignalProcessing,QuantitativeFinance">
+                    <h3 class="service-title">Zpracování signálů & Analýza časových řad</h3>
+
+                    <input type="checkbox" id="toggle-service-13" class="card-toggle-input">
+                    <div class="card-fold-content">
+                        <div class="service-description">
+                            <p>Matematická analýza signálů, časově-frekvenční reprezentace a algoritmická extrakce vzorců z časových datových sad. Dodáváno převážně vzdáleně, s možností osobní účasti.</p>
+                            <p>Projekty jsou strukturovány do nezávislých milníků s jasnými definicemi a koncovými body, což zaručuje, že každý výsledek lze snadno sledovat a integrovat kterýmkoli členem týmu.</p>
+                            <p>Milníky se mohou pohybovat od analýzy časových datových sad až po realizaci diskrétní waveletové transformace pro potlačení šumu signálu senzoru, vytvoření lokalizovaných časově-frekvenčních spektrogramů pro extrakci příznaků nebo vývoj rámců pro detekci anomálií v časových řadách financí. Tyto milníky tvoří základ pro položky placené po dokončení, což chrání váš rozpočet. Cena se sjednává pro každý milník a nemění se, pokud budu potřebovat dodatečný čas, což vám zajišťuje stabilitu a předvídatelnost, zatímco mně to dává snížení tlaku a příležitost ke kvalitnímu učení.</p>
+                            <p>Tato struktura je navržena tak, aby pomohla výzkumným týmům, start-upům v oblasti zdravotnických prostředků nebo inženýrským týmům pracujícím se zarušenými časovými fyzikálními měřeními, které potřebují speciální matematickou podporu pro extrakci smysluplných vzorců bez stálých technických režijních nákladů.</p>
+                            <p>Dlouhodobé partnerství lze předvídat pro upevnění výhod mé křivky učení, protože prohlubuji své porozumění zpracování signálů a transformacím spojením studia knihoven s praktickým použitím.</p>
+                        </div>
+                        <div class="service-commentary">
+                            <h4>Osobní poznámka</h4>
+                            <p>Mé základní porozumění zpracování signálů vychází především z mého základu ve фундаментальной matematice prostřednictvím funkcionální analýzy a spektrálních transformací. Navrhl jsem tuto službu tak, aby efektivně podporovala výzkumné týmy a zároveň rozšiřovala mé znalosti díky studiu děl výzkumníků jako Stéphane Mallat nebo Ingrid Daubechies v oblasti waveletových transformací nebo dalších výzkumů ve funkcionální analýze.</p>
+                        </div>
+                        <div class="card-fold-fade"></div>
+                    </div>
+                    <label for="toggle-service-13" class="card-toggle-label"></label>
+
+                    <div class="service-tags">
+                    <span class="tag" onclick="filterByTag('SignalProcessing')">#SignalProcessing</span>
+                    <span class="tag" onclick="filterByTag('QuantitativeFinance')">#QuantitativeFinance</span>
+                
+                    </div>
+                </div>
+
+                <!-- ==================== SERVICE 14 ==================== -->
+                <div class="service-card" data-tags="ResearchCollaboration">
+                    <h3 class="service-title">Výzkumné rozhraní, Transfer technologií & Podpora spolupráce</h3>
+
+                    <input type="checkbox" id="toggle-service-14" class="card-toggle-input">
+                    <div class="card-fold-content">
+                        <div class="service-description">
+                            <p>Stavění mostů: mezi akademickou sférou (univerzity, školy) a průmyslem (start-upy, banky), mezi Francií a zbytkem světa a také mezi vzdálenými akademickými institucemi pro jakýkoli projekt, který získá z vědecky kvalifikovaného spoluvyslance.</p>
+                            <p>Na rozdíl od mých dalších služeb, přísně strukturovaných kolem předem stanovených milníků, zde určujeme naše cíle a diskutujeme o našem formátu práce individuálně, případ od případu.</p>
+                        </div>
+                        <div class="service-commentary">
+                            <h4>Osobní poznámka</h4>
+                            <p>Navrhl jsem tuto službu především z lásky k cizím jazykům (z mé francouzské perspektivy). Hledal jsem příležitosti podílet se na budování partnerství jménem škol, kde přednáším, zejména pro navazování mostů mezi Paříží a Tallinnem. Učinil jsem již první kroky tímto směrem, což mě seznámilo s mimořádnými lidmi. Jelikož mám v úmyslu nabízet své dovednosti několika partnerům v různých sférách, je skvělá šance, že časem budeme moci vybudovat skvělou synergii!</p>
+                        </div>
+                        <div class="card-fold-fade"></div>
+                    </div>
+                    <label for="toggle-service-14" class="card-toggle-label"></label>
+
+                    <div class="service-tags">
+                    <span class="tag" onclick="filterByTag('ResearchCollaboration')">#ResearchCollaboration</span>
+                
+                    </div>
+                </div>
+            </section>
+
+            <section id="section3" class="section-3">
+                <div class="translation-notice">
+                    Tyto stránky v češtině jsou automatickým překladem z angličtiny. Jsem nadšenec do jazyků, a zejména do slovanských. V letech 2005 až 2007 jsem studoval ruštinu na univerzitě (v čemž pokračuji sám) a poté jsem se sám učil česky. Před několika měsíci jsem také začal s ukrajinštinou. Má úroveň byla dostatečná pro přátelskou konverzaci před několika lety, kdy jsem často navštěvoval Prahu, ale zdaleka nestačí na překlad mé anglické verze webu. Spoléhám se tedy na strojový překlad svých stránek, ale plánuji nechat tuto práci v budoucnu zkontrolovat. Moc rád bych spolupracoval s odborníky z České republiky a vaše zpětná vazba pro mě bude velmi cenná, ať už ohledně mých služeb, nebo z lingvistického hlediska.
+                </div>
+                <h2>Stručný životopis</h2>
+
+                <!-- Local Index / Table of Contents -->
+                <nav class="bio-index" aria-label="Obsah životopisu">
+                    <h3>Obsah</h3>
+                    <ul>
+                        <li>
+                            <a href="#bio-academics">Akademická dráha</a>
+                            <ul>
+                                <li><a href="#bio-physics">Fyzika</a></li>
+                                <li><a href="#bio-mathematics">Matematika</a></li>
+                                <li><a href="#bio-languages-acad">Jazyky</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#bio-miscellaneous">Různé</a>
+                            <ul>
+                                <li><a href="#bio-languages-misc">Jazyky</a></li>
+                                <li><a href="#bio-datascience">Datová věda & Strojové učení</a></li>
+                                <li><a href="#bio-computervision">Počítačové vidění</a></li>
+                                <li><a href="#bio-generative">Generativní modely</a></li>
+                                <li><a href="#bio-finance">Finance</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+
+                <!-- General Introduction -->
+                <article class="bio-intro">
+                    <p>Dobrý den, jsem Nicolas, nezávislý výzkumník a lektor datové vědy (Data Science). Rozdělil jsem tuto stránku na podsekce Akademická a Různé tak dobře, jak jsem mohl, s ohledem na mou velmi nelineární cestu.</p>
+                </article>
+
+                <!-- Academics Subsection -->
+                <div id="bio-academics" class="bio-subsection">
+                    <h3>Akademická dráha</h3>
+                    <p>Mé studium začalo v roce 1998 maturitou a skončilo v roce 2016 obhajobou doktorské дисертаce. Zahrnovalo mimo jiné tři hlavní témata: fyziku, matematiku a jazyky. Řeknu trochu o tom, co jsem dělal, ale vynechám většinu chaotických let.</p>
+
+                    <!-- Physics Subtopic -->
+                    <div id="bio-physics" class="bio-subtopic">
+                        <h4>Fyzika</h4>
+                        <p class="clearfix">
+                            <a href="../cert_doctorat.webp" target="_blank" class="cert-link right">
+                                <img src="../cert_doctorat.webp" alt="Diplom doktora věd" class="inline-cert" loading="lazy">
+                            </a>
+                            Začal jsem studiem DEUG z fyziky v Jussieu (první dva univerzitní roky), než jsem přešel na matematiku, pak jsem se vrátil k fyzice ve druhém ročníku magisterského studia materiálových věd (SMNO Master na Sorbonně), načež následoval doktorát od září 2012 do dubna 2016 na Sorbonne Université v laboratoři IMPMC pod vedením prof. Michele Casuly a prof. Franceska Mauriho.
+                        </p>
+                        <p>Můj doktorát zahrnoval numerické studie elektronických základních stavů (především) a excitovaných stavů (sekundárně) molekulární rodiny zvané aceny. Aceny jsou rodinou lineárních molekul, jejichž strukturu lze chápat jako úzký proužek grafenové pásky. Zaměřili jsme se na elektronové a spinové hustoty a korelace, abychom lépe pochopili spinové korelace v materiálech podobných grafenu, což může mít uplatnění v oblastech, jako je solární energetika.</p>
+                        <p>Prof. Casula je odborníkem na metody kvantového Monte Carla a výzkumníkem s působivou schopností soustředit se na desítky věcí najednou. Byl náročným a nekompromisním vedoucím, který mě naučil dělat vědu, zatímco dříve jsem byl pouze v nastavení mysli řešení úloh z učebnice. Měl jsem velké štěstí, že jsem s ním mohl pracovat.</p>
+                    </div>
+
+                    <!-- Mathematics Subtopic -->
+                    <div id="bio-mathematics" class="bio-subtopic">
+                        <h4>Matematika</h4>
+                        <p class="clearfix">
+                            <a href="../cert_maitrise.webp" target="_blank" class="cert-link right">
+                                <img src="../cert_maitrise.webp" alt="Diplom magistra matematiky" class="inline-cert" loading="lazy">
+                            </a>
+                            Na matematiku jsem přešel ve třetím ročníku. Už od roku 1999 jsem studoval fyziku a matematiku z učebnic, ale pro dosažení mého osobního cíle — ENS — byla tato odbočka strategicky výhodnější.
+                        </p>
+                        <p>Stručná poznámka o francouzských školách: Máme elitní alternativu ke standardní univerzitní dráze zvanou Classes Préparatoires aux Grandes Écoles. V paralela s USA: tyto Grandes Écoles lze přirovnat k univerzitám Ivy League. Studenti se připravují na náročné zkoušky dva roky v Classes Préparatoires (a často berou třetí rok pro přijetí na prestižnější školu) a pak se účastní maratonu конкурсních zkoušek.</p>
+                        <p>Institucí mého snu byla École Normale Supérieure (ENS), pravděpodobně nejvýběrovější z nich po boku Polytechnique. Dozvěděl jsem se o ní příliš pozdě na to, abych nastoupil do Classe Préparatoire, ale přesto jsem se rozhodl to zkusit jako nezávislý kandidát. Soupeřil jsem tedy s budoucími potenciálními nositeli Nobelovy ceny a spoléhal na samostudium z učebnic (a to nefungovalo, ale výzvu jsem si moc užil!).</p>
+                        <p>Licence de Mathématiques nabízel nejbližší odpovídající program Classes Préparatoires. V těchto letech můj studijní plán zahrnoval:</p>
+                        <ul>
+                            <li>Dva kurzy algebry: základy, následované strukturami okruhů a Galoisovou teorií (přibližně odpovídá první polovině Části II v «Algebře» Serge Langa)</li>
+                            <li>Obecná topologie</li>
+                            <li>Diferenciální počet</li>
+                            <li>Integrace a teorie míry</li>
+                            <li>Diferenciální rovnice a diferenciální geometrie</li>
+                            <li>Spektrální a Fourierova analýza</li>
+                            <li>Dynamické systémy a Lieovy skupiny</li>
+                        </ul>
+                        <p>(Tento krátký přehled nezahrnuje oblasti, které jsem studoval později v rámci nezávislých výzkumů, jako je teorie pravděpodobnosti a numerické metody.)</p>
+                    </div>
+
+                    <!-- Languages (Academic) Subtopic -->
+                    <div id="bio-languages-acad" class="bio-subtopic">
+                        <h4>Jazyky</h4>
+                        <p>Můj neúspěch na ENS snížil mého bojového ducha, a proto jsem se paralelně s magisterským studiem matematiky zapsal na INALCO ke studiu ruštiny.</p>
+                        <p>Pohltilo mě studium ruštiny, takže začala vystupovat do popředí ve srovnání s matematikou. Proto mi trvalo dva roky, než jsem magisterské studium dokončil, protože jsem musel opakovat pár zkoušek (čehož také nelituji!).</p>
+                        <p>Můj učitel gramatiky ve mně probudil vášeň pro poezii v cizích jazycích. Poezie mě často motivuje začít se učit nový jazyk. Když jsem se začal učit estonsky, objevil jsem Jaana Kaplinského, který zůstává jedním z mých nejoblíbenějších básníků. Je to dokonce závislost: přečtu si něco zajímavého o kultuře, chci o ní vědět trochu víc, prozkoumám jen trošku, slíbím si, že nebudu kopat hlouběji, stejně to udělám a pak přidám novou hromadu knih na svůj noční stolek.</p>
+                    </div>
+                </div>
+
+                <!-- Miscellaneous Subsection -->
+                <div id="bio-miscellaneous" class="bio-subsection">
+                    <h3>Různé</h3>
+
+                    <!-- Languages (Misc) Subtopic -->
+                    <div id="bio-languages-misc" class="bio-subtopic">
+                        <h4>Jazyky</h4>
+                        <p>Začnu rozhovor o své vášni výhradou: mnohé jazyky znám velmi špatně. Je to vášeň, nikoli sbírka pro chlubení, ale protože jsem se tím začal zabývat před více než dvaceti lety, nahromadil jsem mnoho zkušeností, které, jak se mi někdy zdá, mohu využít.</p>
+                        <p>Stručně tedy: Všechno to začalo ruštinou (dva roky na univerzitě) a pokračovalo samostatně (tak to bude vždy, takže už to nemusím upřesňovat). Pak prvními dvěma jazyky, které jsem se začal učit zcela sám, byly čeština a maďarština, protože jsem tam plánoval cestu. Poprvé to byla katastrofa, když jsem se snažil mluvit s lidmi, ale další rok se to zlepšilo. Mé cizí jazyky ve škole byly němčina a angličtina, takže jsem je obnovil jako další a po cestě přidal italštinu (díky kamarádovi) a jel tam do letní školy. Sedm let studuji estonštinu, počínaje školou na Saaremaa, a před pár lety jsem se začal učit švédsky a trochu čínsky. To ještě není všechno, ale v těchto jsem nejaktivnější.</p>
+                        <p>Nicméně pociťuji plusy a mínusy pobytu na spektru. Mohu se cestou do práce učit estonskou nebo švédskou poezii s telefonem jako slovníkem a nyní využívat AI nástroje pro vysvětlení symbolismu nebo historie, ale zároveň pro mě není vždy snadné komunikovat a často se zablokuji, když začnu pociťovat úzkost.</p>
+                    </div>
+
+                    <!-- Data Science & Machine Learning Subtopic -->
+                    <div id="bio-datascience" class="bio-subtopic">
+                        <h4>Datová věda & Strojové učení</h4>
+                        <p class="clearfix">
+                            <a href="../cert_datacamp.webp" target="_blank" class="cert-link right">
+                                <img src="../cert_datacamp.webp" alt="Certifikát DataCamp" class="inline-cert" loading="lazy">
+                            </a>
+                            <a href="../cert_coursera.webp" target="_blank" class="cert-link right" style="margin-right: 15px;">
+                                <img src="../cert_coursera.webp" alt="Certifikát Coursera" class="inline-cert" loading="lazy">
+                            </a>
+                            Začal jsem studovat datovou vědu online na Coursera, protože tento obor ve Francii v době, kdy jsem dokončoval doktorát, teprve vznikal, a byla to fascinující nová sféra ukazující, jak tyto metody využít na otevřených datech pro objevy v jakémkoli tématu. Milovníci matematiky mají snadný přístup k mnoha novým metodám, zajímavým ke studiu samy o sobě, a také k provádění numerických výzkumů přímo z domova.
+                        </p>
+                    </div>
+
+                    <!-- Computer Vision Subtopic -->
+                    <div id="bio-computervision" class="bio-subtopic">
+                        <h4>Počítačové vidění</h4>
+                        <p>Po několika návodech na hluboké učení na klasických architekturách, jako byl kurz Andrew Ng o hlubokém učení, jsem se chtěl do této oblasti ponořit hlouběji a neomezovat se pouze na metody strojového učení, protože tradiční algoritmy mají fascinující matematické základy, zejména v geometrii, využívající Fourierovy transformace nebo diferenciální počet.</p>
+                    </div>
+
+                    <!-- Generative Models Subtopic -->
+                    <div id="bio-generative" class="bio-subtopic">
+                        <h4>Generativní modely</h4>
+                        <p>V roce 2021 jsem ušetřil dost peněz na to, abych absolvoval kurz na Stanford Online, a vybral jsem si CS236. V té době to byl zčásti způsob, jak si vzít pozdní revanš za neúspěch na ENS a cítit se jako student univerzity Ivy League. Neměl jsem vhodnou povahu na to, abych komunikoval se spolužáky online, vyjadřoval se na fóru nebo kladl otázky, takže jsem nezískal o moc více, než kdybych si přečetl knihu, ale měl jsem včasnou výuku od jednoho z předních odborníků v této oblasti a byl úžasný. Nyní jsem tím fascinován.</p>
+                    </div>
+
+                    <!-- Finance Subtopic -->
+                    <div id="bio-finance" class="bio-subtopic">
+                        <h4>Finance</h4>
+                        <p>Objevil jsem u sebe pozdní zájem o finanční matematiku díky přednášení na business školách. Zajímá mě výpočet rizikové hodnoty (Value-at-Risk) portfolií s využitím metod strojového učení (PCA a normalizační toky). Mezitím jsem zjistil, že investování v souladu s osobními hodnotami se ukázalo jako méně složité, než jsem si myslel, zejména investování do severní Evropy.</p>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+    </body>
+</html>
+
+<script src="../script.js"></script>

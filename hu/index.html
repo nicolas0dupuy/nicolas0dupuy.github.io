@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="hu">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Nicolas Dupuy</title>
+        <link rel="stylesheet" href="../style.css">
+    </head>
+    <body>
+
+        <nav class="sidebar">
+            <img src="../profile.webp" alt="Nicolas Dupuy" class="profile-pic">
+            <h1 class="sidebar-name">Nicolas Dupuy</h1>
+            <p class="sidebar-title">Független kutató | PhD számítógépes fizika területén</p>
+            <ul class="nav-links">
+                <li><a href="#home">Kezdőlap</a></li>
+                <li><a href="#section1">A projekt filozófiája</a></li>
+                <li><a href="#section2">Szolgáltatások</a></li>
+                <li><a href="#section3">Rövid életrajz</a></li>
+                <li class="nav-contact-item"><a href="mailto:nicolas0dupuy@gmail.com" class="email-link">nicolas0dupuy@gmail.com</a></li>
+            </ul>
+        </nav>
+
+        <main class="content">
+            <div class="lang-selector-container">
+                <select class="lang-select" onchange="if(this.value) window.location.href=this.value;">
+                    <option value="../index.html">English</option>
+                    <option value="../fr/index.html">Français</option>
+                    <option value="../de/index.html">Deutsch</option>
+                    <option value="../sv/index.html">Svenska</option>
+                    <option value="../et/index.html">Eesti</option>
+                    <option value="../fi/index.html">Suomi</option>
+                    <option value="../ru/index.html">Русский</option>
+                    <option value="../uk/index.html">Українська</option>
+                    <option value="../cs/index.html">Čeština</option>
+                    <option value="" selected>Magyar</option>
+                </select>
+            </div>
+            <section id="home">
+                <div class="translation-notice">
+                    Ezek a magyar nyelvű oldalak az angol eredeti automatikus fordításai. Rajongok a nyelvekért. Néhány évvel ezelőtt, amikor rendszeresen Budapestre látogattam, magamtól tanultam magyarul. Nyelvtudásom elegendő volt a nagyon egyszerű, baráti beszélgetésekhez, de távolról sem elég ahhoz, hogy lefordítsam a weboldalam angol verzióját. Így a gépi fordításra bíztam az oldalak lefordítását, de a jövőben tervezem a szövegek lektoráltatását. Nagyon örülnék a magyarországi szakemberekkel való együttműködésnek, és a visszajelzései rendkívül értékesek számomra, mind a szolgáltatásaimat, mind a nyelvészetet illetően.
+                </div>
+                <div class="intro-cadre">
+                    <p><strong>Üdvözlöm! Első megjegyzés ehhez a béta verzióhoz.</strong></p>
+                    <p>Ez a weboldal áttekintést nyújt a kutatás-fejlesztési (R&D) digitális szolgáltatásaimról. Mivel azonnali prioritásom a elérhetőségem jelzése, egy minimális verziót terveztem a későbbi fejlesztésekig.</p>
+                    <p>Sokat olvasunk a PhD szintű AI rendszerek képességeiről, és nekem is vannak kiaknázatlan PhD kapacitásaim, amelyeket szeretnék felajánlani. A neuroatipikusság volt a fő akadályom a hagyományos munkamenetekben, ezért az autizmus spektrum profilomhoz igazított munkamenetet alakítottam ki, megszüntetve a hagyományos súrlódásokat, főként az aszinkron munkavégzés, a kijelölt EOR / portage salarial vállalatra átruházott adminisztratív feladatok és a mérföldkövekhez kötött teljesítés révén.</p>
+                    <p>Mivel két energiamódban (alacsony és magas) dolgozom, szolgáltatásaim különböző összetettségű tartományokat fednek le. Ha túl kevés az energiám az igényes kutatáshoz, mindig foglalkozhatok a felhalmozott adatfeldolgozási feladataival; mindig akad valami, amit feldolgozhatok, hogy felgyorsítsam az Ön munkáját.</p>
+                    <p>Idővel finomítom ezt az oldalt, hogy emberibbé, jobban elmagyarázottá tegyem, és egy személyesebb részt is hozzáadjak. Mivel folyamatosan két energiamódban dolgozom, ezt a platformot is két megfelelő részletességi szinttel tervezem; annak fokozatos életre keltése a hobbijaim megosztásán keresztül a feltöltődés módja számomra az intellektuálisan kíváncsi kollégákkal való kommunikáció révén.</p>
+                </div>
+            </section>
+            <section id="section1">
+                <div class="translation-notice">
+                    Ezek a magyar nyelvű oldalak az angol eredeti automatikus fordításai. Rajongok a nyelvekért. Néhány évvel ezelőtt, amikor rendszeresen Budapestre látogattam, magamtól tanultam magyarul. Nyelvtudásom elegendő volt a nagyon egyszerű, baráti beszélgetésekhez, de távolról sem elég ahhoz, hogy lefordítsam a weboldalam angol verzióját. Így a gépi fordításra bíztam az oldalak lefordítását, de a jövőben tervezem a szövegek lektoráltatását. Nagyon örülnék a magyarországi szakemberekkel való együttműködésnek, és a visszajelzései rendkívül értékesek számomra, mind a szolgáltatásaimat, mind a nyelvészetet illetően.
+                </div>
+                <h2>A projekt filozófiája</h2>
+
+                <!-- Unified Introduction Context Block -->
+                <div class="philosophy-intro-text">
+                    <p><strong>Nicolas vagyok, független kutató, aki ezt a kutatási és adat-tudományi támogatási szolgáltatást vezeti.</strong></p>
+                    <p>Moduláris szolgáltatáskínálatot kínálok a tudományos kutatástól az adattudományig, külső támogatást nyújtva azokhoz a feladatokhoz, amelyeket a csapatának mentesítenie kell.</p>
+                    <p>Ezt a rendszert a szoftverfejlesztés által ihletett hibajegy (ticket) rendszer köré építettem, igazodva az autizmussal élő kutatóként meglévő változó munkaterhelési korlátaimhoz. A fizetés szigorúan az eredmények alapján történik a mérföldkövek jóváhagyása után a Employer of Record (portage salarial) révén, ami a teljes együttműködést azonnal használhatóvá teszi („plug-and-play”).</p>
+                    <p><strong>További részletek:</strong></p>
+                </div>
+                <div class="tabs-container">
+                    <!-- Barre de navigation à 3 onglets -->
+                    <div class="tab-buttons grid-three">
+                        <button class="tab-btn active" data-target="phil-what">Amit csinálok...</button>
+                        <button class="tab-btn" data-target="phil-why">Miért</button>
+                        <button class="tab-btn" data-target="phil-autism">Autizmus spektrum profil</button>
+                    </div>
+
+                    <!-- Contenu des onglets -->
+                    <div class="tab-content">
+
+                        <!-- Onglet 1 : What I do -->
+                        <div id="phil-what" class="tab-panel active">
+
+                            <h4 style="margin-top: 1.5rem; color: #ffffff;">Amit csinálok néhány sorban:</h4>
+                            <ul style="padding-left: 1.2rem; color: #e0e0e0;">
+                                <li style="margin-bottom: 0.8rem;"><strong>A felhalmozott projektek és mérnöki adósságok felszámolása:</strong> Átvállalom a felhalmozott kutatási és adattudományi munkaterhelését. Ez magában foglalja a félretett másodlagos hipotézisek vizsgálatát vagy a csapata kapacitásának bővítését a sürgős számítási munkákhoz. Egyetlen szakterülethez sem kötődő kutatóként járok el.</li>
+                                <li style="margin-bottom: 0.8rem;"><strong>Értékalapú mérföldkövek:</strong> Együtt bontjuk fel a technikai ütemtervet projektjegyekre, rögzített árat és indikatív időkeretet rendelve minden mérföldkőhöz. Attól a pillanattól kezdve teljesen autonóm módon irányítom az időbeosztásomat. Aszinkron frissítésekkel tartjuk egymást naprakészen, ami kiküszöböli a formális megbeszélések időigényét.</li>
+                                <li style="margin-bottom: 0rem;"><strong>Adaptív végrehajtás:</strong> A munkameneteket az alapvető adatkutatástól a specializált numerikus szimulációkig vagy teoretikus kutatásokig kezelem. A munkamenetem alkalmazkodik a kognitív elérhetőségemhez, a koncentráció csúcsát a komplex matematikai kutatásokra irányítva, a lineáris adatfeldolgozást pedig a stabil működési ritmus fenntartására használva.</li>
+                            </ul>
+                        </div>
+
+                        <!-- Onglet 2 : Why -->
+                        <div id="phil-why" class="tab-panel">
+                            <ul style="padding-left: 1.2rem; color: #e0e0e0;">
+                                <li style="margin-bottom: 0.8rem;"><p><strong>A kutatás mint szenvedély:</strong> Évekkel ezelőtt nem hittem, hogy kutatóvá válhatok a jó tanulmányi eredmények ellenére. Az egyetemen maradtam, mert imádtam tanulni, és végül lehetőséget kaptam a doktorim megvédésére. A technikai csapatok támogatása az én módom arra, hogy kiváló kutatókkal működjek együtt izgalmas projektekben, lehetővé téve számomra a tanulás folytatását, miközben hozzájárulok a fejlődésükhöz, és túllépek a doktori munkám keretein.</p></li>
+                                <li style="margin-bottom: 0.8rem;"><p><strong>A tanulási lendületem kihasználása:</strong> Akadémiai könyvmoly vagyok. Leginkább így tanultam: magántanárként dolgoztam otthon, majd hordószámra vettem a tankönyveket és tudományos könyveket. Soha nem álltam meg. Ma, a történelmi intézmények digitális médiájával, mint a Collège de France vagy a Stanford, az olvasási listám hosszabb, mint a gyermek karácsonyi kívánságlistája (ahogy én hívom). Az autizmussal kapcsolatos intenzív fókusz nem mítosz. Ha valamiért lelkesedem, nem csinálom félgőzzel. Ez adja meg a lendületet ahhoz, hogy minőségi, koncentrált munkát végezzek hosszú időn keresztül.</p></li>
+                                <li style="margin-bottom: 0.8rem;"><p><strong>Interdiszciplináris dinamika:</strong> A hagyományos kutatási pályákkal ellentétben, amelyek egyetlen területen való extrém specializációt igényelnek, én virágzom több szféra felfedezésekor. Míg egy állandó akadémiai pozícióban ez korlátot jelentene, a független struktúrám ezt a sokszínűség iránti igényt előnnyé alakítja. Ez lehetővé teszi számomra, hogy matematikai készségeimet agnosztikusan alkalmazzam a különböző szektorokban, átemelve az analitikai eszközöket a pénzügyek, az orvostudomány, a elméleti fizika és az alkalmazott adatcsatornák között.</p></li>
+                            </ul>
+                        </div>
+
+                        <!-- Onglet 3 : Autism Notes -->
+                        <div id="phil-autism" class="tab-panel">
+                            <p><em>«Az autizmus spektrum zavarok (ASD) a állapotok sokféle csoportját képviselik. A szociális interakció és a kommunikáció bizonyos fokú nehézségei jellemzik őket. Egyéb jellemzők a tevékenységek és a viselkedés nem tipikus mintázatai, mint például az egyik tevékenységről a másikra való áttérés nehézségei, a részletekre való összpontosítás és a szokatlan reakciók az érzékszervi ingerekre,»</em> — a WHO szerint, amely a prevalenciát körülbelül 1 az 127 emberre becsüli a globális népességben.</p>
+                            <p>És mi a helyzet az akadémiai környezettel? Bár nincsenek közvetlen világszintű statisztikák az akadémiai elterjedtségről, Simon Baron-Cohen 2001-ben közzétett egy tanulmányt, amely az átlagos autizmus spektrum koefficienset (AQ) mérte a különböző népességcsoportokban. Egy 0-tól 50-ig terjedő skálán, ahol az átlagos népesség átlaga 16,4 (± 6,4), a klinikailag diagnosztizált autista népességé pedig 35,8 (± 6,5), a matematikust hallgatók 21,5 (± 6,5) pontot értek el, ami alig marad el a 16 brit diákolimpiai győztesétől (24,5 ± 5,7).</p>
+                            <p>Ha az autizmust a munkahelyen nézzük, a specializált szervezetek, mint a National Autistic Society és a Brit Nemzeti Statisztikai Hivatal (ONS) adatai azt mutatják, hogy az autizmus mutatja a legalacsonyabb foglalkoztatási rátát az összes fogyatékossági kategória közül — a felnőtt autisták mindössze 21,7%-a rendelkezik hivatalos munkával (2020-as adatok), alig megelőzve a súlyos tanulási nehézségekkel küzdő felnőtteket.</p>
+                            <p>Ennek ellenére az autizmus spekrtum a helyzetek és az intellektuális szintek széles skáláját öleli fel. Dr. Niall Kenny értékes tanúságtételeket gyűjtött össze az ír felsőoktatásban dolgozó akadémikusoktól (<em>«Tell me what my job is»: A Qualitative Exploration of the Experiences of Autistic Academic Staff working in Higher Education in Ireland</em>), és én is hozzáadhatom a sajátomat. Ha elolvassa, íme néhány kiemelt téma:</p>
+
+                            <ol style="padding-left: 1.2rem; color: #e0e0e0; margin-top: 1rem;">
+                                <li style="margin-bottom: 0.8rem;"><strong>A diagnózis megszerzése hatalmas terhet vesz le az emberről:</strong> Számomra ez tényleg olyan volt, mintha egy nyúl lennék, aki véletlenül egy macskacsaládba került, akinek végre elmondják, hogy bár szeretem őket, az olyan apró kiigazítások, mint a madárvadászattól vagy az éjszakai kószálástól való tartózkodás, sokkal jobbá teszik az életemet.</li>
+                                <li style="margin-bottom: 0.8rem;"><strong>Az időérzékelés kardinálisan eltér</strong> a neurodivergens és neurotipikus embereknél, sőt még két autista egyén között is. A tanulmányban az egyik résztvevő leírja, hogy képes órákon át egyetlen feladatra összpontosítani anélkül, hogy észrevenné az idő múlását, míg a másiknak gyakrabban van szüksége szünetekre, mint a kollégáinak. Én pontosan középen vagyok: 17 évesen imádtam a sakkversenyeket, ahol a reggel 9-kor kezdődő egész napos játszmák akár 8 órán át is eltarthattak. Megpróbáltam letenni az École Normale Supérieure (ENS) egyik legnehezebb felvételi vizsgáját; mivel nem a hagyományos utat jártam, szörnyű eredményeim voltak, de a kihívást nagyon élveztem. Ennek ellenére, még egy olyan feladatnál is, amiben jeleskedem, ha az elmémet mérgező gondolatok homályosítják el, az időérzékelésem teljesen felborul.</li>
+                                <li style="margin-bottom: 0.8rem;"><strong>Rutinok és szervezés:</strong> Mindannyiunknak megvannak a magunk rutinjai, és a szervezés kaotikus lehet. Számomra a multitasking olyan, mintha egyszerre több buzogánnyal próbálnék zsonglőrködni, és még két határidő jelenléte is, ha nagyon távoliak is, teljesen leblokkolhat.</li>
+                                <li style="margin-bottom: 0.8rem;"><strong>Maszkolás (masking):</strong> Visszatérve a nyúl szerepére a macskacsaládban, amely örökbe fogadott. Szereted őket, szeretnél velük időt tölteni és együtt csinálni dolgokat, de nekik olyan ösztöneik vannak, amik neked nincsenek. Így próbálod ugyanezt tenni egy tudattalan másolási mechanizmuson keresztül, de az elméd sikít a fájdalomtól. Ez gyakran a kiégéshez vezető kimerültség fő oka.</li>
+                                <li style="margin-bottom: 0.8rem;"><strong>Szenzoros túlterhelés:</strong> Kiemelt okként adom hozzá a kimerültséghez és a kiégéshez. Fáradtan, zsúfolt nyilvános helyeken a vonatra várakozás közbeni ismétlődő bemondások, a kipufogógázok vagy a szupermarket pénztáránál lévő szkenner csipogása arra kényszeríti az agyunkat, hogy folyamatosan működjön, mintha aktívan adatokat dolgoznánk fel.</li>
+                                <li style="margin-bottom: 0rem;"><strong>Több jutalom a nehézségeinkért:</strong> Autista embernek lenni természetesen bonyolítja az életet, de nem szeretnék más lenni. A tanulmány résztvevői dicsérik a hiperfókuszukat és azt a vágyat, hogy mélyebben elmerüljenek a hobbijaikban. Én sem szeretném soha elveszíteni a logikus dolgok ilyen intenzitású tanulásának örömét.</li>
+                            </ol>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+            <section id="section2">
+                <div class="translation-notice">
+                    Ezek a magyar nyelvű oldalak az angol eredeti automatikus fordításai. Rajongok a nyelvekért. Néhány évvel ezelőtt, amikor rendszeresen Budapestre látogattam, magamtól tanultam magyarul. Nyelvtudásom elegendő volt a nagyon egyszerű, baráti beszélgetésekhez, de távolról sem elég ahhoz, hogy lefordítsam a weboldalam angol verzióját. Így a gépi fordításra bíztam az oldalak lefordítását, de a jövőben tervezem a szövegek lektoráltatását. Nagyon örülnék a magyarországi szakemberekkel való együttműködésnek, és a visszajelzései rendkívül értékesek számomra, mind a szolgáltatásaimat, mind a nyelvészetet illetően.
+                </div>
+                <!-- Services Section Header & Introduction (Ultra-Clean & Pure HTML) -->
+                <div class="services-container">
+                    <div class="services-header">
+                        <h2>Szolgáltatások</h2>
+                        <span class="status-badge">
+                            🌱 <strong>Kezdeti szakasz:</strong> visszajelzései fontosak a szükségleteihez való jobb igazodáshoz
+                        </span>
+                    </div>
+
+                    <div class="services-intro-text">
+                        <p>
+                            Itt találja a szolgáltatásaim listáját, amelyet idővel bővíthetek, amint valami újat kezdek tanulni. Elsősorban arra szolgálnak, hogy olyan készségeket bocsássanak az Ön rendelkezésére, amelyeket folyamatos tanulással fejlesztettem ki sok éven át több akadémiai területen.
+                        </p>
+                        <p class="framework-note">
+                            A mindkettőnk számára kiszámítható, highly professzionális és stresszmentes együttműködés biztosítása érdekében ezen modulok többségére egységes struktúrát alkalmazok:
+                        </p>
+                    </div>
+
+                    <div class="services-grid">
+                        <div class="feature-card">
+                            <h3>💼 Adminisztratív egyszerűség</h3>
+                            <p>Employer of Record (EOR) vagy a francia portage salarial rendszer használata az összes szerződés, számla és jogszabályi megfelelőség kezelésére.</p>
+                        </div>
+                        <div class="feature-card">
+                            <h3>✅ Kockázatmentes mérföldkövek</h3>
+                            <p>A fizetés szigorúan <strong>a mérföldkő jóváhagyása után</strong> történik, a modern IT cégek hibajegy- és backlog-kezelése által ihletve.</p>
+                        </div>
+                        <div class="feature-card">
+                            <h3>📥 Backlog mentesítés</h3>
+                            <p>Kifejezetten arra tervezve, hogy átvállalja az Ön felhalmozott adatfeldolgozási feladatait és másodlagos hipotéziseit, felszabadítva a fő csapatát azokra a feladatokra, amelyekre nincs idejük.</p>
+                        </div>
+                        <div class="feature-card">
+                            <h3>🧩 Igazított kognitív tempó</h3>
+                            <p>A komplexitás széles skálája, az alapszintű feladatoktól a mélyreható kutatásokig. Ez lehetővé teszi számomra mint autizmussal élő kutató számára, hogy az időmet és a kognitív terhelésemet az aktuális koncentrációs képességemtől függően irányítsam.</p>
+                        </div>
+                    </div>
+
+                    <div class="services-footer">
+                        <p>Vannak egyedi igényei ezen a standard katalóguson kívül?</p>
+                        <a href="mailto:nicolas0dupuy@gmail.com" class="contact-button">✉️ Kapcsolat: nicolas0dupuy@gmail.com</a>
+                    </div>
+                </div>
+
+                <div id="hashtag-menu" class="hashtag-menu-container"></div>
+
+                <!-- ==================== SERVICE 1 ==================== -->
+                <div class="service-card" data-tags="ComputationalPhysics,AppliedMathematics">
+                    <h3 class="service-title">Számítógépes fizika & Numerikus modellezés</h3>
+
+                    <input type="checkbox" id="toggle-service-1" class="card-toggle-input">
+                    <div class="card-fold-content">
+                        <div class="service-description">
+                            <p>Műszaki és elméleti támogatás a kutatásban, kódmegvalósításban, fizikai rendszerek szimulációjában és matematikai modellezésben. Főleg távolról nyújtva, személyes részvételi lehetőséggel.</p>
+                            <p>A projektek független mérföldkövekre vannak strukturálva, világos definíciókkal és végpontokkal, ami garantálja, hogy minden eredmény könnyen nyomon követhető és integrálható a csapat bármely tagja által.</p>
+                            <p>A mérföldkövek képviselhetnek elméleti kutatást vagy egy algoritmus megvalósítását, és a befejezés után fizetendő tételek alapját képezik, védve az Ön költségvetését. Az ár minden mérföldkőre külön kerül kialakításra és nem változik, ha további időre van szükségem, biztosítva Önnek a stabilitást és a kiszámíthatóságot, miközben számomra a nyomás csökkenését és a minőségi tanulás lehetőségét adja.</p>
+                            <p>Ez a struktúra úgy lett kialakítva, hogy segítsen a csapatoknak vagy kutatóknak a félretett mellékprojektek befejezésében és az alternatív hipotézisek értékelésében, miközben a fő csapatai az elsődleges projektjeikre összpontosítanak.</p>
+                            <p>Hosszú távú partnerség előrevetíthető a tanulási görbém előnyeinek megszilárdítására, mivel aktívan tanulom a numerikus módszereket kezdő kutatói szinten.</p>
+                        </div>
+                        <div class="service-commentary">
+                            <h4>Személyes megjegyzés</h4>
+                            <p>A számítógépes fizikát a doktori értekezésem előtti mesterképzési szakmai gyakorlatom során fedeztem fel. Abban az időszakban a kvantumkémia több módszerét alkalmaztam (amelyeket a «Kvantumkémia & Anyagmodellezés» szolgáltatásban kínálok), és a bennem lévő matematikus már akkor meg akarta érteni ezek alapjait. Azért kínálom ezt a szolgáltatást, mert az ezen a területen folytatott folyamatos tanulásom a tapasztalataimmal kombinálva gyakorlati alkalmazásra találhat mind az iparban, mind az akadémiai szférában, ahol gyakran hiányzik a gyakorlati támogatás. Tájékoztatásul, néhány publikáció, amelyhez a gyakorlatomban fordulok: Quarteroni et al. *Numerical Mathematics*, Grégoire Allaire *Analyse numérique et optimisation* (Éditions de l'École Polytechnique), Mallat könyvei és előadásai a waveletekről, valamint Pohjolainen *Mathematical Modeling*.</p>
+                        </div>
+                        <div class="card-fold-fade"></div>
+                    </div>
+                    <label for="toggle-service-1" class="card-toggle-label"></label>
+
+                    <div class="service-tags">
+                    <span class="tag" onclick="filterByTag('ComputationalPhysics')">#ComputationalPhysics</span>
+                    <span class="tag" onclick="filterByTag('AppliedMathematics')">#AppliedMathematics</span>
+                
+                    </div>
+                </div>
+
+                <!-- ==================== SERVICE 2 ==================== -->
+                <div class="service-card" data-tags="ComputationalPhysics">
+                    <h3 class="service-title">Kvantumkémia & Anyagmodellezés</h3>
+
+                    <input type="checkbox" id="toggle-service-2" class="card-toggle-input">
+                    <div class="card-fold-content">
+                        <div class="service-description">
+                            <p>Molekuláris modellezés, elektron- vagy geometriai szerkezeti számítások, valamint kvantumszimulációk alap- és gerjesztett állapotokra, beleértve a DFT és Quantum Monte Carlo munkafolyamatokat. Főleg távolról nyújtva, személyes részvételi lehetőséggel.</p>
+                            <p>A projektek független mérföldkövekre vannak strukturálva, világos definíciókkal és végpontokkal, ami garantálja, hogy minden eredmény könnyen nyomon követhető és integrálható a csapat bármely tagja által.</p>
+                            <p>A mérföldkövek képviselhetnek egyszerűen a DFT elektronszerkezet optimalizálását (a vizsgált molekulák egy tételénél) vagy az alternatív módszerek elméleti tanulmányozását, és a befejezés után fizetendő tételek alapját képezik, védve az Ön költségvetését. Az ár minden mérföldkőre külön kerül kialakításra és nem változik, ha további időre van szükségem, biztosítva Önnek a stabilitást és a kiszámíthatóságot, miközben számomra a nyomás csökkenését és a minőségi tanulás lehetőségét adja.</p>
+                            <p>Ez a struktúra úgy lett kialakítva, hogy segítsen a csapatoknak vagy kutatóknak a félretett mellékprojektek befejezésében és az alternatív hipotézisek értékelésében, miközben a fő csapatai az elsődleges projektjeikre összpontosítanak.</p>
+                            <p>Hosszú távú partnerség előrevetíthető a tanulási görbém előnyeinek megszilárdítására, mivel aktívan igazítom a meglévő számítási folyamataimat az Ön konkrét kutatási feladataihoz.</p>
+                        </div>
+                        <div class="service-commentary">
+                            <h4>Személyes megjegyzés</h4>
+                            <p>PhD fokozatot szereztem (2012–2016) számítógépes fizikából, a grafénszerű molekulák kvantum Monte Carlo optimalizálására, az alapállapoti elektronszerkezetre, a szinglett/triplett gerjesztett állapotokra és a erősen korrelált rendszerek geometriájára összpontosítva. Bár még nem vezettem be molekuláris dinamikai csatornákat, és nem integráltam a gépi tanulást a hagyományos fizikai folyamatokba, hatalmas érdeklődéssel állok készen ezen módszerek tanulására, bevezetésére és az Ön projektjeihez való igazítására. A fizika iránti szenvedélyem mellett korán kialakult az érdeklődésem a kvantumszámítástechnika iránt is. Elvégeztem a MITxPRO 'Quantum Computing Fundamentals' és 'Quantum Computing Realities' professzionális tanúsítványprogramjait, és nagyon szeretnék hozzájárulni e terület fejlődéséhez.</p>
+                        </div>
+                        <div class="card-fold-fade"></div>
+                    </div>
+                    <label for="toggle-service-2" class="card-toggle-label"></label>
+
+                    <div class="service-tags">
+                    <span class="tag" onclick="filterByTag('ComputationalPhysics')">#ComputationalPhysics</span>
+                
+                    </div>
+                </div>
+
+                <!-- ==================== SERVICE 3 ==================== -->
+                <div class="service-card" data-tags="QuantitativeFinance,AppliedMathematics">
+                    <h3 class="service-title">Numerikus módszerek a kvantitatív pénzügyekben</h3>
+
+                    <input type="checkbox" id="toggle-service-3" class="card-toggle-input">
+                    <div class="card-fold-content">
+                        <div class="service-description">
+                            <p>Numerikus modellek, sztochasztikus szimulációk és matematikai struktúrák megvalósítása és validálása a kvantitatív pénzügyek számára. Főleg távolról nyújtva, személyes részvételi lehetőséggel.</p>
+                            <p>A projektek független mérföldkövekre vannak strukturálva, világos definíciókkal és végpontokkal, ami garantálja, hogy minden eredmény könnyen nyomon követhető és integrálható a csapat bármely tagja által.</p>
+                            <p>A mérföldkő képviselheti a Value-at-Risk (VaR) értékelést, egy adatcsomag előkészítését, mérnöki munkáját vagy elemzését, vagy egy vizsgált elméleti modellt, és a befejezés után fizetendő tételek alapját képezi, védve az Ön költségvetését. Az ár minden mérföldkőre külön kerül kialakításra és nem változik, ha további időre van szükségem, biztosítva Önnek a stabilitást és a kiszámíthatóságot, miközben számomra a nyomás csökkenését és a minőségi tanulás lehetőségét adja.</p>
+                            <p>Ez a struktúra úgy lett kialakítva, hogy segítsen a csapatoknak vagy kutatóknak a félretett mellékprojektek befejezésében és az alternatív hipotézisek értékelésében, miközben a fő csapatai az elsődleges projektjeikre összpontosítanak.</p>
+                            <p>Hosszú távú partnerség előrevetíthető a tanulási görbém előnyeinek megszilárdítására, mivel aktívan specializálódom a kvantitatív pénzügyek módszereire, építve a tudományos kutatási tapasztalataimra.</p>
+                        </div>
+                        <div class="service-commentary">
+                            <h4>Személyes megjegyzés</h4>
+                            <p>Az elmúlt évben kezdtem aktívan specializálódni a kvantitatív pénzügyek módszereire, építve a Paris School of Business-ben szerzett hétéves Data Science oktatási tapasztalatomra, szoros kapcsolatban a pénzügyi szakemberekkel. A következő személyes lépésem az aktív kutatókkal és szakemberekkel való együttműködés a gyakorlati tanulás érdekében. A partnerség lehetővé teszi Önnek egy olyan hosszú távú munkatárs képzését, aki mélyen megérti az Ön környezetét. Figyelembe véve a megbízható kvantitatív tehetségek hiányát a mai piacon, ez a partnerség lehetővé teszi Önnek, hogy elkerülje a ritka diplomás profilok nehéz keresését, és egy PhD szintű kutatót vonjon be bizonyított analitikai érettséggel. Örömmel fogadok alapszintű feladatokat az alapok tanulása során, és mint tapasztalt előadó hozzájárulhatok a stornói képzéshez is a frissen szerzett tudásom révén. A kutatók és a szakemberek közötti interfészen pozicionálva magam, ne habozzon kapcsolatba lépni, ha összekötő kapocsra van szüksége. Európai hozzájárulásaimat Franciaországra, a hazámra, valamint a skandináv és baltikumi országokra összpontosítom, amelyek a kedvenc régióim közé tartoznak.</p>
+                        </div>
+                        <div class="card-fold-fade"></div>
+                    </div>
+                    <label for="toggle-service-3" class="card-toggle-label"></label>
+
+                    <div class="service-tags">
+                    <span class="tag" onclick="filterByTag('QuantitativeFinance')">#QuantitativeFinance</span>
+                    <span class="tag" onclick="filterByTag('AppliedMathematics')">#AppliedMathematics</span>
+                
+                    </div>
+                </div>
+
+                <!-- ==================== SERVICE 4 ==================== -->
+                <div class="service-card" data-tags="AppliedMathematics">
+                    <h3 class="service-title">Konvex optimalizálás & Matematikai programozás</h3>
+
+                    <input type="checkbox" id="toggle-service-4" class="card-toggle-input">
+                    <div class="card-fold-content">
+                        <div class="service-description">
+                            <p>Optimalizálási feladatok (például LP, QP, SOCP, SDP) megfogalmazása és megoldása fizikai vagy működési korlátok mellett. Főleg távolról nyújtva, személyes részvételi lehetőséggel.</p>
+                            <p>A projektek független mérföldkövekre vannak strukturálva, világos definíciókkal és végpontokkal, ami garantálja, hogy minden eredmény könnyen nyomon követhető és integrálható a csapat bármely tagja által.</p>
+                            <p>A mérföldkövek képviselhetik a fizikai vagy működési korlátok átültetését egy konvex programozási modellbe, vagy a különböző solverek összehasonlító tesztelését egy adathalmazon, és a befejezés után fizetendő tételek alapját képezik, védve az Ön költségvetését. Az ár minden mérföldkőre külön kerül kialakításra és nem változik, ha további időre van szükségem, biztosítva Önnek a stabilitást és a kiszámíthatóságot, miközben számomra a nyomás csökkenését és a minőségi tanulás lehetőségét adja.</p>
+                            <p>Ez a struktúra úgy lett kialakítva, hogy segítsen a csapatoknak vagy kutatóknak a félretett mellékprojektek befejezésében és az alternatív hipotézisek értékelésében, miközben a fő csapatai az elsődleges projektjeikre összpontosítanak.</p>
+                            <p>Hosszú távú partnerség előrevetíthető a tanulási görbém előnyeinek megszilárdítására, mivel folyamatosan fejlesztem gyakorlati készségeimet Stephen Boyd keretrendszereivel.</p>
+                        </div>
+                        <div class="service-commentary">
+                            <h4>Személyes megjegyzés</h4>
+                            <p>A konvex optimalizálás tanulmányozását csak nemrégiben kezdtem el a numerikus módszerek iránti érdeklődésem kiterjesztéseként. Kiindulópontként Stephen Boyd nyilvános előadásait és tankönyvét használom, Yan Zheng algoritmikus jegyzeteivel, valamint Ben-Tal és Nemirovski *Lectures on Modern Convex Optimization* című klasszikus művével együtt. A korai partnerség biztosítja Önnek a szűken fókuszált optimalizálási szakértőt a működési és fizikai szűk keresztmetszetek modellezéséhez. Ha olyan tudásra van szüksége, amellyel még nem rendelkezem, ne habozzon tudatni velem, hogy kitűzhessem a készségszerzési célokat, és támogassam Önt azoknak a feladatoknak a végrehajtásában, ahol hiányoznak a szakképzett munkatársak.</p>
+                        </div>
+                        <div class="card-fold-fade"></div>
+                    </div>
+                    <label for="toggle-service-4" class="card-toggle-label"></label>
+
+                    <div class="service-tags">
+                    <span class="tag" onclick="filterByTag('AppliedMathematics')">#AppliedMathematics</span>
+                
+                    </div>
+                </div>
+
+                <!-- ==================== SERVICE 5 ==================== -->
+                <div class="service-card" data-tags="ComputerVision,MachineLearning">
+                    <h3 class="service-title">Számítógépes látás kutatás</h3>
+
+                    <input type="checkbox" id="toggle-service-5" class="card-toggle-input">
+                    <div class="card-fold-content">
+                        <div class="service-description">
+                            <p>Műszaki és elméleti támogatás a számítógépes látás algoritmusainak, matematikai alapjainak és numerikus megvalósításainak fejlesztéséhez, felölelve a klaszikus geometriai megközelítéseket, a gépi tanulási architektúrákat és a generatív megbízásokat. Főleg távolról nyújtva, személyes részvételi lehetőséggel.</p>
+                            <p>A projektek független mérföldkövekre vannak strukturálva, világos definíciókkal és végpontokkal, ami garantálja, hogy minden eredmény könnyen nyomon követhető és integrálható a csapat bármely tagja által.</p>
+                            <p>A mérföldkövek skálázódhatnak az egyszerű képfeldolgozási feladattól vagy a kutatási munka algoritmikus megvalósításától az elméleti alapok matematikai auditjáig, és a befejezés után fizetendő tételek alapját képezik, védve az Ön költségvetését. Az ár minden mérföldkőre külön kerül kialakításra és nem változik, ha további időre van szükségem, biztosítva Önnek a stabilitást és a kiszámíthatóságot, miközben számomra a nyomás csökkenését és a minőségi tanulás lehetőségét adja.</p>
+                            <p>Ez a struktúra úgy lett kialakítva, hogy segítsen a csapatoknak vagy kutatóknak a félretett mellékprojektek befejezésében és az alternatív hipotézisek értékelésében, miközben a fő csapatai az elsődleges projektjeikre összpontosítanak.</p>
+                            <p>Hosszú távú partnerség előrevetíthető a tanulási görbém előnyeinek megszilárdítására, mivel gyorsan igazítom a matematikai készségeimet az Ön konkrét látási feladataihoz.</p>
+                        </div>
+                        <div class="service-commentary">
+                            <h4>Személyes megjegyzés</h4>
+                            <p>A számítógépes látást a mély tanulási bumm után fedeztem fel, és a mögötte rejlő matematika gyorsan lenyűgözött. Online követtem a HSE számítógépes látás mesterképzésének első évét (amelyet megszakított az ukrajnai háború kitörése), és 2021-ben elvégeztem a CS236 generatív modellek kurzust a Stanfordon. Egyformán le vagyok nyűgözve a alapvető matematikát használó klasszikus módszerektől és a gépi tanuláson alapuló módszerektől. A gyakorlatomban szakirodalomként Szeliski *Computer Vision: Algorithms and Applications* és Gonzalez és Woods *Digital Image Processing* című tankönyveit használom. Ezenkívül az akadémiai hátterem magában foglalja a differenciálgeometria különböző szintjeit — beleértve a riemanni, szimplektikus geometriát és a Lie-csoportokat —, ami szilárd geometriai perspektívát biztosít a többdimenziós vizuális adatokkal vagy invariáns architektúrákkal való munka során.</p>
+                        </div>
+                        <div class="card-fold-fade"></div>
+                    </div>
+                    <label for="toggle-service-5" class="card-toggle-label"></label>
+
+                    <div class="service-tags">
+                    <span class="tag" onclick="filterByTag('ComputerVision')">#ComputerVision</span>
+                    <span class="tag" onclick="filterByTag('MachineLearning')">#MachineLearning</span>
+                
+                    </div>
+                </div>
+
+                <!-- ==================== SERVICE 6 ==================== -->
+                <div class="service-card" data-tags="ComputerVision,DataEngineering">
+                    <h3 class="service-title">Számítógépes látás alkalmazások</h3>
+
+                    <input type="checkbox" id="toggle-service-6" class="card-toggle-input">
+                    <div class="card-fold-content">
+                        <div class="service-description">
+                            <p>A számítógépes látás folyamatainak gyakorlati megvalósítása az ipari automatizálás, a minőségellenőrzés és az adatok előfeldolgozása számára, a klasszikus képfeldolgozás és a gépi tanulási modellek használatával. Főleg távolról nyújtva, személyes részvételi lehetőséggel.</p>
+                            <p>A projektek független mérföldkövekre vannak strukturálva, világos definíciókkal és végpontokkal, ami garantálja, hogy minden eredmény könnyen nyomon követhető és integrálható a csapat bármely tagja által.</p>
+                            <p>A mérföldkövek skálázódhatnak az képek szűrésére és igazítására szolgáló OpenCV előfeldolgozó csatorna kiépítésétől az egyedi jellemző-párosító skript megírásáig vagy egy könnyű előre betanított modell telepítéséig, és a befejezés után fizetendő tételek alapját képezik, védve az Ön költségvetését. Az ár minden mérföldkőre külön kerül kialakításra és nem változik, ha további időre van szükségem, biztosítva Önnek a stabilitást és a kiszámíthatóságot, miközben számomra a nyomás csökkenését és a minőségi tanulás lehetőségét adja.</p>
+                            <p>Ez a struktúra úgy lett kialakítva, hogy segítsen a csapatoknak vagy kutatóknak a félretett mellékprojektek befejezésében és az alternatív hipotézisek értékelésében, miközben a fő csapatai az elsődleges projektjeikre összpontosítanak.</p>
+                            <p>Hosszú távú partnerség előrevetíthető a tanulási görbém előnyeinek megszilárdítására, mivel aktívan bővítem gyakorlati készségeimet ipari szintű szoftverkönyvtárakkal.</p>
+                        </div>
+                        <div class="service-commentary">
+                            <h4>Személyes megjegyzés</h4>
+                            <p>Elsősorban elméleti szakemberként az elmúlt öt évben aktívan dolgoztam azon, hogy a számítógépes látás gyakorlati szakembere legyek. Korai számítógépes látás kurzusok elvégzésével kezdtem a Coursera, Udacity és LearnOpenCV platformokon, majd felgyorsítottam a tanulást azzal, hogy beiratkoztam a HSE online mesterképzésére — ezt a kísérletet sajnos megszakította az ukrajnai invázió kitörése. Ezeket a szolgáltatásokat az elméleti hátterem gyakorlati tapasztalatokkal való kiegészítésére kínálom, a hozzájárulásomat a backlog-mentesítés támogató szolgáltatásaként pozicionálva, ahol az Ön pénzügyi kockázata teljesen ki van zárva a mérföldkő alapú kifizetéseknek köszönhetően.</p>
+                        </div>
+                        <div class="card-fold-fade"></div>
+                    </div>
+                    <label for="toggle-service-6" class="card-toggle-label"></label>
+
+                    <div class="service-tags">
+                    <span class="tag" onclick="filterByTag('ComputerVision')">#ComputerVision</span>
+                    <span class="tag" onclick="filterByTag('DataEngineering')">#DataEngineering</span>
+                
+                    </div>
+                </div>
+
+                <!-- ==================== SERVICE 7 ==================== -->
+                <div class="service-card" data-tags="DataEngineering,DataScience">
+                    <h3 class="service-title">Adatmérnökség & Jelentéskészítés</h3>
+
+                    <input type="checkbox" id="toggle-service-7" class="card-toggle-input">
+                    <div class="card-fold-content">
+                        <div class="service-description">
+                            <p>Adatfeldolgozó csatornák, analitikai műszerfalak (Business Intelligence) fejlesztése és az adatminőség auditálása. Főleg távolról nyújtva, személyes részvételi lehetőséggel.</p>
+                            <p>A projektek független mérföldkövekre vannak strukturálva, világos definíciókkal és végpontokkal, ami garantálja, hogy minden eredmény könnyen nyomon követhető és integrálható a csapat bármely tagja által.</p>
+                            <p>A mérföldkövek skálázódhatnak az egyedi Python-skript megírásától a különböző adatállományok tisztítására és egyesítésére, a SQL-lekérdezések írásán át a Google BigQuery-ben az automatizált műszerfal kiépítéséig, és a befejezés után fizetendő tételek alapját képezik, védve az Ön költségvetését. Az ár minden mérföldkőre külön kerül kialakításra és nem változik, ha további időre van szükségem, biztosítva Önnek a stabilitást és a kiszámíthatóságot, miközben számomra a nyomás csökkenését és a minőségi tanulás lehetőségét adja.</p>
+                            <p>Ez a struktúra úgy lett kialakítva, hogy segítsen az adatfeldolgozó vagy IT csapatoknak a felhalmozott feladatok megoldásában és a működési műszerfalak kiépítésében, miközben a fő csapatai a mindennapi munkafolyamataikra összpontosítanak, valamint segítsen a nem specializált csapatoknak a kezdeti infrastruktúrájuk létrehozásában.</p>
+                            <p>Hosszú távú partnerség előrevetíthető a tanulási görbém előnyeinek megszilárdítására, mivel nagyon szeretnék hozzájárulni az Ön projektjeihez mindaddig, amíg kézzelfogható és mérhető eredményeket nem érünk el.</p>
+                        </div>
+                        <div class="service-commentary">
+                            <h4>Személyes megjegyzés</h4>
+                            <p>2019 óta tanítok Data Science-t és az adatbázisok alapjait a Paris School of Business-ben, folyamatosan fejlesztve a készségeimet a DataCamp és Coursera platformokon azok alapítása óta. Idővel más neves intézményekben is kezdtem előadásokat tartani, hogy az adatokat szűken specializált kontextusokban tanítsam, mint például a kibervédelem és a pénzügyek. Azért kínálom ezt a szolgáltatást, hogy levegyem a felhalmozott feladatokat az Ön csapatáról — mint például az adatok előkészítése vagy az alapvető csatornák —, mivel ez biztosítja számomra a legfontosabb gyakorlati tapasztalatot, amely táplálja a saját kutatásaimat.</p>
+                        </div>
+                        <div class="card-fold-fade"></div>
+                    </div>
+                    <label for="toggle-service-7" class="card-toggle-label"></label>
+
+                    <div class="service-tags">
+                    <span class="tag" onclick="filterByTag('DataEngineering')">#DataEngineering</span>
+                    <span class="tag" onclick="filterByTag('DataScience')">#DataScience</span>
+                
+                    </div>
+                </div>
+
+                <!-- ==================== SERVICE 8 ==================== -->
+                <div class="service-card" data-tags="DataScience,AppliedMathematics">
+                    <h3 class="service-title">Alkalmazott statisztika & Hipotézisvizsgálat</h3>
+
+                    <input type="checkbox" id="toggle-service-8" class="card-toggle-input">
+                    <div class="card-fold-content">
+                        <div class="service-description">
+                            <p>Kísérleti tervek megfogalmazása, hipotézisek ellenőrzése, statisztikai validálás és az alapvető mintázatok kinyerése a többdimenziós adatállományokból. Főleg távolról nyújtva, személyes részvételi lehetőséggel.</p>
+                            <p>A projektek független mérföldkövekre vannak strukturálva, világos definíciókkal és végpontokkal, ami garantálja, hogy minden eredmény könnyen nyomon követhető és integrálható a csapat bármely tagja által.</p>
+                            <p>A mérföldkövek skálázódhatnak a közelgő kísérlet statisztikai alapjának megtervezésétől a meglévő modell feltételeinek validálási auditjáig vagy egy teljes hipotézisteszt elvégzéséig egy kulcsfontosságú adatállományon, és a befejezés után fizetendő tételek alapját képezik, védve az Ön költségvetését. Az ár minden mérföldkőre külön kerül kialakításra és nem változik, ha további időre van szükségem, biztosítva Önnek a stabilitást és a kiszámíthatóságot, miközben számomra a nyomás csökkenését és a minőségi tanulás lehetőségét adja.</p>
+                            <p>Ez a struktúra úgy lett kialakítva, hogy segítsen a kvantitatív kihívásokkal küzdő csapatoknak (például a pénzügyekben, az orvosi kutatásokban vagy a meteorológiában) a hipotézisek validálásában és az analitikai adósságok felszámolásában. Különösen igazodik azon vállalatokhoz és csapatokhoz, amelyeknek csak részleges tudományos validálásra van szükségük.</p>
+                            <p>Hosszú távú partnerség előrevetíthető a tanulási görbém előnyeinek megszilárdítására, mivel jelenleg bővítem a statisztikai alapjaimat, különösen a kvantitatív pénzügyeken keresztül.</p>
+                        </div>
+                        <div class="service-commentary">
+                            <h4>Személyes megjegyzés</h4>
+                            <p>Statisztikai alapom a fizikában gyökerezik, amikor statisztikus fizikát tanultam, és különösen a doktori tanulmányaim során fejlődött ki, ahol a szimulációimhoz használt Monte Carlo módszerek alapos statisztikai validálást igényeltek. A Paris School of Business-ben tartott előadások a kombinált képzésben részt vevő hallgatókkal arra késztettek, hogy megértsem, hogyan kell alkalmazni a statisztikát a különböző üzleti helyzetekben az előadásaim tartalmának megalkotásához. Különösen arra törekedtem, hogy segítsek a csapatoknak a hatékonyság növelésében az elemzéseik finomítása révén a kapcsolódó bizonytalanság jobb becslésével.</p>
+                        </div>
+                        <div class="card-fold-fade"></div>
+                    </div>
+                    <label for="toggle-service-8" class="card-toggle-label"></label>
+
+                    <div class="service-tags">
+                    <span class="tag" onclick="filterByTag('DataScience')">#DataScience</span>
+                    <span class="tag" onclick="filterByTag('AppliedMathematics')">#AppliedMathematics</span>
+                
+                    </div>
+                </div>
+
+                <!-- ==================== SERVICE 9 ==================== -->
+                <div class="service-card" data-tags="MachineLearning,DataScience">
+                    <h3 class="service-title">Alkalmazott gépi tanulás & Prediktív modellezés</h3>
+
+                    <input type="checkbox" id="toggle-service-9" class="card-toggle-input">
+                    <div class="card-fold-content">
+                        <div class="service-description">
+                            <p>Prediktív modellek betanítása és összehasonlítása, adatállományok szervezése és a gépi tanulási munkafolyamatok átvitele a felhőplatformokra. Főleg távolról nyújtva, személyes részvételi lehetőséggel.</p>
+                            <p>A projektek független mérföldkövekre vannak strukturálva, világos definíciókkal és végpontokkal, ami garantálja, hogy minden eredmény könnyen nyomon követhető és integrálható a csapat bármely tagja által.</p>
+                            <p>A mérföldkövek skálázódhatnak a több modellarchitektúra (például Scikit-Learn vagy XGBoost) összehasonlító elemzésétől az Ön adatállományán az adatok előkészítéséig a BigQuery-ben vagy a modellbetanító skript átviteléig a Google Cloud Platform (GCP) környezetébe, és a befejezés után fizetendő tételek alapját képezik, védve az Ön költségvetését. Az ár minden mérföldkőre külön kerül kialakításra és nem változik, ha további időre van szükségem, biztosítva Önnek a stabilitást és a kiszámíthatóságot, miközben számomra a nyomás csökkenését és a minőségi tanulás lehetőségét adja.</p>
+                            <p>Ez a struktúra úgy lett kialakítva, hogy segítsen a K+F vagy adatcsapatoknak a prediktív folyamatok prototípus-készítésében és az alternatív modellarchitektúrák tesztelésében, miközben a fő mérnökei a stabil produkciós rendszerek fenntartására összpontosítanak.</p>
+                            <p>Hosszú távú partnerség előrevetíthető a tanulási görbém előnyeinek megszilárdítására, és hatékonyan kombinálható a többi adatos vagy specializált szolgáltatásommal, hogy megvitassuk, hogyan segíthetek Önnek mérhető eredmények elérésében.</p>
+                        </div>
+                        <div class="service-commentary">
+                            <h4>Személyes megjegyzés</h4>
+                            <p>A modern gépi tanulási módszereket a Scikit-Learn könyvtárban a modern adattudományi módszerekkel együtt fedeztem fel a doktori obhajóbám után 2016-ban, és erre specializálódtam, mert készen akartam állni, ha mérnöki pozíciót ajánlanak fel egy fizikai laboratóriumban, de végül előadói ajánlatokat kaptam. A gépi tanulás iránti szenvedélyt ötvözöm a numerikus módszerekkel és az adattudománnyal. Jelenleg a Google Cloud mint gépi tanulási mérnök (Machine Learning Engineer) tanúsítványára készülök, hogy segítsek a nem specializált csapatoknak bármely területen (személy szerint sokat gondolok a kulturális örökségre, múzeumokra és galériákra) intuitív adatalapú eszközöket szerezni a szakterületük segítésére.</p>
+                        </div>
+                        <div class="card-fold-fade"></div>
+                    </div>
+                    <label for="toggle-service-9" class="card-toggle-label"></label>
+
+                    <div class="service-tags">
+                    <span class="tag" onclick="filterByTag('MachineLearning')">#MachineLearning</span>
+                    <span class="tag" onclick="filterByTag('DataScience')">#DataScience</span>
+                
+                    </div>
+                </div>
+
+                <!-- ==================== SERVICE 10 ==================== -->
+                <div class="service-card" data-tags="GenerativeAI,MachineLearning">
+                    <h3 class="service-title">Mély generatív modellezés & Matematikai reprezentációk</h3>
+
+                    <input type="checkbox" id="toggle-service-10" class="card-toggle-input">
+                    <div class="card-fold-content">
+                        <div class="service-description">
+                            <p>Mély generatív architektúrák fejlesztése, azok elméleti alapjainak kutatása vagy architektúrák tervezése. Alkalmazható többdimenziós jelek elemzésére, ismeretlen valószínűségi eloszlások modellezésére vagy fizikai inverz feladatok megoldására. Főleg távolról nyújtva, személyes részvételi lehetőséggel.</p>
+                            <p>A projektek független mérföldkövekre vannak strukturálva, világos definíciókkal és végpontokkal, ami garantálja, hogy minden eredmény könnyen nyomon követhető és integrálható a csapat bármely tagja által.</p>
+                            <p>A mérföldkövek skálázódhatnak a mély generatív architektúra (például variációs autoenkóderek, normalizáló tokok vagy diffúziós modélek) megépítésétől és tesztelésétől az Ön adatain az alapok auditjáig (mint a KL-divergenciák levezetése vagy az invariáns reprezentációk vizsgálata), hogy garantálva legyen a modell konvergenciája a kívánt cél felé, vagy az adatállomány statisztikáját megragadó generatív modell létrehozásáig (hasznos az adatvédelem szempontjából, amikor az adatállományt törölni kell, hogy szintetikus verziót hozhasson létre a törlés utáni trendelemzéshez), és a befejezés után fizetendő tételek alapját képezik, védve az Ön költségvetését. Az ár minden mérföldkőre külön kerül kialakításra és nem változik, ha további időre van szükségem, biztosítva Önnek a stabilitást és a kiszámíthatóságot, miközben számomra a nyomás csökkenését és a minőségi tanulás lehetőségét adja.</p>
+                            <p>Ez a struktúra úgy lett kialakítva, hogy segítsen a K+F csapatoknak és kutatóknak (beleértve az orvosi kutatókat vagy a kulturális örökség szakértőit) a matematikai hipotézisek validálásában vagy a neurális hálózati architektúrák prototípus-készítésében a létszám bővítése nélkül. Alkalmas olyan területek szakemberei számára is, ahol az adatokat periodikusan törölni kell az adatvédelem miatt (orvosi vagy fogyasztói adatok).</p>
+                            <p>Hosszú távú partnerség előrevetíthető a tanulási görbém előnyeinek megszilárdítására, és hatékonyan kombinálható a többi adatos vagy specializált szolgáltatásommal, hogy megvitassuk, hogyan segíthetek Önnek mérhető eredmények elérésében.</p>
+                        </div>
+                        <div class="service-commentary">
+                            <h4>Személyes megjegyzés</h4>
+                            <p>A generatív modelleket 2021-ben fedeztem fel, amikor úgy döntöttem, hogy elvégzem Stefano Ermon CS236 online kurzusát (Deep Generative Models) a Stanfordon. Tájékoztatásul: nem adtam be a záró projektemet, mert a PSB-ben és más iskolákban tartott előadásaim nem hagytak erre sok időt (és visszaléptem azzal, hogy idealizáltam a stanfordi hallgatókat, akiket csodálatosnak tartok), de mégis megkaptam a C osztályzatot kizárólag a elmélet és a kódolási feladatok alapján. Ezt bizonyos büszkeséggel fogadtam el, figyelembe véve, hogy a C osztályzat elérése az összesített pontszám mindössze 75%-ának elérhetősége mellett egyáltalán nem volt rossz. Egy külvárosi francia fiú számára a stanfordi hallgatói státusz egy késői revans volt, ami növelte az önbizalmamat (és kicsit az angol nyelvtudásomat is!). Jelenleg elkezdtem nézni és tanulni Stéphane Mallat leckéit a Collège de France-on (megismételve a nyilvánosan elérhető friss CS236 előadásokat), hogy kiegészítsem a generatív modellek elméleti megértését az optimális szállítás szempontjaival.</p>
+                        </div>
+                        <div class="card-fold-fade"></div>
+                    </div>
+                    <label for="toggle-service-10" class="card-toggle-label"></label>
+
+                    <div class="service-tags">
+                    <span class="tag" onclick="filterByTag('GenerativeAI')">#GenerativeAI</span>
+                    <span class="tag" onclick="filterByTag('MachineLearning')">#MachineLearning</span>
+                
+                    </div>
+                </div>
+
+                <!-- ==================== SERVICE 11 ==================== -->
+                <div class="service-card" data-tags="SignalProcessing,ComputerVision,ResearchCollaboration">
+                    <h3 class="service-title">Orvosi képalkotás & Biológiai adatok, Sporttudomány & Jelanalízis / Kutatási támogatás</h3>
+
+                    <input type="checkbox" id="toggle-service-11" class="card-toggle-input">
+                    <div class="card-fold-content">
+                        <div class="service-description">
+                            <p>Előfeldolgozás, tisztítás és feltáró elemzés az orvosi és biológiai adatállományok számára, beleértve a képalkotást (például MRI DICOM fájlok) és a biojeleket (például EKG és EEG). Főleg távolról nyújtva, személyes részvételi lehetőséggel.</p>
+                            <p>A projektek független mérföldkövekre vannak strukturálva, világos definíciókkal és végpontokkal, ami garantálja, hogy minden eredmény könnyen nyomon követhető és integrálható a csapat bármely tagja által.</p>
+                            <p>A mérföldkövek skálázódhatnak az adat-előfeldolgozási feladatoktól a kutatási segítségnyújtásig, mint a képalkotási vagy jeltartalom-kinyerési módszerek tanulmányozása, a generatív modellek fejlesztése vagy a statisztikai adatgyűjtés beállítása az adatvédelem figyelembevételével a törlésre kerülő adatállományokból származó kulcsfontosságú tanulságok megőrzésére (lásd a «Mély generatív modellezés & Matematikai reprezentációk» szolgáltatást). Ezek a mérföldkövek a befejezés után fizetendő tételek alapját képezik, védve az Ön költségvetését. Az ár minden mérföldkőre külön kerül kialakításra és nem változik, ha további időre van szükségem, biztosítva Önnek a stabilitást és a kiszámíthatóságot, miközben számomra a nyomás csökkenését és a minőségi tanulás lehetőségét adja.</p>
+                            <p>Ez a struktúra úgy lett kialakítva, hogy segítsen a klinikai K+F csapatoknak, az orvosi kutatóknak vagy a digitális egészségügyi start-upoknak, amelyeknek specializált analitikai támogatásra van szükségük, felszabadítva az orvosaikat és a vezető kutatóikat.</p>
+                            <p>Hosszú távú partnerség előrevetíthető a tanulási görbém előnyeinek megszilárdítására, mivel lenyűgöz a biológia és az orvostudomány, és folyamatosan tanulok a gyakorlatban.</p>
+                        </div>
+                        <div class="service-commentary">
+                            <h4>Személyes megjegyzés</h4>
+                            <p>Új vagyok a klinikai környezetben, de imádom az emberi élettan tanulmányozását. Még a saját szívadataim egyszerű nyomon követéséből is tanulok a futóedzések során egy Polar H10 pánt segítségével, és büszkén jelenthetem a 180 ütés/perc körüli maximális pulzust, a 164 ütés/perc körüli második szellőzési küszöböt és a terhelés utáni pulzus átlagosan 25-30 ütés/perccel való csökkenését percenként (ugyanolyan büszke vagyok a fizikai formámra 46 évesen, mint arra, ahogyan a szív megértése javult a saját kutatásaim révén!). Arra is büszke vagyok, hogy «laboratóriumi nyúllá» váltam három autizmus kutatásban (egy EEG reakcióidő-rekord az autista és nem autista emberek összehasonlítására, egy a prozódiáról és egy a művészet érzékeléséről szemkövetővel), és nagyon örülnék, ha a kutatók oldalán lehetnék a segítségnyújtás érdekében!</p>
+                        </div>
+                        <div class="card-fold-fade"></div>
+                    </div>
+                    <label for="toggle-service-11" class="card-toggle-label"></label>
+
+                    <div class="service-tags">
+                    <span class="tag" onclick="filterByTag('SignalProcessing')">#SignalProcessing</span>
+                    <span class="tag" onclick="filterByTag('ComputerVision')">#ComputerVision</span>
+                    <span class="tag" onclick="filterByTag('ResearchCollaboration')">#ResearchCollaboration</span>
+                
+                    </div>
+                </div>
+
+                <!-- ==================== SERVICE 12 ==================== -->
+                <div class="service-card" data-tags="ComputerVision,ResearchCollaboration">
+                    <h3 class="service-title">Digitális képfeldolgozás a kulturális örökség számára</h3>
+
+                    <input type="checkbox" id="toggle-service-12" class="card-toggle-input">
+                    <div class="card-fold-content">
+                        <div class="service-description">
+                            <p>Digitális megőrzés, spektrális elemzés és kiváló minőségű digitális bemutatási megoldások a képzőművészet, galériák és kulturális intézmények számára.</p>
+                            <p>A projektek független mérföldkövekre vannak strukturálva, világos definíciókkal és végpontokkal, ami garantálja, hogy minden eredmény könnyen nyomon követhető és integrálható a csapat bármely tagja által.</p>
+                            <p>A mérföldkövek skálázódhatnak a fénykép vagy festmény digitalizálásától a kutatási támogatásig, mint a sérült vászon digitális restaurálása a történelmi fényképek egyesítésével, vagy spektrális elemzés végzése a múltbéli restaurálás nyomainak felderítésére. Ezek a mérföldkövek a befejezés után fizetendő tételek alapját képezik, védve az Ön költségvetését. Az ár minden mérföldkőre külön kerül kialakításra és nem változik, ha további időre van szükségem, biztosítva Önnek a stabilitást és a kiszámíthatóságot, miközben számomra a nyomás csökkenését és a minőségi tanulás lehetőségét adja.</p>
+                            <p>Ez a struktúra úgy lett kialakítva, hogy segítsen a múzeumi kurátoroknak, művészeti restaurátoroknak, magángalériáknak és örökségvédelmi intézményeknek, amelyeknek specializált számítási támogatásra van szükségük a gyűjteményeik digitalizálásához, elemzéséhez vagy virtuális bemutatásához hosszú távú műszaki režijní költségek nélkül.</p>
+                            <p>A hosszú távú együttműködés különösen értékes, mert megadja a szükséges időt a gyűjteményeire és a megőrzési folyamataira jellemző fizikai és matematikai kihívások tanulmányozására.</p>
+                        </div>
+                        <div class="service-commentary">
+                            <h4>Személyes megjegyzés</h4>
+                            <p>Hálás vagyok Robert Erdmann professzornak a vágyamért, hogy felfedezzem a számítógépes vizualizáció területét a kulturális örökségre alkalmazva. Rembrandt *Éjjeli őrjárat* című festményének ultra-nagy felbontású digitalizálásán végzett munkája rendkívül lenyűgöző, mivel fel lehet nagyítani a képet egészen az egy milliméter széles repedésig. A múzeumoknak és galériáknak különleges hangulatuk van, ami számomra mint autizmussal élő ember számára drága. Szeretném itt kifejezni köszönetemet a legkedvesebb múzeumaimnak és galériáimnak: a Kumu Művészeti Múzeumnak és a Fotografiskának Tallinnban, Észtországban, valamint a Finn Nemzeti Múzeumnak Helsinkiben.</p>
+                        </div>
+                        <div class="card-fold-fade"></div>
+                    </div>
+                    <label for="toggle-service-12" class="card-toggle-label"></label>
+
+                    <div class="service-tags">
+                    <span class="tag" onclick="filterByTag('ComputerVision')">#ComputerVision</span>
+                    <span class="tag" onclick="filterByTag('ResearchCollaboration')">#ResearchCollaboration</span>
+                
+                    </div>
+                </div>
+
+                <!-- ==================== SERVICE 13 ==================== -->
+                <div class="service-card" data-tags="SignalProcessing,QuantitativeFinance">
+                    <h3 class="service-title">Jeladdat-feldolgozás & Idősor-elemzés</h3>
+
+                    <input type="checkbox" id="toggle-service-13" class="card-toggle-input">
+                    <div class="card-fold-content">
+                        <div class="service-description">
+                            <p>Jelek matematikai elemzése, idő-frekvencia reprezentációk és algoritmikus mintázat-kinyerés az idősoros adatállományokból. Főleg távolról nyújtva, személyes részvételi lehetőséggel.</p>
+                            <p>A projektek független mérföldkövekre vannak strukturálva, világos definíciókkal és végpontokkal, ami garantálja, hogy minden eredmény könnyen nyomon követhető és integrálható a csapat bármely tagja által.</p>
+                            <p>A mérföldkövek skálázódhatnak az idősoros adatállományok elemzésétől a diszkrét wavelet-transzformáció megvalósításáig a szenzorjel zajának elnyomására, a lokalizált idő-frekvencia spektrogramok létrehozásáig a jellemzők kinyerésére, vagy a pénzügyi idősorok anomália-detektálási keretrendszereinek fejlesztéséig. Ezek a mérföldkövek a befejezés után fizetendő tételek alapját képezik, védve az Ön költségvetését. Az ár minden mérföldkőre külön kerül kialakításra és nem változik, ha további időre van szükségem, biztosítva Önnek a stabilitást és a kiszámíthatóságot, miközben számomra a nyomás csökkenését és a minőségi tanulás lehetőségét adja.</p>
+                            <p>Ez a struktúra úgy lett kialakítva, hogy segítsen a kutatócsapatoknak, az orvosi eszközökkel foglalkozó start-upoknak vagy a zajos idősoros fizikai mérésekkel dolgozó mérnöki csapatoknak, amelyeknek speciális matematikai támogatásra van szükségük a értelmes mintázatok kinyeréséhez állandó műszaki režijní költségek nélkül.</p>
+                            <p>Hosszú távú partnerség előrevetíthető a tanulási görbém előnyeinek megszilárdítására, mivel elmélyítem a jelfeldolgozás és a transzformációk megértését a könyvtárak tanulmányozásának és a gyakorlati alkalmazásnak az ötvözésével.</p>
+                        </div>
+                        <div class="service-commentary">
+                            <h4>Személyes megjegyzés</h4>
+                            <p>Alapvető megértésem a jelfeldolgozásról elsősorban a fundamentális matematikában meglévő alapomból származik a funkcionálanalízisen és a spektrális transzformációkon keresztül. Úgy terveztem ezt a szolgáltatást, hogy hatékonyan támogassa a kutatócsapatokat, miközben bővítem a tudásomat az olyan kutatók munkáinak tanulmányozásával, mint Stéphane Mallat vagy Ingrid Daubechies a wavelet-transzformációk terén, vagy más kutatások a funkcionálanalízisben.</p>
+                        </div>
+                        <div class="card-fold-fade"></div>
+                    </div>
+                    <label for="toggle-service-13" class="card-toggle-label"></label>
+
+                    <div class="service-tags">
+                    <span class="tag" onclick="filterByTag('SignalProcessing')">#SignalProcessing</span>
+                    <span class="tag" onclick="filterByTag('QuantitativeFinance')">#QuantitativeFinance</span>
+                
+                    </div>
+                </div>
+
+                <!-- ==================== SERVICE 14 ==================== -->
+                <div class="service-card" data-tags="ResearchCollaboration">
+                    <h3 class="service-title">Kutatási interfész, Technológiaátadás & Együttműködés elősegítése</h3>
+
+                    <input type="checkbox" id="toggle-service-14" class="card-toggle-input">
+                    <div class="card-fold-content">
+                        <div class="service-description">
+                            <p>Hidak építése: az akadémiai szféra (egyetemek, iskolák) és az ipar (start-upok, bankok) között, Franciaország és a világ többi része között, valamint a távoli akadémiai intézmények között bármely olyan projekt számára, amely profitál egy tudományosan képzett társkövetből.</p>
+                            <p>Más szolgáltatásaimmal ellentétben, amelyek szigorúan az előre meghatározott mérföldkövek köré vannak strukturálva, itt egyedileg, eseti alapon határozzuk meg a céljainkat és vitatjuk meg a munkánk formátumát.</p>
+                        </div>
+                        <div class="service-commentary">
+                            <h4>Személyes megjegyzés</h4>
+                            <p>Ezt a szolgáltatást elsősorban a csendes nyelvszeretemből terveztem (a francia perspektívámból). Kerestem a lehetőségeket, hogy részt vegyek a partnerségek kiépítésében azon iskolák nevében, ahol előadásokat tartok, különösen a Párizs és Tallinn közötti hidak kiépítésére. Már megtettem az első lépéseket ebben az irányban, ami rendkívüli emberekkel ismertetett meg. Mivel szándékomban áll felajánlani a készségeimet több partnernek különböző szférákban, nagyszerű esély van arra, hogy idővel csodálatos szinergiát tudunk kiépíteni!</p>
+                        </div>
+                        <div class="card-fold-fade"></div>
+                    </div>
+                    <label for="toggle-service-14" class="card-toggle-label"></label>
+
+                    <div class="service-tags">
+                    <span class="tag" onclick="filterByTag('ResearchCollaboration')">#ResearchCollaboration</span>
+                
+                    </div>
+                </div>
+            </section>
+
+            <section id="section3" class="section-3">
+                <div class="translation-notice">
+                    Ezek a magyar nyelvű oldalak az angol eredeti automatikus fordításai. Rajongok a nyelvekért. Néhány évvel ezelőtt, amikor rendszeresen Budapestre látogattam, magamtól tanultam magyarul. Nyelvtudásom elegendő volt a nagyon egyszerű, baráti beszélgetésekhez, de távolról sem elég ahhoz, hogy lefordítsam a weboldalam angol verzióját. Így a gépi fordításra bíztam az oldalak lefordítását, de a jövőben tervezem a szövegek lektoráltatását. Nagyon örülnék a magyarországi szakemberekkel való együttműködésnek, és a visszajelzései rendkívül értékesek számomra, mind a szolgáltatásaimat, mind a nyelvészetet illetően.
+                </div>
+                <h2>Rövid életrajz</h2>
+
+                <!-- Local Index / Table of Contents -->
+                <nav class="bio-index" aria-label="Tartalomjegyzék">
+                    <h3>Tartalomjegyzék</h3>
+                    <ul>
+                        <li>
+                            <a href="#bio-academics">Akadémiai út</a>
+                            <ul>
+                                <li><a href="#bio-physics">Fizika</a></li>
+                                <li><a href="#bio-mathematics">Matematika</a></li>
+                                <li><a href="#bio-languages-acad">Nyelvek</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#bio-miscellaneous">Egyebek</a>
+                            <ul>
+                                <li><a href="#bio-languages-misc">Nyelvek</a></li>
+                                <li><a href="#bio-datascience">Adattudomány & Gépi tanulás</a></li>
+                                <li><a href="#bio-computervision">Számítógépes látás</a></li>
+                                <li><a href="#bio-generative">Generatív modellek</a></li>
+                                <li><a href="#bio-finance">Pénzügyek</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+
+                <!-- General Introduction -->
+                <article class="bio-intro">
+                    <p>Üdvözlöm, Nicolas vagyok, független kutató és adattudományi előadó. Ezt az oldalt amennyire tudtam, felosztottam az Akadémiai és Egyebek alfejezetekre, figyelembe véve a nagyon nem lineáris utamat.</p>
+                </article>
+
+                <!-- Academics Subsection -->
+                <div id="bio-academics" class="bio-subsection">
+                    <h3>Akadémiai út</h3>
+                    <p>Tanulmányaim 1998-ban kezdődtek az érettségivel és 2016-ban fejeződtek be a doktori értekezésem megvédésével. Magukban foglaltak többek között három fő témát: a fizikát, a matematikát és a nyelveket. Mesélek egy keveset arról, mit csináltam, de kihagyom a legtöbb kaotikus évet.</p>
+
+                    <!-- Physics Subtopic -->
+                    <div id="bio-physics" class="bio-subtopic">
+                        <h4>Fyzika</h4>
+                        <p class="clearfix">
+                            <a href="../cert_doctorat.webp" target="_blank" class="cert-link right">
+                                <img src="../cert_doctorat.webp" alt="Doktori oklevél" class="inline-cert" loading="lazy">
+                            </a>
+                            A Jussieu-ben kezdtem fizika DEUG diplomával (az első két egyetemi év), mielőtt áttértem volna a matematikára, majd visszatértem a fizikához az anyagtudományi mesterképzés második évében (SMNO Master a Sorbonne-on), amit a doktori képzés követett 2012 szeptemberétől 2016 áprilisáig a Sorbonne Université-n az IMPMC laboratóriumában, Prof. Michele Casula és Prof. Francesco Mauri irányítása alatt.
+                        </p>
+                        <p>A doktori kutatásom az acének nevű molekulacsalád elektronikus alapállapotainak (főként) és gerjesztett állapotainak (másodlagosan) numerikus tanulmányozását foglalta magában. Az acének lineáris molekulák családja, amelyek szerkezetét a grafén nanoszalag keskeny csíkjának lehet tekinteni. Az elektron- és spin-sűrűségekre és korrelációkra összpontosítottunk, hogy jobban megértsük a spin-korrelációkat a grafénszerű anyagokban, aminek alkalmazása lehet olyan területeken, mint a napenergia.</p>
+                        <p>Prof. Casula a kvantum Monte Carlo módszerek szakértője és egy olyan kutató, aki lenyűgöző képességgel rendelkezik ahhoz, hogy egyszerre tucatnyi dologra összpontosítson. Igényes és nem alkuvó témavezető volt, aki megtanított tudományt művelni, míg korábban csak a tankönyvi feladatok megoldásának gondolkodásmódjában voltam. Nagyon szerencsés voltam, hogy vele dolgozhattam.</p>
+                    </div>
+
+                    <!-- Mathematics Subtopic -->
+                    <div id="bio-mathematics" class="bio-subtopic">
+                        <h4>Matematika</h4>
+                        <p class="clearfix">
+                            <a href="../cert_maitrise.webp" target="_blank" class="cert-link right">
+                                <img src="../cert_maitrise.webp" alt="Matematika mesterdiploma" class="inline-cert" loading="lazy">
+                            </a>
+                            A harmadik évben tértem át a matematikára. 1999 óta már studáltam fizikát és matematikát tankönyvekből, de a személyes célom — az ENS — eléréséhez ez a kitérő stratégiailag előnyösebb volt.
+                        </p>
+                        <p>Rövid megjegyzés a francia iskolákról: Van egy elit alternatívánk a standard egyetemi úthoz képest, amelyet Classes Préparatoires aux Grandes Écoles-nak hívnak. Párhuzamot vonva az USA-val: ezeket a Grandes Écoles-okat az Ivy League egyetemeihez lehet hasonlítani. A hallgatók két évig készülnek a nehéz vizsgákra a Classes Préparatoires-ban (és gyakran vesznek egy harmadik évet a rangosabb iskolába való bejutáshoz), majd részt vesznek a felvételi vizsgák maratonján.</p>
+                        <p>Az álmaim intézménye az École Normale Supérieure (ENS) volt, valószínűleg a legszelektívebb közülük a Polytechnique mellett. Túl későn szereztem tudomást róla ahhoz, hogy belépjek a Classe Préparatoire-ba, de mégis úgy döntöttem, hogy megpróbálom független jelöltként. Így a jövőbeli potenciális Nobel-díjasokkal versenyeztem, a tankönyvekből való samostudiumra támaszkodva (és ez nem működött, de a kihívást nagyon élveztem!).</p>
+                        <p>A Licence de Mathématiques kínálta a legközelebbi megfelelést a Classes Préparatoires-nak. Ezekben az években a tantervem magában foglalta:</p>
+                        <ul>
+                            <li>Két algebra kurzus: alapok, amelyeket a gyűrűstruktúrák és a Galois-elmélet követtek (körülbelül megfelel Serge Lang «Algebra» című műve II. részének első felének)</li>
+                            <li>Általános topológia</li>
+                            <li>Differenciálszámítás</li>
+                            <li>Integrálás és mértékelmélet</li>
+                            <li>Differenciálegyenletek és differenciálgeometria</li>
+                            <li>Spektrál- és Fourier-elemzés</li>
+                            <li>Dinamikai rendszerek és Lie-csoportok</li>
+                        </ul>
+                        <p>(Ez a rövid áttekintés nem tartalmazza azokat a területeket, amelyeket később tanulmányoztam a független kutatások keretében, mint például a valószínűségelmélet és a numerikus módszerek.)</p>
+                    </div>
+
+                    <!-- Languages (Academic) Subtopic -->
+                    <div id="bio-languages-acad" class="bio-subtopic">
+                        <h4>Nyelvek</h4>
+                        <p>Az ENS-en elszenvedett kudarc csökkentette a harci szellememet, ezért a matematika mesterképzéssel párhuzamosan beiratkoztam az INALCO-ra orosz nyelvet tanulni.</p>
+
+                        <p>Elnyelt az orosz nyelv tanulása, így az kezdett előtérbe kerülni a matematikához képest. Ezért tartott két évig a mesterképzés befejezése, mert meg kellett ismételnem pár vizsgát (amit szintén nem bánok!).</p>
+                        <p>A nyelvtanárom felébresztette bennem a csendes szenvedélyt a idegen nyelvű költészet iránt. A költészet gyakran motivál arra, hogy új nyelvet kezdjek tanulni. Amikor elkezdtem észtül tanulni, felfedeztem Jaan Kaplinskít, aki az egyik kedvenc költőm marad. Ez még függőség is: olvasok valami érdekeset a kultúráról, szeretnék róla többet tudni, kutatok egy kicsit, megígérem magamnak, hogy nem ásók mélyebbre, mégis megteszem, és utána újabb könyvhalmot adok a éjjeliszekrényemre.</p>
+                    </div>
+                </div>
+
+                <!-- Miscellaneous Subsection -->
+                <div id="bio-miscellaneous" class="bio-subsection">
+                    <h3>Egyebek</h3>
+
+                    <!-- Languages (Misc) Subtopic -->
+                    <div id="bio-languages-misc" class="bio-subtopic">
+                        <h4>Nyelvek</h4>
+                        <p>A szenvedélyemről szóló beszélgetést egy kikötéssel kezdem: sok nyelvet nagyon rosszul tudok. Ez szenvedély, nem pedig gyűjtemény a kérkedéshez, de mivel több mint húsz évvel ezelőtt kezdtem ezzel foglalkozni, sok tapasztalatot halmoztam fel, amit néha úgy érzek, használhatok.</p>
+                        <p>Röviden tehát: Minden az orosszal kezdődött (két év az egyetemen) és önállóan folytatódott (így lesz ez mindig, ezért nem kell többé pontosítanom). Aztán az első két nyelv, amit teljesen egyedül kezdtem tanulni, a cseh és a magyar volt, mert utazást terveztem oda. Első alkalommal katasztrófa volt, amikor megpróbáltam beszélni az emberekkel, de a következő évben jobb lett. Az iskolai idegen nyelveim a német és az angol voltak, így azokat folytattam következőként, és útközben hozzáadtam az olaszt (egy barátnak köszönhetően), és elmentem ott egy nyári iskolába. Hét éve tanulok észtül, Saaremaa-i iskolával kezdve, és pár éve elkezdtem svédül és egy kicsit kínaiul tanulni. Ez még nem minden, de ezekben vagyok a legaktívabb.</p>
+                        <p>Mindazonáltal érzem a spektrumon való tartózkodás előnyeit és hátrányait. Munkába menet tanulhatok észt vagy svéd költészetet a telefontelefont szótárként használva, és most AI eszközöket használva a szimbolizmus vagy a történelem elmagyarázására, de ugyanakkor nem mindig könnyű kommunikálnom, és gyakran leblokkolok, amikor szorongani kezdek.</p>
+                    </div>
+
+                    <!-- Data Science & Machine Learning Subtopic -->
+                    <div id="bio-datascience" class="bio-subtopic">
+                        <h4>Adattudomány & Gépi tanulás</h4>
+                        <p class="clearfix">
+                            <a href="../cert_datacamp.webp" target="_blank" class="cert-link right">
+                                <img src="../cert_datacamp.webp" alt="DataCamp tanúsítvány" class="inline-cert" loading="lazy">
+                            </a>
+                            <a href="../cert_coursera.webp" target="_blank" class="cert-link right" style="margin-right: 15px;">
+                                <img src="../cert_coursera.webp" alt="Coursera tanúsítvány" class="inline-cert" loading="lazy">
+                            </a>
+                            Az adattudományt online kezdtem tanulni a Coursera-n, mert ez a terület Franciaországban abban az időben született, amikor befejeztem a doktorimat, és ez egy lenyűgöző új szféra volt, ami megmutatta, hogyan használhatók ezek a módszerek a nyílt adatokon a felfedezésekhez bármilyen témában. A matematika szerelmesei könnyen hozzáférhetnek számos új módszerhez, amelyek önmagukban is érdekesek a tanulmányozásra, valamint a numerikus kutatások közvetlenül otthonról való elvégzésére.
+                        </p>
+                    </div>
+
+                    <!-- Computer Vision Subtopic -->
+                    <div id="bio-computervision" class="bio-subtopic">
+                        <h4>Számítógépes látás</h4>
+                        <p>Néhány mély tanulási útmutató után a klasszikus architektúrákról, mint Andrew Ng mély tanulási kurzusa, mélyebben akartam elmerülni ebben a területben, és nem korlátozódni a gépi tanulási módszerekre, mert a hagyományos algoritmusoknak lenyűgöző matematikai alapjaik vannak, különösen a geometriában, a Fourier-transzformációk vagy a differenciálszámítás használatával.</p>
+                    </div>
+
+                    <!-- Generative Models Subtopic -->
+                    <div id="bio-generative" class="bio-subtopic">
+                        <h4>Generatív modellek</h4>
+                        <p>2021-ben elegendő pénzt takarítottam meg ahhoz, hogy elvégezzek egy kurzust a Stanford Online-on, és a CS236-ot választottam. Abban az időben ez részben egy módja volt annak, hogy késői revansot vegyek az ENS-en elszenvedett kudarcért, és egy Ivy League egyetem hallgatójának érezzem magam. Nem volt megfelelő jellemem ahhoz, hogy online kommunikáljak a csoporttársaimmal, kifejezzem magam a fórumon vagy kérdéseket tegyek fel, így nem kaptam többet, mintha elolvastam volna egy könyvet, de korai oktatásban részesültem a terület egyik vezető szakértőjétől, és lenyűgöző volt. Most le vagyok nyűgözve ettől.</p>
+                    </div>
+
+                    <!-- Finance Subtopic -->
+                    <div id="bio-finance" class="bio-subtopic">
+                        <h4>Pénzügyek</h4>
+                        <p>Késői érdeklődést fedeztem fel a pénzügyi matematika iránt a business iskolákban tartott előadásoknak köszönhetően. Érdekel a portfóliók kockáztatott értékének (Value-at-Risk) kiszámítása gépi tanulási módszerekkel (PCA és normalizáló tokok). Közben rájöttem, hogy a személyes értékekkel összhangban történő befektetés kevésbé bonyolultnak bizonyult, mint gondoltam, különösen az Észak-Európába történő befektetés.</p>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+    </body>
+</html>
+
+<script src="../script.js"></script>
