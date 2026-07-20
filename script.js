@@ -8,6 +8,7 @@ const CHOICE_PRESETS = {
     "curator": ["ComputerVision", "ResearchCollaboration"]
 };
 
+
 // Helper permettant de changer le hash de l'URL de manière sécurisée en local (évite SecurityError avec file://)
 function safePushHash(hash) {
     try {
